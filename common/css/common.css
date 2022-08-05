@@ -89,18 +89,18 @@ h1 a {
 .top_menu li a {color: #fff; transition: all .2s ease-out;}
 
 #gnb {width: 1200px; height: 50px;}
-#gnb ul {overflow: hidden;}
+/* #gnb ul {overflow: hidden;} */
 #gnb li {
     float: left; width: 16.66%;
     text-align: center; font-size: 1.5em;
-   
+    position: relative;
     margin: 5px 0 0;
 }
 #gnb li h3 {font-weight: 500; color: #fff; transition: all .2s ease-out; position: relative;}
 #gnb li h3::after {
     content: ''; display: block;
     width: 100%; height: 3px; background: #0075c1;
-    position: absolute; left: 0px; bottom: 0px;
+    position: absolute; left: 0px; bottom: -10px;
     transform: scaleX(0); transition: all .2s ease-in-out;
 }
 
@@ -117,7 +117,19 @@ h1 a {
     width: 1200px;
     margin: 0 auto;
     height: 240px;
+    position: relative;
 }
+#footerArea .footerInner .topmove {
+    display: block; position: fixed; right: 20px; bottom: 20px; z-index: 50;    
+}
+#footerArea .footerInner .topmove a {
+    width: 80px; height: 80px; overflow: hidden; display: block;
+    background: url(../images/quicktop.png) 0 0 no-repeat #0075c1;
+    transition: all .3s ease-in-out;
+    text-indent: -9999px;
+}
+#footerArea .footerInner .topmove:hover a {background-position: 0 -80px;}
+
 #footerArea .footerInner .footer_line1 {
     height: 120px;
     background-color: #fff;

@@ -279,10 +279,12 @@
         color: #fff;
         opacity: 0; transition: all .2s ease-in-out;
     }
+    .news a {position: absolute; right: 450px; top: 200px; transform: rotate(0); transition: all .2s ease-in-out;}
 
     .news ul li:hover img {transform: scale(1.1);}
     .news ul li:hover dl {opacity: 1;}
     .news ul li:hover span {opacity: 1;}
 
+    .news a:hover {transform: rotate(180deg);}
 
 
