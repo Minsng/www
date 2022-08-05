@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+
+body{font-family: "Noto Sans Kr", sans-serif; font-size: 16px;color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+a{color: #333; text-decoration: none}
+img{border: 0; vertical-align: top}
+
+.hidden, #skipNav {
+    display: block;
+    position: absolute; left: -1000%;
+    width: 1px; height: 1px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.wrap{width: 100%; overflow: hidden;}
+
+/* 
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+ /* header 공통영역 */ 
+#headerArea {
+    width: 100%;
+    /* background: rgba(255, 255, 255, .5); */
+    height: 210px;
+    position: fixed; z-index: 50; transition: all .2s ease-out;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+}
+#headerArea:hover {background: rgba(255, 255, 255, 1);}
+#headerArea:hover h1 a {background: url(../images/header_logo240100.png);}
+#headerArea:hover .top_menu li a {color: #333;}
+#headerArea:hover .top_menu li a:hover {color: #0075c1;}
+#headerArea:hover #gnb li h3 {color: #333;}
+#headerArea:hover #gnb li h3:hover {color: #0075c1;}
+#headerArea:hover #gnb li h3:hover::after {transform: scaleX(.6);}
+
+
+#headerArea .headerInner {
+    width: 1200px;
+    margin: 0 auto;
+    height: 210px;
+    /* background: orange; */
+}
+.header_section {
+    overflow: hidden; height: 160px; clear: both;
+}
+h1 {float: left; margin:30px 0 0 480px;}
+h1 a {
+    display: block;
+    width: 240px; height: 100px;
+    text-indent: -999px; overflow: hidden;
+    /* background: url(../images/header_logo240100.png); */
+    background: url(../images/header_logo_white.png);
+    margin: 0 auto; transition: all .2s ease-out;
+}
+.top_menu {float: right;}
+.top_menu ul {overflow: hidden; margin-top: 90px;}
+.top_menu li {
+    float: left; margin: 10px 30px 0 0;
+    font-family: 'Roboto', sans-serif; font-weight: 500;
+}
+.top_menu li a {color: #fff; transition: all .2s ease-out;}
+
+#gnb {width: 1200px; height: 50px;}
+#gnb ul {overflow: hidden;}
+#gnb li {
+    float: left; width: 16.66%;
+    text-align: center; font-size: 1.5em;
+   
+    margin: 5px 0 0;
+}
+#gnb li h3 {font-weight: 500; color: #fff; transition: all .2s ease-out; position: relative;}
+#gnb li h3::after {
+    content: ''; display: block;
+    width: 100%; height: 3px; background: #0075c1;
+    position: absolute; left: 0px; bottom: 0px;
+    transform: scaleX(0); transition: all .2s ease-in-out;
+}
+
+
+
+/* footer 공통영역 */ 
+#footerArea {
+    width: 100%;
+    height: 240px;
+    border-top: 1px solid #ccc;    
+    /* background: #f00;  */
+}
+#footerArea .footerInner {
+    width: 1200px;
+    margin: 0 auto;
+    height: 240px;
+}
+#footerArea .footerInner .footer_line1 {
+    height: 120px;
+    background-color: #fff;
+    overflow: hidden;
+}
+#footerArea .footerInner .footer_line2 {
+    height: 120px;
+}
+.footer_line1 .footerlogo {margin:30px 0 0 20px; float: left;}
+.footer_line1 .fnb {overflow: hidden;float: left; margin: 60px 0 0 100px;}
+.footer_line1 .fnb li {
+    float: left; margin: 0 50px;
+    font-size: 1.125em;
+}
+.footer_line1 .fnb a:hover {
+    color: #0075c1;
+}
+.footer_line1 .sns {overflow: hidden; float: left; margin: 60px 0 0 20px;}
+.footer_line1 .sns li {
+    float: left; margin: 0 10px; 
+    font-size: 1.125em; text-align: center; 
+    padding: 5px 0;
+    width: 36px;  border-radius: 18px;
+    background: #666;
+}
+.footer_line1 .sns li:hover {background: #333;}
+.footer_line1 .sns li a {color: #fff;}
+
+.footer_line2 {overflow: hidden;}
+.footer_line2 .copy {float: left; margin: 20px;}
+.footer_line2 .copy p:nth-of-type(1) {font-family: 'Roboto', sans-serif; font-size: 1.125em;}
+.footer_line2 .copy address {font-size: 1.125em;}
+.footer_line2 .copy p:nth-of-type(2) {font-family: 'Roboto', sans-serif; font-size: 1.125em;}
+
+
+
+
+
+
+
+
+.footer_line2 .othercompany {float: left; margin: 20px 0 20px 250px;}
+#footerArea .othercompany {
+    width: 180px; height: 60px; 
+    position: relative; text-align: center; line-height: 60px;
+}
+.othercompany>a {
+    display: block;  border: 1px solid #ccc;
+    color: #333; font-size: 1.375em;
+}
+.othercompany>a:hover {background: #666;}
+.othercompany>a:hover .othercompany ul {background: #666; display: block;}
+.othercompany ul{display: none; width: 180px; position: absolute; top: -290px; left: 0;}
+.othercompany ul a {display: block; padding: 20px 0 20px 20px; background: #999;}
+.othercompany ul a:hover {background: #ccc; color: #fff;}
+
+
+
+.footer_line2 .family {float: left; margin: 20px 0 20px 30px;}
+#footerArea .family {
+    width: 180px; height: 60px; border: 1px solid #ccc;
+    position: relative; text-align: center; line-height: 60px;
+}
+.family>a {
+    display: block; color: #333; font-size: 1.375em;
+}
+.family>a:hover {background: #666;}
+.family>a:hover .family ul {background: #666; display: block;}
+.family ul{display: none; width: 180px; position: absolute; top: -290px; left: 0;}
+.family ul a {display: block; padding: 20px 0 20px 20px; background: #999;}
+.family ul a:hover {background: #ccc; color: #fff;}
+
+
