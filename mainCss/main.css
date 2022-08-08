@@ -64,14 +64,14 @@
         transition: all .2s ease-in-out;
     }
     .business li a {
-        position: absolute; left: 284px; bottom: 0px; 
+        position: absolute; left: 284px; top: 680px; 
         opacity: 0;transition: all .2s ease-in-out;
     }
 
     .business li:hover img {transform: scale(1.1); filter: brightness(.7);}
     .business li:hover h4 {top: 130px;}
     .business li:hover p {top: 270px; opacity: 1;}
-    .business li:hover a {bottom:100px; opacity: 1;}
+    .business li:hover a {top: 480px; opacity: 1;}
     .business li a:hover {transform: rotate(180deg);}
 
 
@@ -177,7 +177,7 @@
         font-size: 1.25em;
         transition: all .2s ease-in-out;
     }
-    .investment li:hover { transform: scale(1.1); box-shadow: 3 3 20px 0 rgba(0, 0, 0, .2);}
+    .investment li:hover {transform: scale(1.1); box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, .2);}
     .investment li:hover h4{color: #0075c1;}
     .investment li:nth-of-type(1):hover img {content: url(../images/invest1blue.png);}
     .investment li:nth-of-type(2):hover img {content: url(../images/invest2blue.png);}
