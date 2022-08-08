@@ -1,7 +1,7 @@
 /* 비주얼 영역 */
 .main {
     width: 2000px; height: 960px; 
-    background: url(../images/visual01.png); 
+    /* background: url(../images/visual01.png);  */
     position: relative; left: 50%; top: 0; margin-left: -1000px;
 }
 
@@ -190,8 +190,12 @@
     width: 2000px; position: relative; left: 50%;
     height: 600px;
     margin: 120px 0 0 -1000px;
-    background: url(../images/hr.png);
+    overflow: hidden;    
 }
+    .hr img {
+        transform: scale(1);
+        transition: all .4s ease-in-out;
+    }
     .hr p:first-of-type {
         z-index: 10; font-weight: 700;
         font-size: 3em; color: #fff;
@@ -212,7 +216,8 @@
         /* border: 3px solid #0075c1; */
         font-size: 1.25em;
     }
-    .hr a span:hover {
+    .hr:hover img {transform: scale(1.1);}
+    .hr:hover a span:hover {
         background: #fff; color: #0075c1;
         /* border: 3px solid #0075c1; */
         
