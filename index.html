@@ -11,6 +11,7 @@
     
     <script src="https://kit.fontawesome.com/d488d1cfdc.js" crossorigin="anonymous"></script>
     <script src="common/js/prefixfree.min.js"></script>
+    <script src="mainJs/mainpopup.js"></script>
 
 </head>
 <body>
@@ -23,7 +24,7 @@
             <div class="headerInner">
                 <div class="header_section">
                     <h1>
-                        <a href="#">한솔케미칼로고</a>
+                        <a href="index.html">한솔케미칼로고</a>
                     </h1>
                     <div class="top_menu">
                         <ul>
@@ -35,37 +36,13 @@
                 </div>
                 <nav id="gnb">
                     <h2 class="hidden">글로벌네비게이션영역</h2>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <h3>기업소개</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h3>정밀화학</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h3>전자소재</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h3>인재채용</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h3>투자정보</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h3>고객센터</h3>
-                            </a>
-                        </li>
+                    <ul class="dropdownmenu">
+                        <li><a href="sub1/sub1_1.html"><h3>기업소개</h3></a></li>
+                        <li><a href="sub2/sub2_1.html"><h3>정밀화학</h3></a></li>
+                        <li><a href="sub3/sub3_1.html"><h3>전자소재</h3></a></li>
+                        <li><a href="sub4/sub4_1.html"><h3>인재채용</h3></a></li>
+                        <li><a href="sub5/sub5_1.html"><h3>투자정보</h3></a></li>
+                        <li><a href="sub6/sub6_1.html"><h3>고객센터</h3></a></li>
                     </ul>
                 </nav>
             </div>
@@ -270,6 +247,28 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <!-- 공지팝업 -->
+    <div id="showimage" style="z-index:40;position:absolute;width:322px;right:10%;top:400px;">
+        <script>
+            function closeWin(){
+                var chk = document.getElementById('Notice')
+                if ( chk.checked ) {
+                    setCookie( "Notice", "done" , 1);
+                }
+            }   
+            if ( getCookie( "Notice" ) == "done" ) {
+                hidebox();
+            }
+       </script>
+        <div>
+            <img src="popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+        </div>
+        <div style="font-size:12px;text-align:center;color:#fff;">
+            <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+            <a href="#"  onclick="closeWin();hidebox();return false;"> [close] </a>
+        </div>
     </div>
 </body>
 </html>
