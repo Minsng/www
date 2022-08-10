@@ -1,0 +1,43 @@
+.menubar {
+    overflow: hidden; margin: 100px 0 0;
+}
+.menubar li {
+    float: left; width: 298px; height: 70px; 
+    border: 1px solid #ccc; border-right: 0;
+    text-align: center; border-collapse: collapse;
+    font-size: 1.5em; line-height: 70px;
+}
+.menubar li:last-child {border-right: 1px solid #ccc;}
+.menubar li:hover {background: #0075c1; color: #fff;}
+.menubar .current {background: #0075c1; color: #fff;}
+
+
+.headoffice {
+    margin: 120px 0 0 ;
+}
+    .headoffice h3 {
+        font-size: 2.5em; text-align: center;
+    }
+    .headoffice .headofficeBox {
+        margin: 50px 0 0;
+        position: relative;
+        height: 600px;
+    }
+        .headofficeBox img {
+            position: absolute; left: 0; top: 0;
+        }
+        .headofficeBox dl {
+            display: block; position: absolute; right: 0; bottom: 0;
+            width: 580px; height: 340px; background: pink;
+            font-size: 1.125em; overflow: hidden;
+        }
+        .headofficeBox dl dt {
+            font-weight: 700; float: left;
+            width: 100px; height: 20%; text-align: center;
+        }
+        .headofficeBox dl dd {
+            float: left; width: 480px;
+        }
+        .headofficeBox dl dd:nth-child(5) {
+            clear: both;
+        }
