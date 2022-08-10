@@ -1,4 +1,138 @@
 /* 기업소개 본문 영역 */
 
-/* body {background: pink;} */
+.summary {
+    overflow: hidden;
+    margin: 100px 0 0;
+}
+    .summary .summaryText {
+        float: left;
+        width: 480px;
+        margin-right: 120px;
+    }
+        .summaryText h3 {
+            color: #0075c1; font-size: 2.5em; text-align: left;
+        }
+        .summaryText p {
+            font-size: 1.125em; display: block; 
+            text-align: justify; margin-top: 50px;
+        }
 
+.ceo {
+    overflow: hidden;
+    margin: 100px 0 0;
+}
+    .ceo .ceoText {
+        float: right;
+        width: 480px;
+        margin-left: 120px;
+    }
+        .ceoText h3 {
+            color: #0075c1; font-size: 2.5em; text-align: left;
+        }
+        .ceoText p {
+            font-size: 1.125em; display: block; 
+            text-align: justify; margin-top: 30px;
+        }
+        .ceoText p:nth-last-child(2) {margin-top: 50px; text-align: right;}
+        .ceoText p:nth-last-child(1) {margin-top: 10px; text-align: right; font-size: 1.5em; font-family: '돋움'; font-style: italic; font-weight: 700;}
+
+
+.vision {
+    margin: 100px 0 200px;
+}
+    .vision h3 {
+        color: #0075c1; font-size: 2.5em; text-align: center;
+    }
+    .vision ul {
+        /* overflow: hidden; */
+        height: 920px;
+    }
+    .vision li {
+        float: left; position: relative;
+        width: 580px; height: 340px;
+    }
+    .vision li:nth-child(1) {margin: 90px 40px 0 0;}
+    .vision li:nth-child(2) {margin: 90px 0 0 0;}
+    .vision li:nth-child(3) {margin: 100px 40px 0 0;}
+    .vision li:nth-child(4) {margin: 100px 0 0 0;}
+    
+    .vision li:nth-child(4) ul {
+        overflow: hidden; position: absolute;
+        left: 0; top: 70px;
+    }
+    .vision li:nth-child(4) ul li {
+        float: left; width: 110px; height: 110px; margin: 3px;
+        background: #fff; border-radius: 55px;
+    }
+    .vision li:nth-child(4) ul li img {
+        position: absolute; left: 50%; top: 50%; margin: -40px 0 0 -40px;
+    }
+    .vision li:nth-child(4) ul li span {
+        display: block; width: 110px; font-weight: 500;
+        position: absolute; left: 0px; bottom: -40px; text-align: center;
+    }
+
+
+
+
+    .vision dl {
+        width: 500px; height: 120px; background: #fff;
+        position: absolute; left: 0; bottom: -60px;
+        box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, .2);
+    }
+        .vision dt, .vision dd {position: absolute;}
+        
+        .vision .textbox1 dt {
+            color: #0075c1; font-weight: 700; font-size: 1.5em;
+            left: 30px; top: 10px;
+        }
+        .vision .textbox1 dd:nth-child(2) {
+            color: #999; font-weight: 500; font-size: 1.063em;
+            left: 160px; top: 18px;
+        }
+        .vision .textbox1 dd:nth-child(3) {
+            color: #333; font-weight: 700; font-size: 1.5em;
+            left: 50%; top: 65px; margin-left: -237px;
+        }
+        
+        .vision .textbox2 dt {
+            color: #0075c1; font-weight: 700; font-size: 1.5em;
+            left: 30px; top: 10px;
+        }
+        .vision .textbox2 dd:nth-child(2) {
+            color: #999; font-weight: 500; font-size: 1.063em;
+            left: 180px; top: 18px;
+        }
+        .vision .textbox2 dd:nth-child(3) {
+            color: #333; font-weight: 700; font-size: 1.5em;
+            left: 50%; top: 65px; margin-left: -100px;
+        }
+        
+        .vision .textbox3 dt {
+            color: #0075c1; font-weight: 700; font-size: 1.5em;
+            left: 30px; top: 10px;
+        }
+        .vision .textbox3 dd:nth-child(2) {
+            color: #999; font-weight: 500; font-size: 1.063em;
+            left: 210px; top: 18px;
+        }
+        .vision .textbox3 dd:nth-child(3) {
+            color: #333; font-weight: 700; font-size: 1.5em;
+            left: 50%; top: 65px; margin-left: -58px;
+        }
+        
+        .vision .textbox4 dt {
+            color: #0075c1; font-weight: 700; font-size: 1.5em;
+            left: 30px; top: 10px;
+        }
+        .vision .textbox4 dd:nth-child(2) {
+            color: #999; font-weight: 500; font-size: 1.063em;
+            left: 230px; top: 18px;
+        }
+        .vision .textbox4 dd:nth-child(3) {
+            color: #333; font-weight: 700; font-size: 1.5em;
+            left: 50%; top: 65px; margin-left: -44px;
+        }
+
+
+        

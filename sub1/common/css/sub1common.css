@@ -3,7 +3,6 @@
 .main {
     width: 2000px; height: 500px;
     position: relative; left: 50%; top: 0; margin-left: -1000px;
-    background: red;
 }
     .main h3 {
         font-size: 50px; color: #fff; font-weight: 500;
@@ -13,16 +12,33 @@
 
 .subNav {border-bottom: 1px solid #ccc;}
     .subNav ul {width: 1050px; overflow: hidden; margin: 0 auto;}
-    .subNav ul li {width: 210px; height: 70%; float: left; text-align: center;}
+    .subNav ul li {position: relative; width: 210px; height: 70%; float: left; text-align: center;}
     .subNav ul li a {display: block; padding: 20px 0; font-weight: 700; transition: all .5s;}
     .subNav ul li a:hover {color: #0075c1;}
     .subNav ul li .current {color: #0075c1;}
+    .subNav ul li:first-child::before{
+        content: '';
+        display: block; position: absolute; left: 0; top: 20px;
+        width: 1px; height: 30px; background: #ccc;
+    }
+    .subNav ul li::after {
+        content: '';
+        display: block; position: absolute; right: 0; top: 20px;
+        width: 1px; height: 30px; background: #ccc;
+    }
 
-#content {width: 1200px; margin: 0 auto; border: 1px solid red;}
+#content {width: 1200px; margin: 0 auto;}
     
-#content .titleArea {}
-#content .lineMap {margin: 20px 0; text-align: right;}
-#content h2 {font-size: 50px; font-weight: 700; text-align: center; margin: 50px 0;}
+#content .titleArea {height: 320px; position: relative;}
+#content .titleArea .lineMap {margin: 30px 0 0; text-align: right; color: #999;}
+#content .titleArea .lineMap span {margin-right: 5px;}
+#content .titleArea .lineMap span:last-child {font-weight: 700;}
+#content .titleArea h2 {font-size: 50px; font-weight: 700; text-align: center; margin: 100px 0 0;}
+#content .titleArea::after {
+    content: '';
+    position: absolute; left: 50%; bottom: 0;
+    display: block; width: 1px; height: 80px; background: #0075c1;
+}
 
 .contentArea {}
 
