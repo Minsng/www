@@ -1,7 +1,7 @@
  window.onload = function() {
     var container = document.getElementById('headofficeMap');
     var options = {
-        center: new daum.maps.LatLng(127.058872, 37.5080060),
+        center: new daum.maps.LatLng(37.5080060, 127.058872),
         level: 2
     };
 
@@ -13,7 +13,7 @@
     var zoomControl = new daum.maps.ZoomControl();
     map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
     
-    var markerPosition  = new daum.maps.LatLng(36.107096, 128.370627); 
+    var markerPosition  = new daum.maps.LatLng(37.5080060, 127.058872); 
     var marker = new daum.maps.Marker({
         position: markerPosition
     });
