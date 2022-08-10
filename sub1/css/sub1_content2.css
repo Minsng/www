@@ -28,16 +28,25 @@
         }
         .headofficeBox dl {
             display: block; position: absolute; right: 0; bottom: 0;
-            width: 580px; height: 340px; background: pink;
+            width: 580px; height: 300px; background: #fff;
             font-size: 1.125em; overflow: hidden;
+            box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, .2);
+            padding: 20px 0;            
         }
         .headofficeBox dl dt {
             font-weight: 700; float: left;
-            width: 100px; height: 20%; text-align: center;
+            width: 100px; height: 16%; text-align: center;
+            margin-bottom: 5px;        
         }
         .headofficeBox dl dd {
-            float: left; width: 480px;
+            width: 480px; height: 16%; float: right;
+            margin-bottom: 5px; 
         }
-        .headofficeBox dl dd:nth-child(5) {
-            clear: both;
+        .headofficeBox dl dt:nth-of-type(1), .headofficeBox dl dd:nth-of-type(1) {
+            height: 36%;
         }
+        
+    #headofficeMap {
+        margin: 120px 0 0;
+        width: 1200px; height: 550px; background: red;
+    }
