@@ -34,7 +34,7 @@
             text-align: justify; margin-top: 30px;
         }
         .ceoText p:nth-last-child(2) {margin-top: 50px; text-align: right;}
-        .ceoText p:nth-last-child(1) {margin-top: 10px; text-align: right; font-size: 1.5em; font-family: '돋움'; font-style: italic; font-weight: 700;}
+        .ceoText p:nth-last-child(1) {margin: 10px 10px 0 0; text-align: right; font-size: 1.5em; font-family: '돋움'; font-weight: 700;}
 
 
 .vision {
@@ -62,7 +62,7 @@
     .vision li:nth-child(4) {margin: 100px 0 0 0;}
     
     .vision li:nth-child(4) ul {
-        overflow: hidden; position: absolute;
+        overflow: hidden; position: absolute; padding: 5px 0;
         left: 0; top: 70px;
     }
     .vision li:nth-child(4) ul li {
