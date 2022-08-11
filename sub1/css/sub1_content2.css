@@ -1,13 +1,15 @@
 .menubar {
+    width: 1210px;
     overflow: hidden; margin: 100px 0 0;
 }
-.menubar li a {
+.menubar li {
     float: left; width: 297px; height: 70px; 
     border: 1px solid #ccc; border-right: 0;
     text-align: center; border-collapse: collapse;
     font-size: 1.5em; line-height: 70px;
 }
-.menubar li a:last-child {border-right: 1px solid #ccc;}
+.menubar li:last-child {border-right: 1px solid #ccc;}
+.menubar li a {display: block;}
 .menubar li a:hover {background: #0075c1; color: #fff;}
 .menubar .current {background: #0075c1; color: #fff;}
 
@@ -52,6 +54,7 @@
     }
 
     .headofficeInfo {
+        width: 1210px;
         height: 350px;
         margin: 120px 0;
     }
