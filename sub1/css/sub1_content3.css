@@ -1,0 +1,45 @@
+/* 기업소개 본문 영역 */
+
+.menubar {
+    width: 1210px;
+    overflow: hidden; margin: 100px 0 0;
+}
+.menubar li {
+    float: left; width: 397px; height: 70px; 
+    border: 1px solid #ccc; border-right: 0;
+    text-align: center; border-collapse: collapse;
+    font-size: 1.5em; line-height: 70px;
+}
+.menubar li:last-child {border-right: 1px solid #ccc;}
+.menubar li a {display: block;}
+.menubar li a:hover {background: #0075c1; color: #fff;}
+.menubar .current {background: #0075c1; color: #fff;}
+
+
+
+.tapex h3 {
+    margin: 100px 0 0;
+    font-size: 2.5em; text-align: center;
+}
+.tapex>ul {
+    overflow: hidden;
+    margin: 120px 0 0;
+}
+.tapex>ul>li {
+    float: left; width: 600px; height: 330px; margin: 0 0 120px 0;
+}
+
+.tapex>ul>li:nth-of-type(1) {padding: 60px 60px 0; width: 480px; height: 270px;}
+.tapex>ul>li:nth-of-type(1) p {margin-top: 30px; font-size: 1.125em; line-height: 1.625em;}
+
+.tapex>ul>li:nth-of-type(4) ul {width: 600px; height: 330px;}
+.tapex>ul>li:nth-of-type(4) ul li {height: 20%;}
+.tapex>ul>li:nth-of-type(4) ul li span {display: block; padding: 21px 0;}
+.tapex>ul>li:nth-of-type(4) ul li span:nth-of-type(1) {float: left;width: 100px; text-align: center; font-weight: 700; margin-right: 30px;}
+
+
+
+
+
+
+
