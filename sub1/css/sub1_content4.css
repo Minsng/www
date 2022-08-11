@@ -1,0 +1,27 @@
+.menubar {
+    width: 1210px;
+    overflow: hidden; margin: 100px 0 0;
+}
+.menubar li {
+    float: left; width: 297px; height: 70px; 
+    border: 1px solid #ccc; border-right: 0;
+    text-align: center; border-collapse: collapse;
+    font-size: 1.5em; line-height: 70px;
+}
+.menubar li:last-child {border-right: 1px solid #ccc;}
+.menubar li a {display: block;}
+.menubar li a:hover {background: #0075c1; color: #fff;}
+.menubar .current {background: #0075c1; color: #fff;}
+
+
+.decade2010 {
+    position: relative;
+    margin: 120px 0 0;
+}
+    .decade2010 img {
+        width:2000px; height: 300px; background: red;
+        margin-left: -400px;
+    }
+
+
+
