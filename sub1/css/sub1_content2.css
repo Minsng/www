@@ -1,14 +1,14 @@
 .menubar {
     overflow: hidden; margin: 100px 0 0;
 }
-.menubar li {
-    float: left; width: 298px; height: 70px; 
+.menubar li a {
+    float: left; width: 297px; height: 70px; 
     border: 1px solid #ccc; border-right: 0;
     text-align: center; border-collapse: collapse;
     font-size: 1.5em; line-height: 70px;
 }
-.menubar li:last-child {border-right: 1px solid #ccc;}
-.menubar li:hover {background: #0075c1; color: #fff;}
+.menubar li a:last-child {border-right: 1px solid #ccc;}
+.menubar li a:hover {background: #0075c1; color: #fff;}
 .menubar .current {background: #0075c1; color: #fff;}
 
 
@@ -53,5 +53,39 @@
 
     .headofficeInfo {
         height: 350px;
-        margin: 120px 0 0;
+        margin: 120px 0;
     }
+
+        .headofficeInfo dl {overflow: hidden;}
+        .headofficeInfo dl dt {
+            width: 399px; height: 350px; float: left; 
+            border-right: 1px solid #ccc;
+            text-align: center; font-size: 1.125em; font-weight: 700;
+
+        }
+        .headofficeInfo dl dt span {
+            display: block; font-weight: 400; margin: 20px 0 0
+        }
+
+        .headofficeInfo dl dd {width: 800px; height: 350px; float: left;}
+        .headofficeInfo dl dd ul {padding: 0 0 0 80px;}
+        .headofficeInfo dl dd ul li {
+            height: 175px; overflow: hidden;
+        }
+        .headofficeInfo dl dd ul li > span{
+            display: block; float: left; width: 50px; height: 100%; text-align: center;font-size: 1.125em; font-weight: 700;
+        }
+        .headofficeInfo dl dd ul li p{
+            float: left; width: 590px;height: 100%; padding-left: 80px; font-weight: 700; font-size: 1.125em;
+        }
+        .headofficeInfo dl dd ul li p span {padding-bottom: 10px;}
+        .headofficeInfo dl dd ul li p span i {margin-right: 20px;}
+
+        .headofficeInfo dl dd ul li p > span:nth-of-type(1) {display: block;font-weight: 700; }
+        .headofficeInfo dl dd ul li p > span:nth-of-type(2) {display: inline; font-size: 16px; font-weight: 700;}
+        .headofficeInfo dl dd ul li p > span:nth-of-type(3) {display: inline; font-size: 16px;font-weight: 400; color: #999; margin-left: 30px;}
+        .headofficeInfo dl dd ul li p > span:nth-of-type(4) {padding-top: 10px;display: block; font-size: 16px;font-weight: 400; color: #87c700;}
+        .headofficeInfo dl dd ul li p > span:nth-of-type(5) {display: block; font-size: 16px;font-weight: 400; color: #386de8;}
+        .headofficeInfo dl dd ul li p > span:nth-of-type(6) {display: block; font-size: 16px;font-weight: 400; color: #fb5852;}
+
+        
