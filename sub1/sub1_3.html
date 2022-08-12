@@ -15,39 +15,7 @@
 
 </head>
 <body>
-    <div id="skipNav">
-        <a href="#content">본문바로가기</a>
-        <a href="#gnb">글로벌네비게이션바로가기</a>
-    </div>
-    
-    <div class="wrap">
-        <header id="headerArea">
-            <div class="headerInner">
-                <div class="header_section">
-                    <h1>
-                        <a href="../index.html">한솔케미칼로고</a>
-                    </h1>
-                    <div class="top_menu">
-                        <ul>
-                            <li><a href="#">Log In</a></li>
-                            <li><a href="#">Join Us</a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <nav id="gnb">
-                    <h2 class="hidden">글로벌네비게이션영역</h2>
-                    <ul class="dropdownmenu">
-                        <li><a href="sub1_1.html"><h3>기업소개</h3></a></li>
-                        <li><a href="../sub2/sub2_1.html"><h3>정밀화학</h3></a></li>
-                        <li><a href="../sub3/sub3_1.html"><h3>전자소재</h3></a></li>
-                        <li><a href="../sub4/sub4_1.html"><h3>인재채용</h3></a></li>
-                        <li><a href="../sub5/sub5_1.html"><h3>투자정보</h3></a></li>
-                        <li><a href="../sub6/sub6_1.html"><h3>고객센터</h3></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <? include "../common/sub_header.html" ?>
 
         <div class="main">
             <img src="images/sub1visual.png" alt="서브1비주얼이미지">
@@ -74,11 +42,15 @@
             </div>
             <div class="contentArea">
                 <!-- 본문 콘텐츠 영역 -->
-                <ul class="menubar">
-                    <li><a class="current" href="#">테이팩스</a></li>
-                    <li><a href="#">한솔전자재료(西安)유한공사</a></li>
-                    <li><a href="#">삼영순화</a></li>
-                </ul>
+                <div class="tabbox">
+                    <div class="tab">
+                        <ul>
+                            <li class="current"><a href="#">테이팩스</a></li>
+                            <li><a href="#">한솔전자재료(西安)유한공사</a></li>
+                            <li><a href="#">삼영순화</a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="tapex">
                     <h3>테이팩스</h3>
@@ -129,56 +101,7 @@
             </div>
         </article>
 
-
-
-
-        <footer id="footerArea">
-            <div class="footerInner">
-                <div class="topmove"><a href="#">위로이동</a></div>
-                <div class="footer_line1">
-                    <img class="footerlogo" src="../common/images/footer_logo14460.png" alt="푸터로고">
-                    <ul class="fnb">
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">개인정보처리방침</a></li>
-                        <li><a href="#">이메일주소 무단수집거부</a></li>
-                    </ul>
-                    <ul class="sns">
-                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer_line2">
-                    <div class="copy">
-                        <p>Copyright &copy; 2014 HANSOLCHEMICAL. All rights reserved</p> 
-                        <address>서울시 강남구 테헤란로513(삼성동 158-23) K타워 7층/8층 06169</address>
-                        <p>TEL : 02-2512-2399  FAX : 02-2152-2391</p>
-                    </div>
-                    
-                    <div class="othercompany">
-                        <a href="#">합작사/자회사</a>
-                        <ul>
-                            <li><a href="#" target="_blank" title="Family01새창에열림">Family Site01</a></li>
-                            <li><a href="#" target="_blank" title="Family02새창에열림">Family Site02</a></li>
-                            <li><a href="#" target="_blank" title="Family03새창에열림">Family Site03</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="family">
-                        <a href="#">Family Site</a>
-                        <ul>
-                            <li><a href="#" target="_blank" title="Family01새창에열림">Family Site01</a></li>
-                            <li><a href="#" target="_blank" title="Family02새창에열림">Family Site02</a></li>
-                            <li><a href="#" target="_blank" title="Family03새창에열림">Family Site03</a></li>
-                            <li><a href="#" target="_blank" title="Family04새창에열림">Family Site04</a></li>
-                            <li><a href="#" target="_blank" title="Family05새창에열림">Family Site05</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+        <? include "../common/sub_footer.html" ?>
 
 </body>
 </html>

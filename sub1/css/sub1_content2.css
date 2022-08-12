@@ -1,17 +1,38 @@
-.menubar {
-    width: 1210px;
+/* .menubar {
+    width: 1200px;
     overflow: hidden; margin: 100px 0 0;
 }
 .menubar li {
-    float: left; width: 297px; height: 70px; 
-    border: 1px solid #ccc; border-right: 0;
-    text-align: center; border-collapse: collapse;
+    float: left; width: 25%; height: 70px;     
+    text-align: center;
     font-size: 1.5em; line-height: 70px;
 }
-.menubar li:last-child {border-right: 1px solid #ccc;}
-.menubar li a {display: block;}
+.menubar li a {
+    display: block; border: 1px solid #ccc; border-right: 0;
+}
 .menubar li a:hover {background: #0075c1; color: #fff;}
-.menubar .current {background: #0075c1; color: #fff;}
+.menubar .current {background: #0075c1; color: #fff;} */
+
+.tabbox {
+    margin: 100px 0 0;
+}
+
+.tab ul{}
+.tab ul::after{content:''; display: block; clear:both;}
+.tab li{float:left; width: 25%;}
+.tab li a{
+    position:relative; height:70px; line-height:70px; display: block; 
+    font-size:1.5em; border:1px solid #ddd; border-left-width:0; 
+    text-align:center; color:#333; transition:all .3s
+}
+.tab li:first-child a{border-left-width:1px;}
+.tab li:hover a{color: #0075c1;}
+.tab li.current a{color: #0075c1;}
+.tab li.current a::before{
+    content:''; 
+    position:absolute; left:-1px; top:-1px; display:block;
+    width: 100%; height: 100%; border:1px solid #0075c1;
+}
 
 
 .headoffice {
