@@ -70,6 +70,7 @@
     .decade2010 .creative {
         margin: 100px 0 0;
         position: relative;
+        height: 1000px;
     }
     .decade2010 .creative div {
         background: #0075c1; width: 320px; height: 240px;

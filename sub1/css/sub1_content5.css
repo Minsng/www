@@ -4,7 +4,7 @@
 
 .tab ul{}
 .tab ul::after{content:''; display: block; clear:both;}
-.tab li{float:left; width: 25%;}
+.tab li{float:left; width: 33%;}
 .tab li a{
     position:relative; height:70px; line-height:70px; display: block; 
     font-size:1.5em; border:1px solid #ddd; border-left-width:0; 
@@ -19,88 +19,35 @@
     width: 100%; height: 100%; border:1px solid #0075c1;
 }
 
-
-.decade2010 {
-    margin: 120px 0 0;    
+.intro {
+    /* background: pink; */
+    margin: 100px 0 0;
 }
-    .decade2010 img {
-        width:2000px; height: 300px;
-        margin-left: -400px;
+    .intro h4 {
+        font-size: 2.5em; 
+        /* color: #0075c1; */
+        font-weight: 700;
+    }
+    .intro>p {
+        font-size: 2em; text-align: center;
+        margin: 80px 0 0;
+    }
+    .intro>dl {
+        margin: 80px 0 0;
+    }
+    .intro>dl dt {
+        font-size: 1.125em; font-weight: 700;
+        margin: 20px 0;
+    }
+    .intro>dl dd:nth-of-type(1) {
+        margin-left: 20px; width: 60%;
     }
 
-    .decade2010 .future {
-        height: 1000px;
-        position: relative;
-    }
 
-    .decade2010 .future div {
-        background: #009944; width: 320px; height: 240px;
-        position: absolute; left: 0; top: 150px;
-        padding: 30px 80px; border-top-right-radius: 80px;
-    }
-        .decade2010 .future div span {display: block; color: #fff;}
-        .decade2010 .future div span:nth-of-type(1) {font-size: 2.5em; font-weight: 700;}
-        .decade2010 .future div span:nth-of-type(2) {font-size: 2.5em; font-weight: 700;}
-        .decade2010 .future div span:nth-of-type(3) {margin-top: 50px;font-size: 2em; font-weight: 700; font-family: 'Roboto', sans-serif;}
-        .decade2010 .future div span:nth-of-type(4) {font-size: 1.125em; font-weight: 400;}
+.direction {
+    background: #ddd;
+}
 
-    .decade2010 .future dl {
-        width: 600px; position: absolute; right: 0; top: 370px;
-    }
-    .decade2010 .future dl dt {
-        float: left; width: 120px;  height: 70px; line-height: 70px;
-        text-align: center; font-size: 2.5em; font-weight: bold;
-    }
-    .decade2010 .future dl dd:nth-of-type(1) {
-        width: 480px; height:70px; line-height: 70px; font-size: 1.5em;
-        /* margin-left: 120px; */
-    }
-    .decade2010 .future dl dd {
-        width: 480px; height:70px; line-height: 70px; font-size: 1.5em;
-        margin-left: 120px;
-    }
-    .decade2010 .future dl dd span {
-        display: block; float: left; width: 80px; text-align: center; color: #999;
-    }
-    .decade2010 .future dl dd p {
-        float: left; width: 400px;
-    }
-
-    .decade2010 .creative {
-        margin: 100px 0 0;
-        position: relative;
-    }
-    .decade2010 .creative div {
-        background: #0075c1; width: 320px; height: 240px;
-        position: absolute; right: 0; top: 150px;
-        padding: 30px 80px; border-top-left-radius: 80px;
-    }
-    .decade2010 .creative div span {display: block; color: #fff; text-align: right;}
-        .decade2010 .creative div span:nth-of-type(1) {font-size: 2.5em; font-weight: 700; text-align: right;}
-        .decade2010 .creative div span:nth-of-type(2) {font-size: 2.5em; font-weight: 700; text-align: right;}
-        .decade2010 .creative div span:nth-of-type(3) {margin-top: 50px;font-size: 2em; font-weight: 700; font-family: 'Roboto', sans-serif; text-align: right;}
-        .decade2010 .creative div span:nth-of-type(4) {font-size: 1.125em; font-weight: 400; text-align: right;}
-
-    .decade2010 .creative dl {
-        width: 600px; position: absolute; left: 0; top: 370px;
-    }
-    .decade2010 .creative dl dt {
-        float: left; width: 120px;  height: 70px; line-height: 70px;
-        text-align: center; font-size: 2.5em; font-weight: bold;
-    }
-    .decade2010 .creative dl dd:nth-of-type(1) {
-        width: 480px; height:70px; line-height: 70px; font-size: 1.5em;
-        /* margin-left: 120px; */
-    }
-    .decade2010 .creative dl dd {
-        width: 480px; height:70px; line-height: 70px; font-size: 1.5em;
-        margin-left: 120px;
-    }
-    .decade2010 .creative dl dd span {
-        display: block; float: left; width: 80px; text-align: center; color: #999;
-    }
-    .decade2010 .creative dl dd p {
-        float: left; width: 400px;
-    }
-    
-
+.situation {
+    background: pink;
+}
