@@ -112,4 +112,240 @@
         .headofficeInfo dl dd ul li p > span:nth-of-type(5) {display: block; font-size: 16px;font-weight: 400; color: #386de8;}
         .headofficeInfo dl dd ul li p > span:nth-of-type(6) {display: block; font-size: 16px;font-weight: 400; color: #fb5852;}
 
+.jeonju {
+    margin: 120px 0 0 ;
+}
+    .jeonju h3 {
+        font-size: 2.5em; text-align: center;
+    }
+    .jeonju .jeonjuBox {
+        margin: 50px 0 0;
+        position: relative;
+        height: 600px;
+    }
+        .jeonjuBox img {
+            position: absolute; left: 0; top: 0;
+        }
+        .jeonjuBox dl {
+            display: block; position: absolute; right: 0; bottom: 0;
+            width: 580px; height: 300px; background: #fff;
+            font-size: 1.125em; overflow: hidden;
+            box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, .2);
+            padding: 20px 0;            
+        }
+        .jeonjuBox dl dt {
+            font-weight: 700; float: left;
+            width: 100px; height: 18%; text-align: center;
+            margin-bottom: 5px;        
+        }
+        .jeonjuBox dl dd {
+            width: 480px; height: 18%; float: right;
+            margin-bottom: 5px; 
+        }
+        .jeonjuBox dl dd p:last-of-type {margin-left: 120px;}
+        .jeonjuBox dl dt:nth-of-type(1), .jeonjuBox dl dd:nth-of-type(1) {
+            height: 46%;
+        }
         
+    #jeonjuMap {
+        margin: 120px 0 0;
+        width: 1200px; height: 550px; background: #eee;
+    }
+
+    .jeonjuInfo {
+        width: 1210px;
+        height: 350px;
+        margin: 120px 0;
+    }
+
+        .jeonjuInfo dl {overflow: hidden;}
+        .jeonjuInfo dl dt {
+            width: 399px; height: 350px; float: left; 
+            border-right: 1px solid #ccc;
+            text-align: center; font-size: 1.125em; font-weight: 700;
+
+        }
+        .jeonjuInfo dl dt span {
+            display: block; font-weight: 400; margin: 20px 0 0
+        }
+
+        .jeonjuInfo dl dd {width: 800px; height: 350px; float: left;}
+        .jeonjuInfo dl dd ul {padding: 0 0 0 80px;}
+        .jeonjuInfo dl dd ul li {
+            height: 175px; overflow: hidden;
+        }
+        .jeonjuInfo dl dd ul li > span{
+            display: block; float: left; width: 50px; height: 100%; text-align: center;font-size: 1.125em; font-weight: 700;
+        }
+        .jeonjuInfo dl dd ul li p{
+            float: left; width: 590px;height: 100%; padding-left: 80px; font-weight: 700; font-size: 1.125em;
+        }
+        .jeonjuInfo dl dd ul li:nth-of-type(1) p span {display: block;font-weight: 500;}
+
+        .jeonjuInfo dl dd ul li:nth-of-type(2) p span {padding-bottom: 10px;}
+        .jeonjuInfo dl dd ul li:nth-of-type(2) p span i {margin-right: 20px;}
+
+        .jeonjuInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(1) {display: block;font-weight: 700; }
+        .jeonjuInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(2) {display: inline; font-size: 16px; font-weight: 700;}
+        .jeonjuInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(3) {display: inline; font-size: 16px;font-weight: 400; color: #999; margin-left: 30px;}
+        .jeonjuInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(4) {padding-top: 10px;display: block; font-size: 16px;font-weight: 400; color: #87c700;}
+        .jeonjuInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(5) {display: block; font-size: 16px;font-weight: 400; color: #386de8;}
+        .jeonjuInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(6) {display: block; font-size: 16px;font-weight: 400; color: #fb5852;}
+
+        
+.ulsan {
+    margin: 120px 0 0 ;
+}
+    .ulsan h3 {
+        font-size: 2.5em; text-align: center;
+    }
+    .ulsan .ulsanBox {
+        margin: 50px 0 0;
+        position: relative;
+        height: 600px;
+    }
+        .ulsanBox img {
+            position: absolute; left: 0; top: 0;
+        }
+        .ulsanBox dl {
+            display: block; position: absolute; right: 0; bottom: 0;
+            width: 580px; height: 300px; background: #fff;
+            font-size: 1.125em; overflow: hidden;
+            box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, .2);
+            padding: 20px 0;            
+        }
+        .ulsanBox dl dt {
+            font-weight: 700; float: left;
+            width: 100px; height: 18%; text-align: center;
+            margin-bottom: 5px;        
+        }
+        .ulsanBox dl dd {
+            width: 480px; height: 18%; float: right;
+            margin-bottom: 5px; 
+        }
+        .ulsanBox dl dd p:last-of-type {margin-left: 120px;}
+        .ulsanBox dl dt:nth-of-type(1), .ulsanBox dl dd:nth-of-type(1) {
+            height: 46%;
+        }
+        
+    #ulsanMap {
+        margin: 120px 0 0;
+        width: 1200px; height: 550px; background: #eee;
+    }
+
+    .ulsanInfo {
+        width: 1210px;
+        height: 350px;
+        margin: 120px 0;
+    }
+
+        .ulsanInfo dl {overflow: hidden;}
+        .ulsanInfo dl dt {
+            width: 399px; height: 350px; float: left; 
+            border-right: 1px solid #ccc;
+            text-align: center; font-size: 1.125em; font-weight: 700;
+
+        }
+        .ulsanInfo dl dt span {
+            display: block; font-weight: 400; margin: 20px 0 0
+        }
+
+        .ulsanInfo dl dd {width: 800px; height: 350px; float: left;}
+        .ulsanInfo dl dd ul {padding: 0 0 0 80px;}
+        .ulsanInfo dl dd ul li {
+            height: 175px; overflow: hidden;
+        }
+        .ulsanInfo dl dd ul li > span{
+            display: block; float: left; width: 50px; height: 100%; text-align: center;font-size: 1.125em; font-weight: 700;
+        }
+        .ulsanInfo dl dd ul li p{
+            float: left; width: 590px;height: 100%; padding-left: 80px; font-weight: 700; font-size: 1.125em;
+        }
+        .ulsanInfo dl dd ul li:nth-of-type(1) p span {display: block;font-weight: 500;}
+
+        .ulsanInfo dl dd ul li:nth-of-type(2) p span {padding-bottom: 10px;}
+        .ulsanInfo dl dd ul li:nth-of-type(2) p span i {margin-right: 20px;}
+
+        .ulsanInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(1) {display: block;font-weight: 700; }
+        .ulsanInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(2) {display: inline; font-size: 16px; font-weight: 700;}
+        .ulsanInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(3) {display: inline; font-size: 16px;font-weight: 400; color: #999; margin-left: 30px;}
+        .ulsanInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(4) {padding-top: 10px;display: block; font-size: 16px;font-weight: 400; color: #87c700;}
+        .ulsanInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(5) {display: block; font-size: 16px;font-weight: 400; color: #386de8;}
+        .ulsanInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(6) {display: block; font-size: 16px;font-weight: 400; color: #fb5852;}
+
+        
+.laboratory {
+    margin: 120px 0 0 ;
+}
+    .laboratory h3 {
+        font-size: 2.5em; text-align: center;
+    }
+    .laboratory .laboratoryBox {
+        margin: 50px 0 0;
+        position: relative;
+        height: 600px;
+    }
+        .laboratoryBox img {
+            position: absolute; left: 0; top: 0;
+        }
+        .laboratoryBox dl {
+            display: block; position: absolute; right: 0; bottom: 0;
+            width: 580px; height: 260px; background: #fff;
+            font-size: 1.125em; overflow: hidden;
+            box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, .2);
+            padding: 40px 0;            
+        }
+        .laboratoryBox dl dt {
+            font-weight: 700; float: left; 
+            width: 100px; height: 25%; text-align: center;
+            margin-bottom: 5px;        
+        }
+        .laboratoryBox dl dd {
+            width: 480px; height: 25%; float: right; 
+            margin-bottom: 5px; 
+        }
+        
+    #laboratoryMap {
+        margin: 120px 0 0;
+        width: 1200px; height: 550px; background: #eee;
+    }
+
+    .laboratoryInfo {
+        width: 1210px;
+        height: 350px;
+        margin: 120px 0;
+    }
+
+        .laboratoryInfo dl {overflow: hidden;}
+        .laboratoryInfo dl dt {
+            width: 399px; height: 350px; float: left; 
+            border-right: 1px solid #ccc;
+            text-align: center; font-size: 1.125em; font-weight: 700;
+
+        }
+        .laboratoryInfo dl dt span {
+            display: block; font-weight: 400; margin: 20px 0 0
+        }
+
+        .laboratoryInfo dl dd {width: 800px; height: 350px; float: left;}
+        .laboratoryInfo dl dd ul {padding: 0 0 0 80px;}
+        .laboratoryInfo dl dd ul li {
+            height: 175px; overflow: hidden;
+        }
+        .laboratoryInfo dl dd ul li > span{
+            display: block; float: left; width: 50px; height: 100%; text-align: center;font-size: 1.125em; font-weight: 700;
+        }
+        .laboratoryInfo dl dd ul li p{
+            float: left; width: 590px;height: 100%; padding-left: 80px; font-weight: 700; font-size: 1.125em;
+        }
+        .laboratoryInfo dl dd ul li:nth-of-type(1) p span {display: block;font-weight: 500;}
+
+        .laboratoryInfo dl dd ul li:nth-of-type(2) p span {padding-bottom: 10px;}
+        .laboratoryInfo dl dd ul li:nth-of-type(2) p span i {margin-right: 20px;}
+
+        .laboratoryInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(1) {display: block;font-weight: 700; }
+        .laboratoryInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(2) {display: inline; font-size: 16px; font-weight: 700;}
+        .laboratoryInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(3) {display: inline; font-size: 16px;font-weight: 400; color: #999; margin-left: 30px;}
+        .laboratoryInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(4) {padding-top: 10px;display: block; font-size: 16px;font-weight: 400; color: #87c700;}
+        .laboratoryInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(5) {display: block; font-size: 16px;font-weight: 400; color: #386de8;}
+        .laboratoryInfo dl dd ul li:nth-of-type(2) p > span:nth-of-type(6) {display: block; font-size: 16px;font-weight: 400; color: #fb5852;}
