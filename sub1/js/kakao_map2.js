@@ -27,7 +27,7 @@
      
     //두번째 맵
      
-      var container2 = document.getElementById('jeonjuofficeMap');
+      var container2 = document.getElementById('jeonjuMap');
     var options2 = {
         center: new daum.maps.LatLng(35.946803, 127.123442),
         level: 2
@@ -56,7 +56,7 @@
      
     //세번째 맵
      
-     var container3 = document.getElementById('ulsanofficeMap');
+     var container3 = document.getElementById('ulsanMap');
    var options3 = {
        center: new daum.maps.LatLng(35.518462, 129.360553),
        level: 2
@@ -72,7 +72,7 @@
    
    var markerPosition3  = new daum.maps.LatLng(35.518462, 129.360553); 
    var marker3 = new daum.maps.Marker({
-       position: markerPosition2
+       position: markerPosition3
    });
 
    marker3.setMap(map3);
