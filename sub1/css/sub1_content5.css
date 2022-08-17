@@ -22,32 +22,125 @@
 .intro {
     /* background: pink; */
     margin: 100px 0 0;
+    position: relative;
 }
     .intro h4 {
-        font-size: 2.5em; 
+        font-size: 2em; 
         /* color: #0075c1; */
         font-weight: 700;
     }
     .intro>p {
-        font-size: 2em; text-align: center;
+        font-size: 1.75em; text-align: center;
         margin: 80px 0 0;
     }
     .intro>dl {
-        margin: 80px 0 0;
+        margin: 80px 0 0; font-size: 1.125em;
     }
     .intro>dl dt {
         font-size: 1.125em; font-weight: 700;
-        margin: 20px 0;
+        margin: 50px 0 20px; color: #0075c1;
     }
-    .intro>dl dd:nth-of-type(1) {
-        margin-left: 20px; width: 60%;
+    .intro>dl dt i {
+        padding: 0 5px;
     }
-
+    .intro>dl>dd>ul li {
+        overflow: hidden;
+    }
+    .intro>dl>dd>ul li span {
+        display: block; width: 13%; float: left; 
+        height: 70px; font-weight: 700;
+    }
+    .intro>dl>dd>ul li p {
+        display: block; width: 87%; float: left;
+    }
 
 .direction {
-    background: #ddd;
+    margin: 100px 0 0;
 }
+    .direction h4 {
+        font-size: 2em;
+    }
+    .direction>p:nth-of-type(1) {
+        font-size: 1.75em; text-align: center;
+        margin: 80px 0 0;
+    }
+    .direction>p:nth-of-type(2) {
+        font-size: 1.5em; text-align: center;
+        margin: 80px 0 0;
+    }
+    .direction ul {overflow: hidden;}
+    .direction ul li{
+        float: left;
+        /* background: blue; */
+        width: 360px; height: 400px;
+        margin: 80px 20px 10px;
+        box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, .3);
+        
+    }
+    .direction ul li dl {
+        text-align: center;
+    }
+    .direction ul li dl dt{
+        /* background: skyblue; */
+        font-size: 1.75em;
+        padding: 20px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .direction ul li dl dd {
+        margin: 20px 20px 0 30px; text-align: justify;
+        text-indent: -12px; font-size: 1.125em;
+    }
 
 .situation {
-    background: pink;
+    margin: 100px 0 ;
 }
+    .situation h4 {
+        font-size: 2em;
+    }
+    .situation>p {
+        font-size: 1.75em; text-align: center;
+        margin: 80px 0 0;
+    }
+
+    .situation dl {
+        width: 960px;
+        margin: 80px 0 0 120px; 
+        overflow: hidden;
+        font-size: 1.5em;
+        position: relative;
+    }
+    .situation dl::before {
+        content: '';
+        background: url(../images/logobackground.png) no-repeat;
+        display: block; width: 587px; height: 228px;
+        position: absolute; left: 160px; top: 160px;
+        opacity: .15;
+    }
+    .situation dl dt{
+        float: left; display: block; width: 30%;
+        text-align: center; font-weight: 700;
+        font-size: 1.75em;
+        margin: 0 0 50px; color: #0075c1;
+    }
+    .situation dl dd{
+        float: left; display: block; width: 70%;        
+        /* background: pink; */
+        margin: 0 0 50px;
+    }
+    .situation dl dd ul li {
+        overflow: hidden;
+        line-height: 50px;
+    }
+    .situation dl dd ul li span {
+        display: block; width: 20%; float: left;
+        color: #999;
+    }
+    .situation dl dd ul li p {
+        display: block; width: 80%; float: left;
+    }
+    .situation dl dd ul li p:nth-of-type(2) {
+        display: block; width: 80%; float: left;
+        margin-left: 20%;
+    }
+
+

@@ -29,7 +29,7 @@
      
       var container2 = document.getElementById('jeonjuMap');
     var options2 = {
-        center: new daum.maps.LatLng(35.946803, 127.123442),
+        center: new daum.maps.LatLng(35.945403, 127.123484),
         level: 2
     };
 
@@ -41,7 +41,7 @@
     var zoomControl2 = new daum.maps.ZoomControl();
     map2.addControl(zoomControl2, daum.maps.ControlPosition.RIGHT);
     
-    var markerPosition2  = new daum.maps.LatLng(35.946803, 127.123442); 
+    var markerPosition2  = new daum.maps.LatLng(35.945403, 127.123484); 
     var marker2 = new daum.maps.Marker({
         position: markerPosition2
     });
@@ -58,7 +58,7 @@
      
      var container3 = document.getElementById('ulsanMap');
    var options3 = {
-       center: new daum.maps.LatLng(35.518462, 129.360553),
+       center: new daum.maps.LatLng(35.517770, 129.361083),
        level: 2
    };
 
@@ -70,7 +70,7 @@
    var zoomControl3 = new daum.maps.ZoomControl();
    map3.addControl(zoomControl3, daum.maps.ControlPosition.RIGHT);
    
-   var markerPosition3  = new daum.maps.LatLng(35.518462, 129.360553); 
+   var markerPosition3  = new daum.maps.LatLng(35.517770, 129.361083); 
    var marker3 = new daum.maps.Marker({
        position: markerPosition3
    });
@@ -86,7 +86,7 @@
      
      var container4 = document.getElementById('laboratoryMap');
    var options4 = {
-       center: new daum.maps.LatLng(35.946803, 127.123442),
+       center: new daum.maps.LatLng(35.945403, 127.123484),
        level: 2
    };
 
@@ -98,7 +98,7 @@
    var zoomControl4 = new daum.maps.ZoomControl();
    map4.addControl(zoomControl2, daum.maps.ControlPosition.RIGHT);
    
-   var markerPosition4  = new daum.maps.LatLng(35.946803, 127.123442); 
+   var markerPosition4  = new daum.maps.LatLng(35.945403, 127.123484); 
    var marker4 = new daum.maps.Marker({
        position: markerPosition2
    });
