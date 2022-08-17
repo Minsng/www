@@ -35,7 +35,7 @@
 }
 
 .tapex>ul>li:nth-of-type(1) {padding: 60px 60px 0; width: 480px; height: 270px;}
-.tapex>ul>li:nth-of-type(1) p {margin-top: 30px; font-size: 1.125em; line-height: 1.625em;}
+.tapex>ul>li:nth-of-type(1) p {margin-top: 30px; font-size: 1.125em; line-height: 1.625em; text-align: justify;}
 
 .tapex>ul>li:nth-of-type(4) ul {width: 600px; height: 330px;}
 .tapex>ul>li:nth-of-type(4) ul li {height: 20%;}
@@ -55,7 +55,7 @@
 }
 
 .yuhan>ul>li:nth-of-type(1) {padding: 60px 60px 0; width: 480px; height: 270px;}
-.yuhan>ul>li:nth-of-type(1) p {margin-top: 30px; font-size: 1.125em; line-height: 1.625em;}
+.yuhan>ul>li:nth-of-type(1) p {font-size: 1.125em; line-height: 1.625em; text-align: justify;}
 
 .yuhan>ul>li:nth-of-type(4) ul {width: 600px; height: 330px; margin-left: 30px;}
 .yuhan>ul>li:nth-of-type(4) ul li {height: 25%;}
@@ -63,6 +63,25 @@
 .yuhan>ul>li:nth-of-type(4) ul li span:nth-of-type(1) {float: left;width: 100px; text-align: center; font-weight: 700; margin-right: 30px;}
 
 
+.samyoung h3 {
+    margin: 100px 0 0;
+    font-size: 2.5em; text-align: center;
+}
+.samyoung>ul {
+    overflow: hidden;
+    margin: 120px 0 0;
+}
+.samyoung>ul>li {
+    float: left; width: 600px; height: 330px; margin: 0 0 120px 0;
+}
+
+.samyoung>ul>li:nth-of-type(1) {padding: 60px 60px 0; width: 480px; height: 270px;}
+.samyoung>ul>li:nth-of-type(1) p {font-size: 1.125em; line-height: 1.625em; text-align: justify;}
+
+.samyoung>ul>li:nth-of-type(4) ul {width: 600px; height: 330px; margin-left: 30px;}
+.samyoung>ul>li:nth-of-type(4) ul li {height: 25%;}
+.samyoung>ul>li:nth-of-type(4) ul li span {display: block; padding: 21px 0;}
+.samyoung>ul>li:nth-of-type(4) ul li span:nth-of-type(1) {float: left;width: 100px; text-align: center; font-weight: 700; margin-right: 30px;}
 
 
 

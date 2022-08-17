@@ -104,5 +104,147 @@
     .decade2010 .creative dl dd p {
         float: left; width: 400px;
     }
+
+.decade2000 {
+    margin: 120px 0 0;
+    height: 850px;
+}
+    .decade2000 img {
+        width:2000px; height: 300px;
+        margin-left: -400px;
+    }
+
+    .decade2000 .innovation {
+        height: 1000px;
+        position: relative;
+    }
+
+    .decade2000 .innovation div {
+        background: #009944; width: 320px; height: 240px;
+        position: absolute; left: 0; top: 150px;
+        padding: 30px 80px; border-top-right-radius: 80px;
+    }
+        .decade2000 .innovation div span {display: block; color: #fff;}
+        .decade2000 .innovation div span:nth-of-type(1) {font-size: 2.5em; font-weight: 700;}
+        .decade2000 .innovation div span:nth-of-type(2) {font-size: 2.5em; font-weight: 700;}
+        .decade2000 .innovation div span:nth-of-type(3) {margin-top: 50px;font-size: 2em; font-weight: 700; font-family: 'Roboto', sans-serif;}
+        .decade2000 .innovation div span:nth-of-type(4) {font-size: 1.125em; font-weight: 400;}
+
+    .decade2000 .innovation dl {
+        width: 600px; position: absolute; right: 0; top: 370px;
+    }
+    .decade2000 .innovation dl dt {
+        float: left; width: 120px;  height: 70px; line-height: 70px;
+        text-align: center; font-size: 2.5em; font-weight: bold;
+    }
+    .decade2000 .innovation dl dd:nth-of-type(1) {
+        width: 480px; height:70px; line-height: 70px; font-size: 1.5em;
+        /* margin-left: 120px; */
+    }
+    .decade2000 .innovation dl dd {
+        width: 480px; height:70px; line-height: 70px; font-size: 1.5em;
+        margin-left: 120px;
+    }
+    .decade2000 .innovation dl dd span {
+        display: block; float: left; width: 80px; text-align: center; color: #999;
+    }
+    .decade2000 .innovation dl dd p {
+        float: left; width: 400px;
+    }
     
 
+.decade1990 {
+    margin: 120px 0 0;
+    height: 1200px;
+}
+    .decade1990 img {
+        width:2000px; height: 300px;
+        margin-left: -400px;
+    }
+
+    .decade1990 .pioneer {
+        margin: 100px 0 0;
+        position: relative;
+        height: 1000px;
+    }
+    .decade1990 .pioneer div {
+        background: #0075c1; width: 320px; height: 240px;
+        position: absolute; right: 0; top: 150px;
+        padding: 30px 80px; border-top-left-radius: 80px;
+    }
+    .decade1990 .pioneer div span {display: block; color: #fff; text-align: right;}
+        .decade1990 .pioneer div span:nth-of-type(1) {font-size: 2.5em; font-weight: 700; text-align: right;}
+        .decade1990 .pioneer div span:nth-of-type(2) {font-size: 2.5em; font-weight: 700; text-align: right;}
+        .decade1990 .pioneer div span:nth-of-type(3) {margin-top: 50px;font-size: 2em; font-weight: 700; font-family: 'Roboto', sans-serif; text-align: right;}
+        .decade1990 .pioneer div span:nth-of-type(4) {font-size: 1.125em; font-weight: 400; text-align: right;}
+
+    .decade1990 .pioneer dl {
+        width: 600px; position: absolute; left: 0; top: 370px;
+    }
+    .decade1990 .pioneer dl dt {
+        float: left; width: 120px;  height: 70px; line-height: 70px;
+        text-align: center; font-size: 2.5em; font-weight: bold;
+    }
+    .decade1990 .pioneer dl dd:nth-of-type(1) {
+        width: 480px; height:70px; line-height: 70px; font-size: 1.5em;
+        /* margin-left: 120px; */
+    }
+    .decade1990 .pioneer dl dd {
+        width: 480px; height:70px; line-height: 70px; font-size: 1.5em;
+        margin-left: 120px;
+    }
+    .decade1990 .pioneer dl dd span {
+        display: block; float: left; width: 80px; text-align: center; color: #999;
+    }
+    .decade1990 .pioneer dl dd p {
+        float: left; width: 400px;
+    }
+
+
+.decade1980 {
+    margin: 120px 0 0;
+    height: 1000px;
+}
+    .decade1980 img {
+        width:2000px; height: 300px;
+        margin-left: -400px;
+    }
+
+    .decade1980 .start {
+        height: 1000px;
+        position: relative;
+    }
+
+    .decade1980 .start div {
+        background: #009944; width: 320px; height: 240px;
+        position: absolute; left: 0; top: 150px;
+        padding: 30px 80px; border-top-right-radius: 80px;
+    }
+        .decade1980 .start div span {display: block; color: #fff;}
+        .decade1980 .start div span:nth-of-type(1) {font-size: 2.5em; font-weight: 700;}
+        .decade1980 .start div span:nth-of-type(2) {font-size: 2.5em; font-weight: 700;}
+        .decade1980 .start div span:nth-of-type(3) {margin-top: 50px;font-size: 2em; font-weight: 700; font-family: 'Roboto', sans-serif;}
+        .decade1980 .start div span:nth-of-type(4) {font-size: 1.125em; font-weight: 400;}
+
+    .decade1980 .start dl {
+        width: 600px; position: absolute; right: 0; top: 370px;
+    }
+    .decade1980 .start dl dt {
+        float: left; width: 120px;  height: 70px; line-height: 70px;
+        text-align: center; font-size: 2.5em; font-weight: bold;
+    }
+    .decade1980 .start dl dd:nth-of-type(1) {
+        width: 480px; height:70px; line-height: 70px; font-size: 1.5em;
+        /* margin-left: 120px; */
+    }
+    .decade1980 .start dl dd {
+        width: 480px; height:70px; line-height: 70px; font-size: 1.5em;
+        margin-left: 120px;
+    }
+    .decade1980 .start dl dd span {
+        display: block; float: left; width: 80px; text-align: center; color: #999;
+    }
+    .decade1980 .start dl dd p {
+        float: left; width: 400px;
+    }
+    
