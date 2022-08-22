@@ -1,1 +1,83 @@
 /* 과산화수소 */
+
+.contentArea>ul {
+    margin: 120px 0 0;
+    overflow: hidden;
+}
+
+.contentArea>ul>li:first-of-type{margin-left: 0;}
+.contentArea>ul>li {
+    float: left;
+    margin-left: 80px;
+    width: 560px; height: 560px;
+}
+.contentArea>ul>li p {
+    font-size: 1.5em;
+    margin: 80px 0 80px;
+    text-align: justify;
+}
+
+h4 {
+    margin: 120px 0 80px;
+    font-size: 1.75em;
+}
+.table1 {
+    width: 90%;
+    margin: 0 auto;
+}
+.table1 tr {
+    height: 100px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+}
+
+.table1 th {
+    width: 23%;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    border-left: 0;
+    padding: 10px 40px;
+    font-size: 1.125em 
+}
+.table1 td {
+    width: 77%;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px 40px;
+    font-size: 1.125em
+}
+
+.table2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+.table2 tr {
+    height: 100px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+}
+
+.table2 th {
+    width: 15%;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px 30px;
+    font-size: 1.125em;
+}
+.table2 td {
+    width: 15%;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px 30px;
+    font-size: 1.125em;
+    text-align: center;
+}
+.table2 th:nth-of-type(4), .table2 td:nth-of-type(4) {width: 20%;}
+.table2 th:nth-of-type(5), .table2 td:nth-of-type(5) {width: 35%;}
