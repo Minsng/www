@@ -33,11 +33,14 @@
     width: 560px; height: 320px;
 }
 .emulsion >ul:nth-of-type(1)>li:first-of-type{margin-left: 0;}
-.emulsion >ul:nth-of-type(1)>li:last-of-type{padding: 120px 0;}
+.emulsion >ul:nth-of-type(1)>li:last-of-type{
+    padding: 200px 0;
+    height: 160px;
+}
 
 .emulsion >ul:nth-of-type(1)>li p {
     font-size: 1.5em;
-    margin: 0 0 80px;
+    /* margin: 0 0 80px; */
     text-align: justify;
 }
 
@@ -46,9 +49,48 @@ h4 {
     font-size: 2em;
 }
 
+.emulsion .character {
+    background: #f8f8f8;
+    padding: 40px;
+    margin: 40px 0 0;
+}
 
+.emulsion .character li {
+    margin: 15px 15px 15px 5%;
+    list-style-type: disc;
+}
 
+.fixer >ul:nth-of-type(1) {
+    margin: 120px 0 0;
+    overflow: hidden;
+}
 
+.fixer >ul:nth-of-type(1)>li {
+    float: left;
+    margin-left: 80px;
+    width: 560px; height: 320px;
+}
+.fixer >ul:nth-of-type(1)>li:first-of-type{margin-left: 0;}
+.fixer >ul:nth-of-type(1)>li:last-of-type{
+    padding: 120px 0;
+}
+
+.fixer >ul:nth-of-type(1)>li p {
+    font-size: 1.5em;
+    margin: 0 0 80px;
+    text-align: justify;
+}
+
+.fixer .character {
+    background: #f8f8f8;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.fixer .character li {
+    margin: 15px 15px 15px 5%;
+    list-style-type: disc;
+}
 
 
 .contact {
