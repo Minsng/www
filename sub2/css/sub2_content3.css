@@ -1,1 +1,83 @@
 /* 제지용케미칼 */
+
+.tabbox {
+    margin: 100px 0 0;
+}
+
+.tab ul::after{content:''; display: block; clear:both;}
+.tab ul{width: 66%; margin: 0 auto;}
+.tab li{float:left; width: 50%;}
+.tab li a{
+    position:relative; height:70px; line-height:70px; display: block; 
+    font-size:1.5em; border:1px solid #ddd; border-left-width:0; 
+    text-align:center; color:#333; transition:all .3s
+}
+.tab li:first-child a{border-left-width:1px;}
+.tab li:hover a{color: #0075c1;}
+.tab li.current a{color: #0075c1;}
+.tab li.current a::before{
+    content:''; 
+    position:absolute; left:-1px; top:-1px; display:block;
+    width: 100%; height: 100%; border:1px solid #0075c1;
+}
+
+
+.emulsion >ul:nth-of-type(1) {
+    margin: 120px 0 0;
+    overflow: hidden;
+}
+
+.emulsion >ul:nth-of-type(1)>li {
+    float: left;
+    margin-left: 80px;
+    width: 560px; height: 320px;
+}
+.emulsion >ul:nth-of-type(1)>li:first-of-type{margin-left: 0;}
+.emulsion >ul:nth-of-type(1)>li:last-of-type{padding: 120px 0;}
+
+.emulsion >ul:nth-of-type(1)>li p {
+    font-size: 1.5em;
+    margin: 0 0 80px;
+    text-align: justify;
+}
+
+h4 {
+    margin: 120px 0 0;
+    font-size: 2em;
+}
+
+
+
+
+
+
+.contact {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+.contact tr {
+    height: 70px;
+}
+
+.contact th {
+    width: 15%;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    border-bottom: 0;
+    border-left: 0;
+    padding: 10px 30px;
+    font-size: 1.125em;
+}
+.contact td {
+    width: 15%;
+    border: 1px solid #ccc;
+    border-left: 0;
+    padding: 10px 30px;
+    font-size: 1.125em;
+    text-align: center;
+}
+.contact th:last-of-type, .contact td:last-of-type{border-right: 0;}
+.contact th:nth-of-type(4), .contact td:nth-of-type(4) {width: 20%;}
+.contact th:nth-of-type(5), .contact td:nth-of-type(5) {width: 35%;}
