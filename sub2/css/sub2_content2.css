@@ -1,4 +1,4 @@
-/* 과산화수소 */
+/* 라텍스 */
 
 .contentArea>ul {
     margin: 120px 0 0;
@@ -20,30 +20,39 @@
 }
 
 h4 {
-    margin: 120px 0 80px;
+    margin: 120px 0 0;
     font-size: 2em;
 }
-.table1 {
+
+dl dt {
+    color: #0075c1; font-weight: bold; font-size: 1.5em;
+    margin: 80px 0 0 5%;
+}
+dl dd p {
+    margin: 30px 0 30px 5%; font-size: 1.125em;
+    width: 90%;
+}
+.hitex {
     width: 90%;
     margin: 0 auto;
 }
-.table1 tr {
-    height: 100px;
+.hitex tr {
+    height: 70px;
     border: 1px solid #ccc;
     border-left: 0;
     border-right: 0;
 }
 
-.table1 th {
-    width: 23%;
+.hitex th {
+    width: 30%;
     border: 1px solid #ccc;
     background: #f8f8f8;
     border-left: 0;
     padding: 10px 40px;
     font-size: 1.125em 
 }
-.table1 td {
-    width: 77%;
+.hitex td {
+    width: 70%;
     border: 1px solid #ccc;
     border-left: 0;
     border-right: 0;
@@ -51,35 +60,80 @@ h4 {
     font-size: 1.125em
 }
 
-.table2 {
+.biosbl {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 120px;
 }
-.table2 tr {
-    height: 100px;
+.biosbl tr {
+    height: 70px;
     border: 1px solid #ccc;
     border-left: 0;
     border-right: 0;
 }
 
-.table2 th {
-    width: 15%;
+.biosbl th {
+    width: 30%;
     border: 1px solid #ccc;
     background: #f8f8f8;
     border-left: 0;
-    border-right: 0;
-    padding: 10px 30px;
-    font-size: 1.125em;
+    padding: 10px 40px;
+    font-size: 1.125em 
 }
-.table2 td {
-    width: 15%;
+.biosbl td {
+    width: 70%;
     border: 1px solid #ccc;
     border-left: 0;
     border-right: 0;
+    padding: 10px 40px;
+    font-size: 1.125em
+}
+
+.hancellymer {
+    width: 90%;
+    margin-left: 5%;
+}
+.hancellymer li {
+    list-style-type: disc;
+    margin-left: 5%;
+    font-size: 1.125em;
+}
+.hansphere {
+    width: 90%;
+    margin-left: 5%;
+}
+.hansphere li {
+    list-style-type: disc;
+    margin-left: 5%;
+    font-size: 1.125em;
+}
+
+.contact {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+.contact tr {
+    height: 70px;
+}
+
+.contact th {
+    width: 15%;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    border-bottom: 0;
+    border-left: 0;
+    padding: 10px 30px;
+    font-size: 1.125em;
+}
+.contact td {
+    width: 15%;
+    border: 1px solid #ccc;
+    border-left: 0;
     padding: 10px 30px;
     font-size: 1.125em;
     text-align: center;
 }
-.table2 th:nth-of-type(4), .table2 td:nth-of-type(4) {width: 20%;}
-.table2 th:nth-of-type(5), .table2 td:nth-of-type(5) {width: 35%;}
+.contact th:last-of-type, .contact td:last-of-type{border-right: 0;}
+.contact th:nth-of-type(4), .contact td:nth-of-type(4) {width: 20%;}
+.contact th:nth-of-type(5), .contact td:nth-of-type(5) {width: 35%;}

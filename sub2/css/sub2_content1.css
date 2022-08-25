@@ -51,35 +51,32 @@ h4 {
     font-size: 1.125em
 }
 
-.table2 {
+.contact {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 120px;
 }
-.table2 tr {
-    height: 100px;
-    border: 1px solid #ccc;
-    border-left: 0;
-    border-right: 0;
+.contact tr {
+    height: 70px;
 }
 
-.table2 th {
+.contact th {
     width: 15%;
     border: 1px solid #ccc;
     background: #f8f8f8;
+    border-bottom: 0;
     border-left: 0;
-    border-right: 0;
     padding: 10px 30px;
     font-size: 1.125em;
 }
-.table2 td {
+.contact td {
     width: 15%;
     border: 1px solid #ccc;
     border-left: 0;
-    border-right: 0;
     padding: 10px 30px;
     font-size: 1.125em;
     text-align: center;
 }
-.table2 th:nth-of-type(4), .table2 td:nth-of-type(4) {width: 20%;}
-.table2 th:nth-of-type(5), .table2 td:nth-of-type(5) {width: 35%;}
+.contact th:last-of-type, .contact td:last-of-type{border-right: 0;}
+.contact th:nth-of-type(4), .contact td:nth-of-type(4) {width: 20%;}
+.contact th:nth-of-type(5), .contact td:nth-of-type(5) {width: 35%;}
