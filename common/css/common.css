@@ -62,16 +62,18 @@ font-family: 'Roboto', sans-serif;
     width: 100%;
     /* background: rgba(255, 255, 255, .5); */
     height: 210px;
-    position: fixed; z-index: 50; transition: all .2s ease-out;
-    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+    position: fixed; z-index: 50; transition: all .2s;
+    /* box-shadow: 0 2px 10px rgb(0 0 0 / 10%); */
 }
-#headerArea:hover {background: rgba(255, 255, 255, 1);}
-#headerArea:hover h1 a {background: url(../images/header_logo240100.png);}
-#headerArea:hover .top_menu li a {color: #333;}
-#headerArea:hover .top_menu li a:hover {color: #0075c1;}
-#headerArea:hover #gnb li h3 {color: #333;}
-#headerArea:hover #gnb li h3:hover {color: #0075c1;}
-#headerArea:hover #gnb li h3:hover::after {transform: scaleX(.6);}
+/* #headerArea:hover {background: rgba(255, 255, 255, 1);} */
+
+/* #headerArea:hover h1 a {background: url(../images/header_logo240100.png);} */
+
+/* #headerArea:hover .top_menu li a {color: #333;} */
+/* #headerArea:hover .top_menu li a:hover {color: #0075c1;} */
+/* #headerArea:hover #gnb li h3 {color: #333;} */
+/* #headerArea:hover #gnb li h3:hover {color: #0075c1;} */
+
 
 
 #headerArea .headerInner {
@@ -100,21 +102,43 @@ h1 a {
 }
 .top_menu li a {color: #fff; transition: all .2s ease-out;}
 
-#gnb {width: 1200px; height: 50px;}
-/* #gnb ul {overflow: hidden;} */
-#gnb li {
+
+
+#gnb {width: 1200px; height: 50px; clear: both;}
+#gnb ul.dropdownmenu {float: left; width: 100%;}
+#gnb ul.dropdownmenu li.menu {
     float: left; width: 16.66%;
     text-align: center; font-size: 1.5em;
     position: relative;
     margin: 5px 0 0;
 }
-#gnb li h3 {font-weight: 500; color: #fff; transition: all .2s ease-out; position: relative;}
-#gnb li h3::after {
+#gnb ul.dropdownmenu li a.depth1 {
+    display: block; font-weight: 500; 
+    color: #fff; transition: all .2s; position: relative;
+    padding: 7px 0 8px;
+}
+#gnb ul.dropdownmenu li a.depth1::after {
     content: ''; display: block;
     width: 100%; height: 3px; background: #0075c1;
-    position: absolute; left: 0px; bottom: -10px;
+    position: absolute; left: 0px; bottom: 0px;
     transform: scaleX(0); transition: all .2s ease-in-out;
 }
+#headerArea:hover #gnb li:hover a::after {transform: scaleX(.6);}
+
+
+#gnb ul.dropdownmenu li ul{
+    width: 100%; position: absolute; top: 50px; left: 0;
+    padding: 15px 0; line-height: 2em; 
+    display: none; background: #fff;
+}
+
+#gnb ul.dropdownmenu li ul li {text-align: center; font-weight: 400; height: 50px;}
+#gnb ul.dropdownmenu li ul li a {display: block; color: #0075c1; transition: all .2s; height: 100%;}
+
+
+
+
+
 
 
 
