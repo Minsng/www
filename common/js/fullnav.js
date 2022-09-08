@@ -70,6 +70,12 @@ $(function() {
         },function() {
             $('.depth1',this).css('color','#333');
     });
+    $('.top_menu ul li a').hover(
+        function() { 
+            $(this).css('color','#0075c1');
+        },function() {
+            $(this).css('color','#333');
+    });
 
     //2depth hover
     $('ul.dropdownmenu li.menu ul li a').hover(

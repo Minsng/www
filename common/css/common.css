@@ -69,8 +69,7 @@ font-family: 'Roboto', sans-serif;
 
 /* #headerArea:hover h1 a {background: url(../images/header_logo240100.png);} */
 
-/* #headerArea:hover .top_menu li a {color: #333;} */
-/* #headerArea:hover .top_menu li a:hover {color: #0075c1;} */
+#headerArea:hover .top_menu li a:hover {color: #0075c1;}
 /* #headerArea:hover #gnb li h3 {color: #333;} */
 /* #headerArea:hover #gnb li h3:hover {color: #0075c1;} */
 
