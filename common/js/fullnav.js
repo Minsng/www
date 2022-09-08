@@ -95,7 +95,7 @@ $(function() {
     $('ul.dropdownmenu li.m6 li:last').find('a').on('blur', function () {        
         $('ul.dropdownmenu li.menu ul').slideUp('fast');
         $('#headerArea').animate({height:220},'normal').clearQueue();
-        $('.dropdownmenu li a').css('color','#fff');
-        $('.top_menu li a').css('color','#fff');
+        // $('.dropdownmenu li a').css('color','#fff');
+        // $('.top_menu li a').css('color','#fff');
     });
 });
