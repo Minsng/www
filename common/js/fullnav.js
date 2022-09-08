@@ -56,10 +56,11 @@ $(function() {
     $('ul.dropdownmenu').hover(
         function() { 
             $('ul.dropdownmenu li.menu ul').fadeIn('normal',function(){$(this).stop();}); //모든 서브를 다 열어라
-            $('#headerArea').animate({height:550},'fast').clearQueue();
+            $('ul.dropdownmenu li.menu ul').css({'height':'450px'}).clearQueue();
+            $('#headerArea').animate({height:460},'fast').clearQueue();
         },function() {
             $('ul.dropdownmenu li.menu ul').hide(); //모든 서브를 다 닫아라
-            $('#headerArea').animate({height:210}).clearQueue();
+            $('#headerArea').animate({height:220}).clearQueue();
     });
     
     //1depth 효과
@@ -79,7 +80,7 @@ $(function() {
             $(this).css('color','#333');
         }
     );
-     
+        
 
      //tab 처리
      $('ul.dropdownmenu li.menu .depth1').on('focus', function () {        
@@ -88,12 +89,12 @@ $(function() {
         $('h1 a').css({'background':'url(./common/images/header_logo240100.png)'});
         $('.dropdownmenu li a').css('color','#333');
         $('.top_menu li a').css('color','#333');
-        $('#headerArea').animate({height:550},'fast').clearQueue();
+        $('#headerArea').animate({height:460},'fast').clearQueue();
      });
 
     $('ul.dropdownmenu li.m6 li:last').find('a').on('blur', function () {        
         $('ul.dropdownmenu li.menu ul').slideUp('fast');
-        $('#headerArea').animate({height:210},'normal').clearQueue();
+        $('#headerArea').animate({height:220},'normal').clearQueue();
         $('.dropdownmenu li a').css('color','#fff');
         $('.top_menu li a').css('color','#fff');
     });

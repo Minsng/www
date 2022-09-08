@@ -79,7 +79,7 @@ font-family: 'Roboto', sans-serif;
 #headerArea .headerInner {
     width: 1200px;
     margin: 0 auto;
-    height: 210px;
+    height: 220px;
     /* background: orange; */
 }
 .header_section {
@@ -108,31 +108,38 @@ h1 a {
 #gnb ul.dropdownmenu {float: left; width: 100%;}
 #gnb ul.dropdownmenu li.menu {
     float: left; width: 16.66%;
-    text-align: center; font-size: 1.5em;
+    text-align: center; font-size: 1.375em;
     position: relative;
-    margin: 5px 0 0;
+    padding: 0 0 5px 0;
+    /* background: blue; */
+    height: 50px;
 }
 #gnb ul.dropdownmenu li a.depth1 {
     display: block; font-weight: 500; 
     color: #fff; transition: all .2s; position: relative;
     padding: 7px 0 8px;
 }
-#gnb ul.dropdownmenu li a.depth1::after {
+#gnb ul.dropdownmenu li::after {
     content: ''; display: block;
-    width: 100%; height: 3px; background: #0075c1;
-    position: absolute; left: 0px; bottom: 0px;
+    width: 80%; height: 3px; background: #0075c1;
+    position: absolute; left: 20px; bottom: 5px;
     transform: scaleX(0); transition: all .2s ease-in-out;
 }
-#headerArea:hover #gnb li:hover a::after {transform: scaleX(.6);}
+#headerArea:hover #gnb li:hover::after {transform: scaleX(.6);}
 
 
 #gnb ul.dropdownmenu li ul{
     width: 100%; position: absolute; top: 50px; left: 0;
-    padding: 15px 0; line-height: 2em; 
+    padding: 0; line-height: 2em; 
     display: none; background: #fff;
+    /* background: blue; */
 }
 
-#gnb ul.dropdownmenu li ul li {text-align: center; font-weight: 400; height: 50px;}
+#gnb ul.dropdownmenu li ul li {
+    text-align: center; font-weight: 400; height: 40px; font-size: 0.818em;
+    padding: 0 3px;
+    /* background: red; */
+}
 #gnb ul.dropdownmenu li ul li a {display: block; color: #0075c1; transition: all .2s; height: 100%;}
 
 
