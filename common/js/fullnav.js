@@ -6,7 +6,7 @@ $(function() {
        $('#headerArea').mouseenter(function(){
           // var scroll = $(window).scrollTop();
            $(this).css('background','#fff');
-           $('h1 a').css({'background':'url(./common/images/header_logo240100.png)'});
+           $('h1 a').css({'background':'url(http://minsng.cafe24.com/common/images/header_logo240100.png)'});
            $('.dropdownmenu li a').css('color','#333'); 
            $('.top_menu li a').css('color','#333'); 
           
@@ -18,12 +18,12 @@ $(function() {
         //    console.log(scroll);
            if(scroll<smh-50 ){
                $(this).css('background','none').css('border-bottom','none'); 
-               $('h1 a').css({'background':'url(./common/images/header_logo_white.png)'});
+               $('h1 a').css({'background':'url(http://minsng.cafe24.com/common/images/header_logo_white.png)'});
                $('.dropdownmenu li a').css('color','#fff');
                $('.top_menu li a').css('color','#fff'); 
            }else{
                $(this).css('background','#fff');
-               $('h1 a').css({'background':'url(./common/images/header_logo240100.png)'});
+               $('h1 a').css({'background':'url(http://minsng.cafe24.com/common/images/header_logo240100.png)'});
                $('.dropdownmenu li a').css('color','#333');
                $('.top_menu li a').css('color','#333'); 
            }
@@ -37,13 +37,13 @@ $(function() {
         
            if(scroll>smh-500){//스크롤300까지 내리면
                 $('#headerArea').css('background','#fff');
-                $('h1 a').css({'background':'url(./common/images/header_logo240100.png)'});
+                $('h1 a').css({'background':'url(http://minsng.cafe24.com/common/images/header_logo240100.png)'});
                 $('.dropdownmenu li a').css('color','#333');
                 $('.top_menu li a').css('color','#333'); 
            }else{//스크롤 내리기 전 디폴트(마우스올리지않음)
               if(on_off==false){
                 $('#headerArea').css('background','none').css('border-bottom','none'); 
-                $('h1 a').css({'background':'url(./common/images/header_logo_white.png)'});
+                $('h1 a').css({'background':'url(http://minsng.cafe24.com/common/images/header_logo_white.png)'});
                 $('.dropdownmenu li a').css('color','#fff');
                 $('.top_menu li a').css('color','#fff');
               }
@@ -86,7 +86,7 @@ $(function() {
      $('ul.dropdownmenu li.menu .depth1').on('focus', function () {        
         $('ul.dropdownmenu li.menu ul').slideDown('normal');
         $('#headerArea').css('background','#fff');
-        $('h1 a').css({'background':'url(./common/images/header_logo240100.png)'});
+        $('h1 a').css({'background':'url(http://minsng.cafe24.com/common/images/header_logo240100.png)'});
         $('.dropdownmenu li a').css('color','#333');
         $('.top_menu li a').css('color','#333');
         $('#headerArea').animate({height:460},'fast').clearQueue();
