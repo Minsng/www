@@ -1,7 +1,7 @@
 
 $(function() {
 
-   var smh=$('.visual').height();  //비주얼 이미지의 높이를 리턴한다   900px
+   var smh=$('.main').height();  //비주얼 이미지의 높이를 리턴한다   900px
    var on_off=false;  //false(안오버)  true(오버)
        $('#headerArea').mouseenter(function(){
           // var scroll = $(window).scrollTop();
