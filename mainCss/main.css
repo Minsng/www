@@ -3,7 +3,75 @@
     width: 2000px; height: 960px; 
     /* background: url(../images/visual01.png);  */
     position: relative; left: 50%; top: 0; margin-left: -1000px;
+    overflow: hidden;
 }
+
+    .gallery{
+        position:relative;left:0; top:0; overflow:hidden; width:2000px; height:960px;
+    }
+    .gallery li{display:none; position: relative;}
+
+    .gallery img{animation: ani 15s linear infinite;}
+    @keyframes ani {
+        from {transform: scale(1.2);}
+        to {transform: scale(1.0);}
+    }
+
+    @keyframes intro{
+        from{transform:translateY(50px); opacity: 0;}
+        to{transform:translateY(0); opacity: 1;}
+    }
+    .gallery li .intro{
+        position:absolute; left: 600px; top: 50%;  margin-top:-7%; color: #fff; line-height: 2;
+    }
+    .gallery li .intro strong{
+        display:block; font-size:3.4375rem; opacity: 0;
+        animation:intro 1.5s ease-out; animation-delay: .5s; animation-fill-mode: forwards;
+    }
+    .gallery li .intro span{
+        display: block; font-size:1.25rem; margin:10px 0 0; opacity: 0;
+        animation:intro 1.5s ease-out; animation-delay: .8s; animation-fill-mode: forwards;
+    }
+    
+
+    .dock{width:600px; position:absolute; left:600px; bottom:200px;}
+
+    .dock .mbutton{ 
+        margin-right:15px; cursor:pointer; 
+        display:block; float:left; width:100px; height:4px;
+        background: #c8c8c8;
+        transition: all .5s
+    }
+    
+    .dock .mbutton{
+        position:relative; margin-right:8px; 
+        background:rgba(255,255,255,.2); overflow: hidden; transition: width .5s;}
+    /* .dock .mbutton.on{width:30px; background:rgba(255,255,255,1)/} */
+    
+    .dock .mbutton::after{content:''; display:block; width: 0; height: 100%; background:rgba(255,255,255,1);}
+    .dock .mbutton.on::after{width: 100%; transition:width 7s;}
+    
+    
+
+    /* .dock .ps{
+        margin-right:15px; margin-top: -10px; cursor:pointer;
+        display:block; float:left; width:24px; height:24px;
+        background:url(../images/stop.png); 
+    } */
+    .dock .ps{
+        margin:-10px 15px 0 0; cursor: pointer;
+        display: block; float: left; width: 24px; height: 24px;
+        background:url(../images/stop.png) 50% 50% no-repeat;
+    }
+    .dock .ps.on{background:url(../images/play.png) 50% 50% no-repeat;}
+
+    .main .btn{display: block; width: 80px; height: 80px;
+            position: absolute;  top:440px;cursor:pointer; 
+        }
+    
+    .main .btnLeft{left:0; margin-left: 80px; background: rgba(0,0,0,.1) url(../images/leftarrow.png);}
+    .main .btnRight{top:440px ;right:0; margin-right: 80px; background: rgba(0,0,0,.2) url(../images/rightarrow.png);}    
+
 
 
 /* 본문 콘텐츠 영역 */
