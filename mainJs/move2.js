@@ -30,14 +30,24 @@ $(document).ready(function() {
    
 
     
-    $('.mbutton').click(function(){  
+    $('.mbutton').click(function(event){  
+        var $target=$(event.target); //클릭한 버튼 $target == $(this)
         clearInterval(timeonoff); 
 	 
 	    $('.gallery li').hide(); 
         
-        for(var i=0; i<=imageCount; i++){ 
-            if(this.className == 'mbutton btn'+i){ cnt = i; }
+        // for(var i=0; i<=imageCount; i++){ 
+        //     if(this.className == 'mbutton btn'+i){ cnt = i; }
+        // }
+
+        if($target.is('.btn1')){  //첫번째 버튼 클릭??
+            cnt=1;  //클릭한 해당 카운트를 담아놓는다
+        }else if($target.is('.btn2')){  //두번째 버튼 클릭??
+            cnt=2; 
+        }else if($target.is('.btn3')){ 
+            cnt=3; 
         }
+
         $('.gallery .link'+cnt).fadeIn('slow'); 
 
         $('.mbutton').removeClass('on'); 
@@ -52,6 +62,8 @@ $(document).ready(function() {
             $('.ps').removeClass('on'); 
         }
     });
+
+    
     
     
     

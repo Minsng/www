@@ -61,11 +61,15 @@
     .dock .ps.on{background:url(../images/play.png) 50% 50% no-repeat;}
 
     .main .btn{display: block; width: 80px; height: 80px;
-            position: absolute;  top:440px;cursor:pointer; 
-        }
+            position: absolute;  top:440px;cursor:pointer;
+            transition: all .5s;
+    }    
     
     .main .btnLeft{left:0; margin-left: 80px; background: rgba(0,0,0,.1) url(../images/leftarrow.png);}
-    .main .btnRight{top:440px ;right:0; margin-right: 80px; background: rgba(0,0,0,.2) url(../images/rightarrow.png);}    
+    .main .btnRight{top:440px ;right:0; margin-right: 80px; background: rgba(0,0,0,.1) url(../images/rightarrow.png);}    
+    .main .btnLeft:hover{background: rgba(255,255,255,.1) url(../images/leftarrow.png);}
+    .main .btnRight:hover{background: rgba(255,255,255,.1) url(../images/rightarrow.png);}    
+    
 
 
 
