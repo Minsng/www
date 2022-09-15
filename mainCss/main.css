@@ -22,7 +22,7 @@
         to{transform:translateY(0); opacity: 1;}
     }
     .gallery li .intro{
-        position:absolute; left: 600px; top: 50%;  margin-top:-7%; color: #fff; line-height: 2;
+        position:absolute; left: 500px; top: 55%;  margin-top:-7%; color: #fff; line-height: 2;
     }
     .gallery li .intro strong{
         display:block; font-size:3.4375rem; opacity: 0;
@@ -53,11 +53,6 @@
     
     
 
-    /* .dock .ps{
-        margin-right:15px; margin-top: -10px; cursor:pointer;
-        display:block; float:left; width:24px; height:24px;
-        background:url(../images/stop.png); 
-    } */
     .dock .ps{
         margin:-10px 15px 0 0; cursor: pointer;
         display: block; float: left; width: 24px; height: 24px;

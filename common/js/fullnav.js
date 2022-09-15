@@ -56,7 +56,7 @@ $(function() {
     $('ul.dropdownmenu').hover(
         function() { 
             $('ul.dropdownmenu li.menu ul').fadeIn('normal',function(){$(this).stop();}); //모든 서브를 다 열어라
-            $('ul.dropdownmenu li.menu ul').css({'height':'450px'}).clearQueue();
+            $('ul.dropdownmenu li.menu ul').css({'height':'240px'}).clearQueue();
             $('#headerArea').animate({height:460},'fast').clearQueue();
         },function() {
             $('ul.dropdownmenu li.menu ul').hide(); //모든 서브를 다 닫아라

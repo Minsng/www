@@ -102,7 +102,7 @@ h1 a {
     color: #fff; transition: all .2s; position: relative;
     padding: 7px 0 8px;
 }
-#gnb ul.dropdownmenu li::after {
+#gnb ul.dropdownmenu>li::after {
     content: ''; display: block;
     width: 80%; height: 3px; background: #0075c1;
     position: absolute; left: 20px; bottom: 5px;
