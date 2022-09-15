@@ -121,7 +121,7 @@ h1 a {
     text-align: center; font-weight: 400; height: 40px; font-size: 0.818em;
     padding: 0 3px;
 }
-#gnb ul.dropdownmenu li ul li a {display: block; color: #0075c1; transition: all .2s; height: 100%;}
+#gnb ul.dropdownmenu li ul li a {display: block; transition: all .2s; height: 100%;}
 
 
 
