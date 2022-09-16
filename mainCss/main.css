@@ -1,7 +1,8 @@
+/* .text{position: fixed; right:0; top: 0; font-size: 50px; z-index: 100} */
+
 /* 비주얼 영역 */
 .main {
     width: 2000px; height: 960px; 
-    /* background: url(../images/visual01.png);  */
     position: relative; left: 50%; top: 0; margin-left: -1000px;
     overflow: hidden;
 }
@@ -46,7 +47,6 @@
     .dock .mbutton{
         position:relative; margin-right:8px; 
         background:rgba(255,255,255,.2); overflow: hidden; transition: width .5s;}
-    /* .dock .mbutton.on{width:30px; background:rgba(255,255,255,1)/} */
     
     .dock .mbutton::after{content:''; display:block; width: 0; height: 100%; background:rgba(255,255,255,1);}
     .dock .mbutton.on::after{width: 100%; transition:width 7s;}
@@ -76,12 +76,17 @@
 /* 본문 콘텐츠 영역 */
 #content {
     width: 1200px;
-    /* border: 1px solid red; */
     margin: 0 auto;
 }
 
+#content section {
+    position: relative; transform: scale(.5); transition: all .5s; opacity: 0;
+}
+#content section.boxMove{
+    top:0; opacity: 1 ; transform: scale(1);
+}
+
 .business {
-    /* background: #efefef; */
     height: 860px;
     margin: 120px 0 0;
 }
@@ -96,14 +101,12 @@
     .business .fine {
         float: left;   
         width: 600px; height: 560px;
-        /* background: url(../images/fine_chemical.png); */
         position: relative;
     }
     
     .business .elec {
         float: left;
         width: 600px; height: 560px;
-        /* background: url(../images/electric_metarial.png); */
         position: relative;
     }
     .business .fine h4 {
@@ -211,7 +214,6 @@
 .investment {
     width: 2000px; position: relative; left: 50%;
     margin: 120px 0 0 -1000px;
-    /* background: pink; */
     height: 590px;
 }
     .investment h3 {
@@ -280,13 +282,11 @@
         padding: 20px 0;
         width: 160px; 
         background: #0075c1; color: #fff;
-        /* border: 3px solid #0075c1; */
         font-size: 1.25em;
     }
     .hr:hover img {transform: scale(1.1);}
     .hr:hover a span:hover {
         background: #fff; color: #0075c1;
-        /* border: 3px solid #0075c1; */
         
     }
 
@@ -296,7 +296,6 @@
     width: 2000px; height: 1070px;
     position: relative; left: 50%; 
     margin: 120px 0 120px -1000px;
-    /* background: #ccc; */
 }
 
     .news h3 {

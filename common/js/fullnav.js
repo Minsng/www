@@ -32,8 +32,8 @@ $(function() {
    
       $(window).on('scroll',function(){//스크롤의 거리가 발생하면
            var scroll = $(window).scrollTop();  //스크롤의 거리를 리턴하는 함수
-           console.log(scroll);
-           console.log(smh);
+        //    console.log(scroll);
+        //    console.log(smh);
         
            if(scroll>smh-500){//스크롤300까지 내리면
                 $('#headerArea').css('background','#fff');
@@ -103,5 +103,10 @@ $(function() {
         $('#headerArea').animate({height:220},'normal').clearQueue();
         // $('.dropdownmenu li a').css('color','#fff');
         // $('.top_menu li a').css('color','#fff');
+    });
+    $('.topmove').click(function(e){
+        e.preventDefault();
+         //상단으로 스르륵 이동합니다.
+        $("html,body").stop().animate({"scrollTop":0},500); 
     });
 });
