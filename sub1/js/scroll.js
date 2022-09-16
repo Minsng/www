@@ -25,12 +25,15 @@ $(document).ready(function () {
         //스크롤 좌표의 값을 찍는다.
         
         //sticky menu 처리
-        if(scroll>smh+550){ 
+        if(scroll>smh+350){ 
             $('.tabbox').addClass('tabOn');
+            $('.decade2010').css('margin-top',292);
             //스크롤의 거리가 350px 이상이면 서브메뉴 고정
             $('header').hide();
+
         }else{
             $('.tabbox').removeClass('tabOn');
+            $('.decade2010').css('margin-top',120);
             //스크롤의 거리가 350px 보다 작으면 서브메뉴 원래 상태로
             $('header').show();
         }

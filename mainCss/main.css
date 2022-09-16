@@ -86,63 +86,29 @@
     top:0; opacity: 1 ; transform: scale(1);
 }
 
-.business {
-    height: 860px;
-    margin: 120px 0 0;
-}
+.business {height: 860px;margin: 120px 0 0;}
     .business h3 {text-align: center; font-weight: 700; font-size: 60px;}
     .business p {margin: 80px 0; text-align: center; font-weight: 500; font-size: 1.5em;}
     
     .business ul {overflow: hidden; margin: 52px 0 0;box-shadow: 6px 6px 10px 5px rgba(0, 0, 0, .2);}
     .business li {position: relative;}
-    .business img {
-        transform: scale(1); transition: all .2s ease-in-out;        
-    }
-    .business .fine {
-        float: left;   
-        width: 600px; height: 560px;
-        position: relative;
-    }
-    
-    .business .elec {
-        float: left;
-        width: 600px; height: 560px;
-        position: relative;
-    }
-    .business .fine h4 {
-        color: #fff; font-size: 40px; text-align: center;
-        font-weight: 700;
-        position: absolute; left: 225px; top: 250px;
-        transition: all .2s ease-in-out;
-    }
-    .business .fine p {
-        color: #fff; font-size: 1.5em; text-align: center;
-        font-weight: 500;
-        position: absolute; left: 73px; top: 380px; opacity: 0;
-        transition: all .2s ease-in-out;
-    }
-    .business .elec h4 {
-        color: #fff; font-size: 40px; text-align: center;
-        font-weight: 700;
-        position: absolute; left: 225px; top: 250px;
-        transition: all .2s ease-in-out;
-    }
-    .business .elec p {
-        color: #fff; font-size: 1.5em; text-align: center;
-        font-weight: 500;
-        position: absolute; left: 110px; top: 380px; opacity: 0;
-        transition: all .2s ease-in-out;
-    }
-    .business li a {
-        position: absolute; left: 284px; top: 680px; 
-        opacity: 0;transition: all .2s ease-in-out;
-    }
+    .business img {transform: scale(1); transition: all .2s ease-in-out;}
+    .business .fine {float: left; width: 600px; height: 560px;}    
+    .business .elec {float: left; width: 600px; height: 560px;}
 
-    .business li:hover img {transform: scale(1.1); filter: brightness(.7);}
+    .business .fine h4 {color: #fff; font-size: 40px; text-align: center;font-weight: 700;position: absolute; left: 225px; top: 250px;transition: all .2s ease-in-out;}
+    .business .fine p {color: #fff; font-size: 1.5em; text-align: center;font-weight: 500;position: absolute; left: 73px; top: 380px; opacity: 0;transition: all .2s ease-in-out;}
+    .business .elec h4 {color: #fff; font-size: 40px; text-align: center;font-weight: 700;position: absolute; left: 225px; top: 250px;transition: all .2s ease-in-out;}
+    .business .elec p {color: #fff; font-size: 1.5em; text-align: center;font-weight: 500;position: absolute; left: 110px; top: 380px; opacity: 0;transition: all .2s ease-in-out;}
+    .business li a {position: absolute; left: 284px; top: 680px; opacity: 0;transition: all .2s ease-in-out;}
+
+    .business li:hover img {transform: scale(1.1); filter: brightness(.7); z-index: 30;}
     .business li:hover h4 {top: 130px;}
     .business li:hover p {top: 270px; opacity: 1;}
     .business li:hover a {top: 480px; opacity: 1;}
     .business li a:hover {transform: rotate(180deg);}
+    
+    
 
 
 

@@ -1,5 +1,4 @@
-// JavaScript Document
-
+// 비주얼
 $(document).ready(function() {
 
     var timeonoff; 
@@ -109,3 +108,7 @@ $(document).ready(function() {
     });
 
 });
+
+
+//스크롤
+

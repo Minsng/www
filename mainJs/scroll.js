@@ -10,11 +10,11 @@ $(document).ready(function () {
 
     var cnt=-1;
     
-    console.log(smh);
-    console.log(h1);
-    console.log(h2);
-    console.log(h3);
-    console.log(h4);
+    // console.log(smh);
+    // console.log(h1);
+    // console.log(h2);
+    // console.log(h3);
+    // console.log(h4);
      //스크롤의 좌표가 변하면.. 스크롤 이벤트
     $(window).on('scroll',function(){
         var scroll = $(window).scrollTop();
@@ -43,5 +43,13 @@ $(document).ready(function () {
         
     });
 
+    $('.elec').mouseenter(function(){
+        $(this).css('z-index',20);
+        $('.fine').css('z-index',10);
+    });
+    $('.fine').mouseenter(function(){
+        $(this).css('z-index',20);
+        $('.elec').css('z-index0',10);
+    });
 
 });
