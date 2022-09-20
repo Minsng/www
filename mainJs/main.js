@@ -64,8 +64,6 @@ $(document).ready(function() {
 
     
     
-    
-    
     $('.ps').click(function(){
         if(onoff == true){ 
             clearInterval(timeonoff); 
