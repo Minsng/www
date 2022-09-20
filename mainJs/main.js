@@ -152,7 +152,7 @@ $(document).ready(function () {
         }        
         
         // $('#content div').removeClass('boxMove');
-        $('#content section:eq('+cnt+')').addClass('boxMove');
+        $('#content section:eq('+cnt+')').addClass('event');
         
         
     });
@@ -169,15 +169,15 @@ $(document).ready(function () {
 });
 
 
-//뉴스
+//뉴스 갤러리
 
 // JavaScript Document
 $(document).ready(function() {
     var position=0;  //최초위치
-    var movesize=150; //이미지 하나의 너비
+    var movesize=410; //이미지 하나의 너비
    // var timeonoff;
    
-    $('.slide_gallery ul').after($('.slide_gallery ul').clone());
+    $('.newsgallery ul').after($('.newsgallery ul').clone());
   /*
     function moveG() {
         position-=movesize;  // 150씩 감소
@@ -203,25 +203,25 @@ $(document).ready(function() {
      if($(this).is('.m1')){  //이전버튼 클릭
          
           position-=movesize;  // 150씩 감소
-              $('.slide_gallery').stop(true,true).animate({left:position}, 'fast',
+              $('.newsgallery').stop(true,true).animate({left:position}, 'fast',
                 function(){							
-                    if(position==-750){
-                        $('.slide_gallery').css('left',0);
+                    if(position==-2050){
+                        $('.newsgallery').css('left',0);
                         position=0;
                     }
                 });
      }else if($(this).is('.m2')){  //다음버튼 클릭
            if(position==0){
-                $('.slide_gallery').css('left',-750);
-                position=-750;
+                $('.newsgallery').css('left',-2050);
+                position=-2050;
             }
  
             position+=movesize; // 150씩 증가
-            $('.slide_gallery').stop(true,true).animate({left:position}, 'fast',
+            $('.newsgallery').stop(true,true).animate({left:position}, 'fast',
                 function(){							
                     if(position==0){
-                        $('.slide_gallery').css('left',-750);
-                        position=-750;
+                        $('.newsgallery').css('left',-2050);
+                        position=-2050;
                     }
                 });
       }
