@@ -115,18 +115,18 @@ $(document).ready(function () {
     
     //첫번째 내용글 애니메이션 처리
     var smh= $('.main').height();  //메인 비주얼의 높이
-    var h1= $('#content section:eq(1)').offset().top-600 ;
-    var h2= $('#content section:eq(2)').offset().top-600 ;
-    var h3= $('#content section:eq(3)').offset().top-600 ;
-    var h4= $('#content section:eq(4)').offset().top-600 ;
+    var h1= $('#content section:eq(1)').offset().top-400 ;
+    var h2= $('#content section:eq(2)').offset().top-400 ;
+    var h3= $('#content section:eq(3)').offset().top-400 ;
+    var h4= $('#content section:eq(4)').offset().top-400 ;
 
     var cnt=-1;
     
-    // console.log(smh);
-    // console.log(h1);
-    // console.log(h2);
-    // console.log(h3);
-    // console.log(h4);
+    console.log(smh);
+    console.log(h1);
+    console.log(h2);
+    console.log(h3);
+    console.log(h4);
      //스크롤의 좌표가 변하면.. 스크롤 이벤트
     $(window).on('scroll',function(){
         var scroll = $(window).scrollTop();

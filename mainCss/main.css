@@ -261,8 +261,10 @@
     width: 2000px; position: relative; left: 50%;
     height: 600px;
     margin: 120px 0 0 -1000px;
-    overflow: hidden;    
+    overflow: hidden;
+    opacity: 0;
 }
+.hr.event {animation: godown100 .5s ease-out; animation-fill-mode: forwards;}
     .hr img {
         transform: scale(1);
         transition: all .4s ease-in-out;
@@ -363,10 +365,11 @@
         color: #fff;
         opacity: 0; transition: all .2s ease-in-out;
     }
-    .news .newsbtn {position: absolute; right: 450px; top: 200px;}
+    .news .newsbtn {position: absolute; right: 450px; top: 200px; display: block;}
+    .news .newsbtn a {display:  block; width: 30px; height: 30px; transition: all .2s;}
     .news .m1 {position: absolute; right: 120px; top: 0;}
     .news .m2 {position: absolute; right: 80px; top: 0;}
-    .news a.more {position: absolute; right: 0; top: 0; transform: rotate(0); transition: all .2s ease-in-out;}
+    .news a.more {position: absolute; right: 0; top: 0; transform: rotate(0); transition: all .2s;}
     
 
     .news ul li:hover img {transform: scale(1.1);}
@@ -374,5 +377,6 @@
     .news ul li:hover span {opacity: 1;}
 
     .news a.more:hover {transform: rotate(180deg);}
+    
 
 
