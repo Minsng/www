@@ -110,7 +110,7 @@
     .business .elec p {color: #fff; font-size: 1.5em; text-align: center;font-weight: 500;position: absolute; left: 110px; top: 380px; opacity: 0;transition: all .2s ease-in-out;}
     .business li a {position: absolute; left: 284px; top: 680px; opacity: 0;transition: all .2s ease-in-out;}
 
-    .business li:hover img {transform: scale(1.1); filter: brightness(.7); z-index: 30;}
+    .business li:hover img {transform: scale(1.1); filter: brightness(.7);}
     .business li:hover h4 {top: 130px;}
     .business li:hover p {top: 270px; opacity: 1;}
     .business li:hover a {top: 480px; opacity: 1;}

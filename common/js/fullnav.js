@@ -112,7 +112,8 @@ $(function() {
 
 
 
-    //family
+    //family    
+    
     $('.othercompany>a').toggle(function(e){
         e.preventDefault();
 		$('.othercompany ul').stop().fadeIn('fast');
@@ -124,6 +125,12 @@ $(function() {
         $('.othercompany>a').css('background','#fff').css('color','#333');
         $('.othercompany>a>span').html('▲');
 	});
+    
+    $('.othercompany>a').hover(function(){
+        $(this).css({background:'#0075c1',color:'#fff'});
+    },function(){
+        $(this).css({background:'#fff',color:'#333'});
+    });
 
 	//tab키 처리
     $('.othercompany>a').on('focus', function () {        
@@ -131,6 +138,32 @@ $(function() {
     });
     $('.othercompany ul li:last a').on('blur', function () {        
             $('.othercompany ul').fadeOut('fast');
+    });
+
+    $('.family>a').toggle(function(e){
+        e.preventDefault();
+		$('.family ul').stop().fadeIn('fast');
+        $('.family>a').css('background','#0075c1').css('color','#fff');
+        $('.family>a>span').html('▼');
+	},function(e){
+        e.preventDefault();
+        $('.family ul').stop().fadeOut('fast');
+        $('.family>a').css('background','#fff').css('color','#333');
+        $('.family>a>span').html('▲');
+	});
+
+    $('.family>a').hover(function(){
+        $(this).css({background:'#0075c1',color:'#fff'});
+    },function(){
+        $(this).css({background:'#fff',color:'#333'});
+    });
+
+	//tab키 처리
+    $('.family>a').on('focus', function () {        
+            $('.family ul').fadeIn('slow');	
+    });
+    $('.family ul li:last a').on('blur', function () {        
+            $('.family ul').fadeOut('fast');
     });
 
     

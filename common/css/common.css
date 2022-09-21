@@ -203,7 +203,6 @@ h1 a {
     display: block;  border: 1px solid #ccc;
     color: #333; font-size: 1.125em;
 }
-.othercompany>a:hover {background: #0075c1; color: #fff;}
 
 .othercompany ul{
     display: none; width: 180px; 
@@ -217,14 +216,34 @@ h1 a {
     background: #0075c1; color:#fff;
 }
 
-.othercompany>a:hover ul {background: #666; display: block;}
-.othercompany ul a:hover {background: #ccc; color: #fff;}
-
-
-
-
-
 .footer_line2 .family {float: left; margin: 20px 0 20px 30px;}
+#footerArea .family {
+    width: 180px; height: 60px; 
+    position: relative; text-align: center; line-height: 60px;
+}
+.family>a {
+    display: block;  border: 1px solid #ccc;
+    color: #333; font-size: 1.125em;
+}
+
+.family ul{
+    display: none; width: 180px; 
+    position: absolute; top: -440px; left: 0; z-index: 30;
+}
+.family ul li {line-height: 1.5em;}
+.family ul li a {
+    display: block; padding: 10px; background: #fff; color: #333;
+}
+.family ul li a:hover {
+    background: #0075c1; color:#fff;
+}
+
+
+
+
+
+
+/* .footer_line2 .family {float: left; margin: 20px 0 20px 30px;}
 #footerArea .family {
     width: 180px; height: 60px; border: 1px solid #ccc;
     position: relative; text-align: center; line-height: 60px;
@@ -236,6 +255,6 @@ h1 a {
 .family>a:hover .family ul {background: #666; display: block;}
 .family ul{display: none; width: 180px; position: absolute; top: -290px; left: 0;}
 .family ul a {display: block; padding: 20px 0 20px 20px; background: #999;}
-.family ul a:hover {background: #ccc; color: #fff;}
+.family ul a:hover {background: #ccc; color: #fff;} */
 
 
