@@ -181,7 +181,7 @@ h1 a {
 .footer_line1 .sns li:hover {background: #333;}
 .footer_line1 .sns li a {color: #fff;}
 
-.footer_line2 {overflow: hidden;}
+.footer_line2 {}
 .footer_line2 .copy {float: left; margin: 20px;}
 .footer_line2 .copy p:nth-of-type(1) {font-family: 'Roboto', sans-serif; font-size: 1.125em;}
 .footer_line2 .copy address {font-size: 1.125em;}
@@ -201,16 +201,26 @@ h1 a {
 }
 .othercompany>a {
     display: block;  border: 1px solid #ccc;
-    color: #333; font-size: 1.375em;
+    color: #333; font-size: 1.125em;
 }
-.othercompany>a ul{
-    display: none; width: 180px; position: absolute; top: -290px; left: 0; z-index: 30;
-}
-.othercompany ul a {display: none; padding: 20px 0 20px 20px; background: #999;}
+.othercompany>a:hover {background: #0075c1; color: #fff;}
 
-.othercompany>a:hover {background: #666;}
+.othercompany ul{
+    display: none; width: 180px; 
+    position: absolute; top: -256px; left: 0; z-index: 30;
+}
+.othercompany ul li {line-height: 1.5em;}
+.othercompany ul li a {
+    display: block; padding: 20px; background: #fff; color: #333;
+}
+.othercompany ul li a:hover {
+    background: #0075c1; color:#fff;
+}
+
 .othercompany>a:hover ul {background: #666; display: block;}
 .othercompany ul a:hover {background: #ccc; color: #fff;}
+
+
 
 
 

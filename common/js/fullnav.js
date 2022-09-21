@@ -110,5 +110,28 @@ $(function() {
         $("html,body").stop().animate({"scrollTop":0},500); 
     });
 
+
+
+    //family
+    $('.othercompany>a').toggle(function(e){
+        e.preventDefault();
+		$('.othercompany ul').stop().fadeIn('fast');
+        $('.othercompany>a').css('background','#0075c1').css('color','#fff');
+        $('.othercompany>a>span').html('▼');
+	},function(e){
+        e.preventDefault();
+        $('.othercompany ul').stop().fadeOut('fast');
+        $('.othercompany>a').css('background','#fff').css('color','#333');
+        $('.othercompany>a>span').html('▲');
+	});
+
+	//tab키 처리
+    $('.othercompany>a').on('focus', function () {        
+            $('.othercompany ul').fadeIn('slow');	
+    });
+    $('.othercompany ul li:last a').on('blur', function () {        
+            $('.othercompany ul').fadeOut('fast');
+    });
+
     
 });
