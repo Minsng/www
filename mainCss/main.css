@@ -1,3 +1,25 @@
+@keyframes ani {
+    from {transform: scale(1.2);}
+    to {transform: scale(1.0);}
+}
+
+@keyframes goup50{
+    from{transform:translateY(50px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+@keyframes goup100{
+    from{transform:translateY(100px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+@keyframes godown50{
+    from{transform:translateY(-50px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+@keyframes godown100{
+    from{transform:translateY(-100px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+
 /* .text{position: fixed; right:0; top: 0; font-size: 50px; z-index: 100} */
 
 /* 비주얼 영역 */
@@ -13,19 +35,7 @@
     .gallery li{display:none; position: relative;}
 
     .gallery img{animation: ani 15s linear infinite;}
-    @keyframes ani {
-        from {transform: scale(1.2);}
-        to {transform: scale(1.0);}
-    }
-
-    @keyframes goup50{
-        from{transform:translateY(50px); opacity: 0;}
-        to{transform:translateY(0); opacity: 1;}
-    }
-    @keyframes godown100{
-        from{transform:translateY(100px); opacity: 0;}
-        to{transform:translateY(0); opacity: 1;}
-    }
+    
     .gallery li .intro{
         position:absolute; left: 500px; top: 55%;  margin-top:-7%; color: #fff; line-height: 2;
     }
@@ -89,36 +99,121 @@
     top:0; opacity: 1 ; transform: translateY(0);
 } */
 
-.business {height: 860px;margin: 120px 0 0;}
-    .business h3 {text-align: center; font-weight: 700; font-size: 60px;}
-    .business p {margin: 80px 0; text-align: center; font-weight: 500; font-size: 1.5em;}
-    
-    .business ul {overflow: hidden; margin: 52px 0 0;}
-    .business li {position: relative;box-shadow: 6px 6px 10px 5px rgba(0, 0, 0, .2);}
-    .business li:nth-of-type(1) {transform: translateY(-150px); transition: all 1s; opacity: 0;}
-    .business li:nth-of-type(2) {transform: translateY(150px); transition: all 1s; opacity: 0; transition-delay: .5s;}
-    
-    .business.event li{transform: translateY(0); opacity: 1;}
-    
-    .business img {transform: scale(1); transition: all .2s ease-in-out;}
-    .business .fine {float: left; width: 600px; height: 560px;}    
-    .business .elec {float: left; width: 600px; height: 560px;}
-
-    .business .fine h4 {color: #fff; font-size: 40px; text-align: center;font-weight: 700;position: absolute; left: 225px; top: 250px;transition: all .2s ease-in-out;}
-    .business .fine p {color: #fff; font-size: 1.5em; text-align: center;font-weight: 500;position: absolute; left: 73px; top: 380px; opacity: 0;transition: all .2s ease-in-out;}
-    .business .elec h4 {color: #fff; font-size: 40px; text-align: center;font-weight: 700;position: absolute; left: 225px; top: 250px;transition: all .2s ease-in-out;}
-    .business .elec p {color: #fff; font-size: 1.5em; text-align: center;font-weight: 500;position: absolute; left: 110px; top: 380px; opacity: 0;transition: all .2s ease-in-out;}
-    .business li a {position: absolute; left: 284px; top: 680px; opacity: 0;transition: all .2s ease-in-out;}
-
-    .business li:hover img {transform: scale(1.1); filter: brightness(.7);}
-    .business li:hover h4 {top: 130px;}
-    .business li:hover p {top: 270px; opacity: 1;}
-    .business li:hover a {top: 480px; opacity: 1;}
-    .business li a:hover {transform: rotate(180deg);}
-    
-    
 
 
+    .business{
+        width: 2000px;
+        position: relative;
+        top: 0;
+        left: 50%;
+        margin-left: -1000px;
+    }
+    
+    .business {
+        padding: 120px 0;
+    }
+    
+    .business_inner {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .business_inner ul {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.144);
+        opacity: 0;
+        transition: .5s ease-in-out;
+        position: absolute;
+    }
+    
+    .business.event .business_inner ul {animation: godown100 .5s ease-out 1s forwards;}
+    
+    .business h3 {
+        margin: 100px 0; font-size: 60px; font-weight: 700; text-align: center; opacity: 0;
+    }
+    .business.event h3 {animation: godown100 .5s ease-out 0s forwards;}
+    .business .business_inner>p {margin: 80px 0; text-align: center; font-weight: 500; font-size: 1.5em; opacity: 0;}
+    .business.event .business_inner>p {animation: godown100 1s ease-out .5s forwards;}
+    
+    .business_inner>div {
+        margin-top: 70px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        height: 550px;
+        width: 100%;
+    }
+    
+    .business_inner li {
+        width: 800px;
+        height: 550px;
+        position: absolute;
+        box-shadow: -5px 0px 10px 0px #00000033;
+        overflow: hidden;
+    }
+    
+    .business_inner li:first-of-type {
+        background-image: url("../images/fine_chemical.png");
+    }
+    
+    .business_inner li:nth-of-type(2) {
+        background-image: url("../images/electric_metarial.png");
+        left: 600px;
+    }
+    
+    .business_inner li>div {
+        float: left;
+        padding-top: 150px;
+        height: 550px;
+        box-sizing: border-box;
+    }
+    
+    .business_inner .business_title {
+        width: 600px;
+        height: 550px;
+        text-align: center;
+        font-size: 2.5em;
+        line-height: 550px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 0 10px rgb(0, 0, 0);
+        padding-top: 0;
+        margin: 0;
+    }
+    .business_main p {font-weight: 500; font-size: 1.5em; text-align: center;}
+    
+    .business_main p:first-of-type {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Roboto';
+    }
+    
+    .business_main p:nth-of-type(2) {
+        font-size: 20px;
+        color: white;
+        margin: 50px 0 80px;
+    }
+    
+        
+    .business_main {
+        width: 800px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    .business_main>a{
+        position: absolute; left:384px; bottom: 50px;
+        transition: all .2s ease-in-out;
+    }
+    .business_main>a:hover {transform: rotate(180deg);}
+    
+    .business_btn {
+        position: relative;
+        width: 600px;
+        height: 550px;
+        display: block;
+    }    
+    
 
 .infor {    
     width: 2000px;
@@ -151,10 +246,7 @@
         position: relative;
         opacity: 0; 
     }
-    @keyframes goup100{
-        from{transform:translateY(100px); opacity:0;}
-        to{transform:translateY(0); opacity:1;}
-    }
+    
     .infor.event li{animation:goup100 .3s ease-out; animation-fill-mode: forwards;}
     .infor.event li:nth-child(1){animation-delay:0s;}
     .infor.event li:nth-child(2){animation-delay:0.3s;}
@@ -226,10 +318,7 @@
         transition: all .2s ease-in-out;
         opacity: 0;
     }
-    @keyframes goup50{
-        from{transform:translateY(50px); opacity:0;}
-        to{transform:translateY(0); opacity:1;}
-    }
+    
     .investment.event li{animation:goup50 .3s ease-out; animation-fill-mode: forwards;}
     .investment.event li:nth-child(1){animation-delay:0s;}
     .investment.event li:nth-child(2){animation-delay:0.3s;}
@@ -262,22 +351,20 @@
     height: 600px;
     margin: 120px 0 0 -1000px;
     overflow: hidden;
-    opacity: 0;
 }
-.hr.event {animation: godown100 .5s ease-out; animation-fill-mode: forwards;}
-    .hr img {
-        transform: scale(1);
-        transition: all .4s ease-in-out;
-    }
-    .hr p:first-of-type {
-        z-index: 10; font-weight: 700;
+.hr img {
+    transform: scale(1);
+    transition: all .4s ease-in-out;
+}
+.hr p:first-of-type {
+    z-index: 10; font-weight: 700;
         font-size: 3em; color: #fff;
-        position: absolute; left: 390px; top: 160px;
+        position: absolute; left: 390px; top: 160px; opacity: 0;
     }
     .hr p:last-of-type {
         z-index: 10; font-weight: 500;
         font-size: 1.5em; color: #fff;
-        position: absolute; left: 390px; bottom: 192px;
+        position: absolute; left: 390px; bottom: 192px; opacity: 0;
     }
     .hr a span{
         display: block;
@@ -286,8 +373,12 @@
         padding: 20px 0;
         width: 160px; 
         background: #0075c1; color: #fff;
-        font-size: 1.25em;
+        font-size: 1.25em; opacity: 0;
     }
+    .hr.event p:nth-of-type(1) {animation: godown100 .5s ease-out; animation-fill-mode: forwards; animation-delay: 0s;}
+    .hr.event p:nth-of-type(2) {animation: godown100 .5s ease-out; animation-fill-mode: forwards; animation-delay: .5s;}
+    .hr.event span {animation: godown100 .5s ease-out; animation-fill-mode: forwards; animation-delay: 1s;}
+
     .hr:hover img {transform: scale(1.1);}
     .hr:hover a span:hover {
         background: #fff; color: #0075c1;

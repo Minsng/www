@@ -168,7 +168,42 @@ $(document).ready(function () {
 
 //비즈니스
 $(function(){
-    
+    // Agencies accordion script
+	function accordion(imgnum) {
+		$('.business_title:eq('+imgnum +'), .business_inner li:not(:eq('+imgnum +')) .business_main').hide();
+		$('.business_inner li:eq('+imgnum+') .business_main').fadeIn('slow');
+		$('.business_inner span:eq('+imgnum+')').css('width', '100');
+		$('.business_inner span:not(:eq(' + imgnum + '))').css('width', '400');
+		$('.business_title:not(:eq(' + imgnum + '))').show().animate({ width: 400 });
+	}
+
+	$('.business_inner li span').mouseenter(function (event) {
+		var $target = $(event.target);
+		if ($target.is('.business_inner span:eq(0)')) {
+			$('.business_inner li:eq(1)')
+				.animate({ left: [800, 'easeOutQuad'] }, 500)
+				.clearQueue();
+			accordion(0);
+		} else if ($target.is('.business_inner span:eq(1)')) {
+			$('.business_inner li:eq(1)')
+				.animate({ left: [400, 'easeOutQuad'] }, 500)
+				.clearQueue();
+			accordion(1);
+		}
+	});
+
+	$('.business_inner>div').mouseleave(function (event) {
+		$('.business_main').hide();
+		$('.business_inner li:eq(0)')
+			.animate({ left: [0, 'easeOutQuad'] }, 500)
+			.clearQueue();
+		$('.business_inner li:eq(1)')
+			.animate({ left: [600, 'easeOutQuad'] }, 500)
+			.clearQueue();
+		$('.business_inner span').css('width', '');
+		$('.business_title').animate({ width: 600 });
+		$('.business_title').fadeIn(200);
+	});
 
 });
 
