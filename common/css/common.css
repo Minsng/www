@@ -56,7 +56,7 @@ img{border: 0; vertical-align: top}
  /* header 공통영역 */ 
 #headerArea {
     width: 100%;
-    height: 220px;
+    height: 210px;
     background: none;
     position: fixed; z-index: 50; transition: background .2s;
     left: 0; top: 0;
@@ -75,7 +75,7 @@ img{border: 0; vertical-align: top}
 #headerArea .headerInner {
     width: 1200px;
     margin: 0 auto;
-    height: 220px;
+    height: 210px;
 }
 .header_section {
     overflow: hidden; height: 160px; clear: both;
@@ -258,6 +258,7 @@ h1 a {
 #headerSearch p{font-size:1.875rem; font-weight: 700; letter-spacing:-0.045rem; padding: 110px 0 0;}
 #headerSearch form{display:block; border-bottom:3px solid #000; overflow: hidden; margin:40px 0 0;}
 #headerSearch form select {width: 140px; height: 65px; line-height: 65px; font-size: 1.375rem; font-weight: 700; border: 0 none; float: left;}
+#headerSearch form select option {font-size: 1.175rem;}
 #headerSearch form input[type="text"]{
     float:left; width: 450px; height: 65px; line-height: 65px; border:0 none; font-size:1.375rem; font-weight:700; letter-spacing:-0.045rem; outline:none;
 }

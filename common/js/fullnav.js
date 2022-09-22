@@ -22,7 +22,7 @@ $(function() {
     //    console.log(scroll);
     //    console.log(smh);
     
-        if(scroll>smh-500){//스크롤300까지 내리면
+        if(scroll>smh-300){//스크롤300까지 내리면
             $('#headerArea').addClass('on');
         }else{
             if(on_off==false){
@@ -39,7 +39,7 @@ $(function() {
             $('#headerArea').animate({height:460},'fast').clearQueue();
         },function() {
             $('ul.dropdownmenu li.menu ul').hide(); //모든 서브를 다 닫아라
-            $('#headerArea').animate({height:220}).clearQueue();
+            $('#headerArea').animate({height:210}).clearQueue();
     });
 
     //tab 처리
@@ -51,7 +51,7 @@ $(function() {
     
     $('ul.dropdownmenu li.m6 li:last').find('a').on('blur',function(){        
         $('ul.dropdownmenu li.menu ul').slideUp('fast');
-        $('#headerArea').animate({height:220},'fast').clearQueue();
+        $('#headerArea').animate({height:210},'fast').clearQueue();
         $('#headerArea').removeClass('on');
     });
 
