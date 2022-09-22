@@ -52,6 +52,30 @@
     </div>
 </footer>
 </div>
+<div id="headerSearch">
+    <div class="inner">
+        <p>한솔케미칼의 제품을 검색해보세요</p>
+        <form name="search_form" method="post" action="">
+            <select name="category" id="category">
+                <option value="0">정밀화학</option>
+                <option value="1">전자소재</option>
+            </select>
+            <input type="text" class="hidden" name="find" value="subject">
+            <input type="button" value="검색" onclick="">
+            <label class="hidden" for="search">검색어 입력</label>
+            <input type="text" id="search" name="search" placeholder=" 검색어를 입력하세요">
+        </form>
+        <ul>
+            <li><a href="#">과산화수소</a></li>
+            <li><a href="#">라텍스</a></li>
+            <li><a href="#">제지용케미칼</a></li>
+            <li><a href="#">OCR레진</a></li>
+            <li><a href="#">박막재료</a></li>
+            <li><a href="#">블랙사이드실링제</a></li>
+        </ul>
+        <a href="#" class="close">닫기</a>
+    </div>
+</div>
 
 <script src="./common/js/jquery-1.12.4.min.js"></script>
 <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>

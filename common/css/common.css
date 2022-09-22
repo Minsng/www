@@ -46,7 +46,7 @@ img{border: 0; vertical-align: top}
     overflow: hidden; text-align: center;
 }
 #skipNav a:hover, #skipNav a:focus, #skipNav a:focus {
-    height: auto; padding: 10px 0; background: #0075c1; color: #fff;
+    height: auto; padding: 10px 0; background: rgb(0, 117, 193); color: #fff;
 }
 
 
@@ -57,10 +57,20 @@ img{border: 0; vertical-align: top}
 #headerArea {
     width: 100%;
     height: 220px;
+    background: none;
     position: fixed; z-index: 50; transition: background .2s;
+    left: 0; top: 0;
 }
 
-#headerArea:hover .top_menu li a:hover {color: #0075c1;}
+#headerArea.on {background: #fff; box-shadow: 0 2px 10px rgba(0, 0, 0, .1);}
+#headerArea.on h1 a{background: url(../images/header_logo240100.png);}
+#headerArea.on .dropdownmenu li a {color: #333;}
+#headerArea.on .top_menu ul>li a {color: #333;}
+#headerArea.on .top_menu ul>li:hover a {color: #0075c1;}
+#headerArea.on .dropdownmenu>li a.depth1 {color:#333;}
+#headerArea.on .dropdownmenu>li:hover h3 a {color:#0075c1;}
+#headerArea.on .dropdownmenu>li:hover ul li:hover a {color:#0075c1;}
+
 
 #headerArea .headerInner {
     width: 1200px;
@@ -112,7 +122,7 @@ h1 a {
 
 
 #gnb ul.dropdownmenu li ul{
-    width: 100%; position: absolute; top: 50px; left: 0;
+    width: 100%; position: absolute; top: 50px; left: 0; height: 260px;
     padding: 0; line-height: 2em; 
     display: none; background: #fff;
 }
@@ -238,23 +248,28 @@ h1 a {
     background: #0075c1; color:#fff;
 }
 
-
-
-
-
-
-/* .footer_line2 .family {float: left; margin: 20px 0 20px 30px;}
-#footerArea .family {
-    width: 180px; height: 60px; border: 1px solid #ccc;
-    position: relative; text-align: center; line-height: 60px;
+/* 검색 */
+#headerSearch{
+    position:fixed; left: 0; top: 0; width: 100%; z-index: 999; background:#fff; box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    height:460px; overflow:hidden;
+    display:none;
 }
-.family>a {
-    display: block; color: #333; font-size: 1.375em;
+#headerSearch .inner{width: 720px; height: 500px; box-sizing:border-box; margin: 0 auto;}
+#headerSearch p{font-size:1.875rem; font-weight: 700; letter-spacing:-0.045rem; padding: 110px 0 0;}
+#headerSearch form{display:block; border-bottom:3px solid #000; overflow: hidden; margin:40px 0 0;}
+#headerSearch form select {width: 140px; height: 65px; line-height: 65px; font-size: 1.375rem; font-weight: 700; border: 0 none; float: left;}
+#headerSearch form input[type="text"]{
+    float:left; width: 450px; height: 65px; line-height: 65px; border:0 none; font-size:1.375rem; font-weight:700; letter-spacing:-0.045rem; outline:none;
 }
-.family>a:hover {background: #666;}
-.family>a:hover .family ul {background: #666; display: block;}
-.family ul{display: none; width: 180px; position: absolute; top: -290px; left: 0;}
-.family ul a {display: block; padding: 20px 0 20px 20px; background: #999;}
-.family ul a:hover {background: #ccc; color: #fff;} */
+#headerSearch form input::placeholder{color:rgba(0,0,0,0.2);}
+#headerSearch form input[type="button"],
+#headerSearch form input[type="submit"]{float:right; width: 50px; height: 65px; border:0 none; background:url("../images/search.png") 50% 50% no-repeat; background-size:30px auto; text-indent:-9999px; overflow: hidden; cursor:pointer;}
+#headerSearch ul{margin:40px 0 0; letter-spacing:-0.045rem; line-height:40px;}
+#headerSearch ul li{padding-left:10px; float: left;}
+#headerSearch ul li a{display:inline-block; padding: 0 20px; background:rgba(0, 117, 193, .05); border-radius:500px; margin:0 15px 15px 0; transition:background .3s}
+#headerSearch ul li a::before{content:'# ';}
+#headerSearch ul li a:hover{background:rgba(0, 117, 193, .15);}
+#headerSearch .close{position:absolute; right: 50%; top:100px; margin-right:-570px; transform:rotate(0); display: block; width: 21px; height: 20px; background:url("../images/close.png") 50% 50% no-repeat; background-size:21px auto; text-indent:-9999px; overflow: hidden; transition:transform .3s; cursor:pointer;}
+#headerSearch .close:hover{transform:rotate(180deg);}
 
 
