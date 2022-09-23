@@ -1,0 +1,19 @@
+.gongsi {
+    width: 2000px;
+    position: relative;
+    left: 50%; top: 0;
+    margin: 60px 0 0 -1000px;
+    padding: 60px 0 120px;
+    /* background: #f8f8f8; */
+    position: relative;
+}
+.gongsi::before {
+    content: '';
+    background: url(../images/logobackground.png) no-repeat;
+    display: block; width: 1200px; height: 477px;
+    position: absolute; left: 300px; top: 100px;
+    opacity: .15;
+}
+.gongsi iframe {    
+    position: relative; left: 50%; top: 0; margin-left: -357px;
+}

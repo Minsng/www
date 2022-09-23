@@ -8,13 +8,13 @@ $(document).ready(function () {
     var h3= $('.contentArea ul li:eq(2)').offset().top-300 ;
     var h4= $('.contentArea ul li:eq(3)').offset().top-300 ;
 
-    var cnt=-1;
+    var cnt=-5;
     
-    // console.log(smh);
-    // console.log(h1);
-    // console.log(h2);
-    // console.log(h3);
-    // console.log(h4);
+    console.log(smh);
+    console.log(h1);
+    console.log(h2);
+    console.log(h3);
+    console.log(h4);
      //스크롤의 좌표가 변하면.. 스크롤 이벤트
     $(window).on('scroll',function(){
         var scroll = $(window).scrollTop();
@@ -27,7 +27,7 @@ $(document).ready(function () {
             cnt = 1;
         }else if(scroll>=h2 && scroll<h3){
             cnt = 2;
-        }else if(scroll>=h3){
+        }else if(scroll>=h3 && scroll<h4){
             cnt = 3;
         }
         
