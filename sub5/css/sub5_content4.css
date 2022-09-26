@@ -28,16 +28,18 @@
     background: #000; opacity: .7; display: none;
 }
 .contentArea  .popup{
-    position: fixed; top: 50%; left: 50%; margin: -350px 0 0 -350px;
+    position: fixed; top: 50%; left: 50%; margin: -400px 0 0 -400px;
     padding: 50px;
     width: 700px; height: 700px; background: #fff; box-shadow: 1px 3px 7px 0px #666;
     z-index: 60; display:none;
 }
-.contentArea  .popup img{width: 650px;}
+.contentArea  .popup img{width: 650px; height: 650px;}
 
 .contentArea  .popup .close_btn{
-    position: absolute; top: 25px; right: 5px; 
+    position: absolute; top: 25px; right: 25px; 
     display: block; text-indent: -999px; overflow: hidden; width: 32px; 
-    height: 32px; padding: 9px 9px; background: url(../images/close.png) no-repeat;
+    height: 32px; background: url(../images/close.png) no-repeat;
     opacity: .7;
+    transform: rotate(0); transition: all .5s;
 }
+.contentArea .popup .close_btn:hover {transform: rotate(270deg);}
