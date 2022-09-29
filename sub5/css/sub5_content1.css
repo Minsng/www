@@ -1,82 +1,94 @@
-/* 과산화수소 */
-
-.contentArea>ul {
-    margin: 120px 0 0;
-    overflow: hidden;
+.contentArea > p {
+    margin: 100px 0;
+    font-size: 1.25em; text-align: center;
 }
 
-.contentArea>ul>li {
-    float: left;
-    margin-left: 80px;
-    width: 560px; height: 320px;
-}
-.contentArea>ul>li:first-of-type{margin-left: 0;}
-.contentArea>ul>li:last-of-type{padding: 120px 0;}
-
-.contentArea>ul>li p {
-    font-size: 1.5em;
-    margin: 0 0 80px;
-    text-align: justify;
+.tabbox {
+    margin: 100px 0 0;
 }
 
-h4 {
-    margin: 120px 0 80px;
-    font-size: 2em;
+.tab ul{}
+.tab ul::after{content:''; display: block; clear:both;}
+.tab li{float:left; width: 33%;}
+.tab li a{
+    position:relative; height:70px; line-height:70px; display: block; 
+    font-size:1.5em; border:1px solid #ddd; border-left-width:0; 
+    text-align:center; color:#333; transition:all .3s
 }
-.table1 {
+.tab li:first-child a{border-left-width:1px;}
+.tab li:hover a{color: #0075c1;}
+.tab li.current a{color: #0075c1;}
+.tab li.current a::before{
+    content:''; 
+    position:absolute; left:-1px; top:-1px; display:block;
+    width: 100%; height: 100%; border:1px solid #0075c1;
+}
+
+.contentArea h3 {
+    margin: 100px 0 0;
+    font-size: 1.75em;
+}
+
+.contentArea h4 {
+    margin: 60px 0 0;
+    font-size: 1.4em;
+    color: #0075c1;
+}
+.contentArea>div>p {margin-left: 5%;}
+
+table > caption:nth-of-type(1) {
+    text-align: left; font-size: 1.3em; color: #0075c1; font-weight: 500;
+}
+table > caption:nth-of-type(1) > span {font-size: 0.8em;}
+table > caption:nth-of-type(2) {text-align: right;}
+table {
     width: 90%;
     margin: 0 auto;
+    position: relative;
+    margin-top: 60px;
 }
-.table1 tr {
-    height: 100px;
+table tr {height: 50px;}
+table th {
     border: 1px solid #ccc;
-    border-left: 0;
-    border-right: 0;
-}
-
-.table1 th {
-    width: 23%;
-    border: 1px solid #ccc;
-    background: #f8f8f8;
-    border-left: 0;
-    padding: 10px 40px;
-    font-size: 1.125em 
-}
-.table1 td {
-    width: 77%;
-    border: 1px solid #ccc;
-    border-left: 0;
-    border-right: 0;
-    padding: 10px 40px;
-    font-size: 1.125em
-}
-
-.contact {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 120px;
-}
-.contact tr {
-    height: 70px;
-}
-
-.contact th {
-    width: 15%;
-    border: 1px solid #ccc;
-    background: #f8f8f8;
+    background: rgba(0, 117, 193, .1);
     border-bottom: 0;
     border-left: 0;
     padding: 10px 30px;
     font-size: 1.125em;
 }
-.contact td {
-    width: 15%;
+table td {
     border: 1px solid #ccc;
     border-left: 0;
     padding: 10px 30px;
     font-size: 1.125em;
     text-align: center;
 }
-.contact th:last-of-type, .contact td:last-of-type{border-right: 0;}
-.contact th:nth-of-type(4), .contact td:nth-of-type(4) {width: 20%;}
-.contact th:nth-of-type(5), .contact td:nth-of-type(5) {width: 35%;}
+
+.row4 th:nth-of-type(1), .row4 tr:nth-of-type(1) {width: 22%;}
+.row4 th:nth-of-type(2), .row4 tr:nth-of-type(2) {width: 22%;}
+.row4 th:nth-of-type(3), .row4 tr:nth-of-type(3) {width: 22%;}
+.row4 th:nth-of-type(4), .row4 tr:nth-of-type(4) {width: 34%;}
+
+
+table th:last-of-type {border-right: 0;}
+.row4 td:nth-of-type(4) {border-right: 0;}
+.row5 td:last-of-type {border-right: 0;}
+.row7 td:last-of-type {border-right: 0;}
+
+table.last {margin-bottom: 120px;}
+table.last th:nth-of-type(1) {width:70%}
+table.last th:nth-of-type(2) {width:17%}
+table.last th:nth-of-type(3) {width:13%}
+
+table.last td:nth-of-type(1) {width:20%}
+table.last td:nth-of-type(2) {width:50%}
+table.last td:nth-of-type(3) {width:17%}
+table.last td:nth-of-type(4) {width:13%}
+
+.isa .row5 {margin-bottom: 120px;}
+.isa .row5 td:nth-of-type(1) {border-right: 1px solid #ccc;}
+
+.gamsa .row4 {margin-bottom: 120px;}
+
+
+
