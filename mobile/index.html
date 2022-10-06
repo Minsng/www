@@ -10,6 +10,7 @@
 <link rel="apple-touch-startup-image" href="startup.png">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/flexslider.css">
 
 <script src="js/prefixfree.min.js"></script>
 <script>
@@ -41,25 +42,53 @@
             </nav>        
         </header>
         <div class="main">
-            비주얼영역
-            
+            <div id="main">
+                <!-- 메인 겔러리 삽입부분 -->
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <img src="images/visual01.png" />
+                    </li>
+                    <li>
+                      <img src="images/visual02.png" />
+                    </li>
+                    <li>
+                      <img src="images/visual03.png" />
+                    </li>                      
+                  </ul>
+                
+            </div>   
         </div>
         <article id="content">
             <h2 class="hidden">본문콘텐츠영역</h2>    
+            <div class="business">
+                <h2>BUSINESS</h2>
+                <div class="businessContent">
+                    <h3>정밀화학</h3>
+                    <a href="#"><img src="images/fine.png" alt="정밀화학이미지"></a>                    
+                </div>
+            </div>
             
-            본문
         </article>
         <footer id="footerArea">
             푸터영역
         </footer>
 
     </div>
-    <div class="aa">
+    <!-- <div class="aa">
         <img src="main_320(성민승).jpg" alt="">
-    </div>
+    </div> -->
  
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script defer src="js/jquery.flexslider.js"></script>
+    <script>
+        $(window).load(function(){
+            $('.flexslider').flexslider({
+            animation: "slide"
+            });
+        });
+    </script>
  
  
 </body>
