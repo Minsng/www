@@ -1,12 +1,13 @@
 /* CSS Document */
 
+h3 {font-family: 'roboto', sans-serif; font-weight: 700;}
 
-.business h3 {font-size: 1.7rem; font-weight: 700; margin: 2.5rem 0;}
+.business h3 {font-size: 1.7rem; margin: 2.5rem 0;}
 .business {position: relative; margin: 3rem 3% 0 3%;}
 .business ul li {display: none;}
 .business ul li:nth-of-type(1) {display: block;}
 .business ul li a {display: block;}
-.business ul li h4 {font-size: 1.2rem; font-weight: 700; margin: 0.7rem 0 0.7rem 6%;}
+.business ul li h4 {font-size: 1.2rem;font-weight: 700; margin: 0.7rem 0 0.7rem 6%;}
 .business ul li img {border-radius: 2rem; width: 100%;}
 
 .business .controls {position: absolute; right: 4.5%; top: 5rem;}
@@ -20,7 +21,7 @@
 
 
 .investment {background: #f8f8f8; padding: 2.5rem 0; margin: 2.5rem 0 0 0; position: relative;}
-.investment h3 {font-size: 1.4rem; font-weight: 700; margin: 0 0 2.5rem 3% ;}
+.investment h3 {font-size: 1.4rem; margin: 0 0 2.5rem 3% ;}
 .investment ul {overflow: hidden; position: relative;}
 .investment li {float: left; width: 33.33%;}
 .investment li:nth-of-type(2) {position: relative;}
@@ -34,7 +35,7 @@
 }
 
 #wrap .investment li img {width: 70px; display: block; margin: 0 auto;}
-#wrap .investment li span {
+#wrap .investment li h4 {
     width: 100px; display: block; text-align: center; margin: 0 auto; font-weight: 700; font-size: 1.1rem;
     padding-top: 0.7rem;
 }
@@ -42,7 +43,7 @@
 
 
 .infor {position: relative; margin: 2.5rem 0 0;}
-.infor h3 {font-size: 1.4rem; font-weight: 700; margin: 0 0 2.5rem 3% ;}
+.infor h3 {font-size: 1.4rem; margin: 0 0 1.5rem 3% ;}
 
 
 .infor .swiper2 {width: 100%; padding-bottom: 50px;}
@@ -63,6 +64,23 @@
 .infor .swiper-container-3d .swiper-slide-shadow-left{border-radius: 24px; background-image: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0))}
 .infor .swiper-container-3d .swiper-slide-shadow-right{border-radius: 24px; background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0))}
 .infor .swiper-pagination{padding: 15px 0}
+
+
+
+.recruit {position: relative; margin: 1rem 0 0;}
+.recruit h3 {font-size: 1.4rem; margin: 0 0 1.5rem 3% ;}
+.recruit > div {position: relative; margin: 1.5rem 0 2.5rem;}
+.recruit>div strong {
+    display: block; position: absolute; color: #fff; font-size: 1.1rem;
+    top: 20%; left: 11%;
+}
+.recruit>div a {
+    display: block; position: absolute; color: #fff; background: #0075c1;
+    box-sizing: border-box; font-weight: 500; font-size: 0.9em;
+    border-radius: 1rem; width: 70px; height: 30px; line-height: 30px; text-align: center;
+    bottom: 10%; right: 10%;
+}
+
 
 
 
