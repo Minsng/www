@@ -19,7 +19,7 @@
 .business .controls a:nth-of-type(2) {background: url(../images/right_arrowx2.png) 50% 50% no-repeat;}
 
 
-.investment {background: #f0f0f0; padding: 2.5rem 0; margin: 2.5rem 0 0 0; position: relative;}
+.investment {background: #f8f8f8; padding: 2.5rem 0; margin: 2.5rem 0 0 0; position: relative;}
 .investment h3 {font-size: 1.4rem; font-weight: 700; margin: 0 0 2.5rem 3% ;}
 .investment ul {overflow: hidden; position: relative;}
 .investment li {float: left; width: 33.33%;}
@@ -33,11 +33,38 @@
     width: 1px; height: 50%; top: 12.5%; right:0; background: #0075c1;
 }
 
-#wrap .investment li img {width: 100px; display: block; margin: 0 auto;}
+#wrap .investment li img {width: 70px; display: block; margin: 0 auto;}
 #wrap .investment li span {
     width: 100px; display: block; text-align: center; margin: 0 auto; font-weight: 700; font-size: 1.1rem;
     padding-top: 0.7rem;
 }
+
+
+
+.infor {position: relative; margin: 2.5rem 0 0;}
+.infor h3 {font-size: 1.4rem; font-weight: 700; margin: 0 0 2.5rem 3% ;}
+
+
+.infor .swiper2 {width: 100%; padding-bottom: 50px;}
+.infor .swiper-slide{
+    background-position: center; background-size: cover; 
+    width: 240px; padding: 24px 0 36px; background: #fff; 
+    border-radius: 24px; position: relative;
+}
+.infor .swiper-slide:nth-of-type(1) {background: #f0f0f0;}
+.infor .swiper-slide:nth-of-type(2) {background: #edeff3;}
+.infor .swiper-slide:nth-of-type(3) {background: #e8f0f7;}
+
+.infor .swiper-slide h4{font-weight: 700; font-size: 1.286rem; text-align: center; margin: 20px 0;}
+#wrap .infor .swiper-slide img {
+    display: block; width: 150px; height: 150px; margin: 16px auto; border-radius: 75px;
+}
+#wrap .infor .swiper-slide p{line-height: 1.5em; text-align: center;}
+.infor .swiper-container-3d .swiper-slide-shadow-left{border-radius: 24px; background-image: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+.infor .swiper-container-3d .swiper-slide-shadow-right{border-radius: 24px; background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+.infor .swiper-pagination{padding: 15px 0}
+
+
 
 
 
