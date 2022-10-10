@@ -1,5 +1,20 @@
 /* CSS Document */
 
+/*flexslider*/
+.flex-direction-nav {display: none;}
+.flexslider .slides li {
+    position: relative;
+}
+
+.flexslider .slides li strong {
+    position: absolute; top: 140px; left: 5%;
+    color: #fff; font-size: 1.5em;
+}
+.flexslider .slides li span {
+    position: absolute; top: 200px; left: 5%;
+    color: #fff; font-size: 1em;
+}
+
 h3 {font-family: 'roboto', sans-serif; font-weight: 700;}
 
 .business h3 {font-size: 1.7rem; margin: 2.5rem 0;}

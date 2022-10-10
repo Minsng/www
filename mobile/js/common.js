@@ -128,5 +128,23 @@ $(document).ready(function() {
 
 
 
+    $('.familysite > a').toggle(function(e){
+        e.preventDefault();
+        $('.familysite ul').stop().slideDown('fast', function(){
+          $('.familysite ul').css('height', '');
+          $('.familysite ul').css('margin', '');
+          $('.familysite ul').css('padding', '');
+        });
+        // $('.familysite > a').css('background', '#0081cc');
+        $('.familysite > a span').html('<i class="fa-solid fa-caret-down"></i>')
+      }, function(e){
+        e.preventDefault();
+        $('.familysite ul').stop().slideUp('fast');
+        // $('.familysite > a').css('background', '#182eae');
+        $('.familysite > a span').html('<i class="fa-solid fa-caret-up"></i>')
+      })
+
+
+
 
 });

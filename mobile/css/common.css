@@ -76,6 +76,8 @@ label { cursor:pointer; }
 }
 
 
+
+
 #gnb{position:fixed; right:-100%; top:0; width:100%; height: 100%; padding:3rem 10%; box-sizing:border-box; overflow-y:scroll; z-index:99; background:#fff;}
 #headerArea .header_top h1 a{
     display:block; width: 100px; height: 60px; background-image:url(../images/logow.png); background-position:0 50%; background-repeat:no-repeat; background-size:100% auto; text-indent:-9999%; font-size:0; transition:background .3s;
@@ -100,7 +102,135 @@ label { cursor:pointer; }
 
 /* 푸터공통 */
 
-
+#footerArea {
+    background: #f0f0f0;
+    padding: 8% 5% 15.5% 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+#footerArea .footerTop {
+    display: flex;
+    justify-content: space-between;
+}
+#footerArea .footerTop .footerLogo {
+    display: block;
+    width: 100px;
+    height: 60px;
+    text-indent: -9999px;
+    overflow: hidden;
+    color: #fff;
+    background: url(../images/logox2.png) 0 no-repeat;
+    background-size: 100% auto;
+}
+#footerArea .footerTop .sns {
+    display: flex;
+    column-gap: 10px;
+}
+#footerArea .footerTop .sns li {
+    width: 33.33%;
+}
+#footerArea .footerTop .sns li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background: #555 no-repeat 50% 50%;
+    font-size: 0.857em;
+    color: #fff;
+    position: relative;
+    letter-spacing: -0.025rem;
+}
+#footerArea .footerTop .sns li a i {
+    display: block;
+    position: absolute;
+    left: 31%;
+    top: 25%;
+}
+#footerArea .footerTop .sns li:first-child a i {
+    left: 27%;
+}
+#footerArea .identity {
+    overflow: hidden;
+    padding-top: 15px;
+}
+#footerArea .identity li {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+#footerArea .identity li a {
+    font-size: 0.857em;
+}
+#footerArea address {   
+    padding-top: 10px;
+}
+#footerArea address span {
+    display: block;
+    font-size: 0.857em;
+}
+#footerArea address span:nth-child(1){
+    margin-bottom: 10px;
+}
+#footerArea .familysite {
+    background: #c8c8c8;
+    margin-top: 30px;
+    position: relative;
+}
+#footerArea .familysite a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    font-weight: 500;
+    position: relative;
+}
+#footerArea .familysite a span {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 3px;
+}
+#footerArea .familysite ul {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    display: none;
+  }
+  #footerArea .familysite ul a {
+    display: block;
+    background: #f0f0f0;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.5s ease-out;
+  }
+  #footerArea .topMove {
+    display: block;
+    background: url(../../images/topmovex2.jpg) 0 no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    overflow: hidden;
+    color: #fff;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+/* scroll */
+  .topMoveOn {
+    animation: topMoveOn .5s forwards;
+  }
+  @keyframes topMoveOn {
+    0% {
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
 
 
 
