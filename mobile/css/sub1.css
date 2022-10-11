@@ -20,3 +20,47 @@
 .sub_menu span a::after{content:''; position:absolute; right: 4.5%; top:50%; margin-top:-6px; display:block; width:12px; height: 12px; background:url(../images/navi_open.png) 50% 50% no-repeat; background-size:100% auto; transition:transform .3s;}
 .sub_menu ul{position:absolute; left:0; top:55px; width: 100%; background:#fff; box-shadow:0 2px 2px rgba(0,0,0,0.2); padding:1rem 0; display: none;}
 .sub_menu ul li a{display: block; line-height:40px; color:#666; padding:0 0 0 4.5%;}
+
+
+.sub1_gaeyo {
+    margin: 0 4%;
+}
+.sub1_gaeyo > img {
+    margin: 2.5rem 0 0; box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 30%); 
+}
+.sub1_gaeyo > h3 {color: #0075c1; font-size: 1.4rem; font-weight: 700; margin: 1.1rem 0;}
+.sub1_gaeyo > p {text-align: justify; line-height: 1.5em; margin: 5px 0; font-size: 1.0245rem;}
+.sub1_gaeyo > p:nth-of-type(7) {text-align: right; margin: 10px 0;}
+.sub1_gaeyo > p:nth-of-type(8) {text-align: right; font-size: 1.5rem; font-family: '돋움'; font-weight: 700;}
+
+.sub1_vision {padding-bottom: 1rem;}
+.sub1_vision > h3 {
+    color: #0075c1; font-size: 1.4rem; font-weight: 700; margin: 1.1rem 0 0 4%;
+
+}
+
+.sub1_vision .swiper2 {width: 100%; padding: 40px 0 60px;}
+.sub1_vision .swiper-slide{
+    background-position: center; background-size: cover; 
+    width: 300px; height: 175px;  padding: 0; background: #fff; 
+    border-radius: 24px; position: relative;
+    box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 30%);
+}
+.sub1_vision .swiper-slide:nth-of-type(1) {background: url(../images/sub1_vision.png) 50% 50% no-repeat;}
+.sub1_vision .swiper-slide:nth-of-type(2) {background: url(../images/sub1_slogun.png) 50% 50% no-repeat;}
+.sub1_vision .swiper-slide:nth-of-type(3) {background: url(../images/sub1_corevaluie.png) 50% 50% no-repeat;}
+.sub1_vision .swiper-slide:nth-of-type(4) {background: url(../images/sub1_corestrategy.png) 50% 50% no-repeat;}
+#wrap .sub1_vision .swiper-slide img {
+    display: block; width: 150px; height: 150px; margin: 16px auto; border-radius: 75px;
+}
+.sub1_vision .swiper-slide p{line-height: 1.5em; text-align: center;}
+.sub1_vision .swiper-container-3d .swiper-slide-shadow-left{border-radius: 24px; background-image: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+.sub1_vision .swiper-container-3d .swiper-slide-shadow-right{border-radius: 24px; background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+
+.sub1_vision .swiper-slide dl {
+    position: absolute; left: 10px; bottom: -50px; display: block;
+    width: 240px; height: 100px; background: #fff;
+    padding: 10px 20px; box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 30%);
+}
+.sub1_vision .swiper-slide dl dt {color: #0075c1; font-size: 1.035rem;}
+.sub1_vision .swiper-slide dl dd:first-of-type {color: #888; font-size: 1rem}
