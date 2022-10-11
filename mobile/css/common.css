@@ -153,6 +153,9 @@ label { cursor:pointer; }
 #footerArea .footerTop .sns li:first-child a i {
     left: 27%;
 }
+#footerArea .footerTop .sns li:nth-of-type(3) a i {
+    left: 35%;
+}
 #footerArea .identity {
     overflow: hidden;
     padding-top: 15px;
