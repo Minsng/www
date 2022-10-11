@@ -5,13 +5,12 @@
 .flexslider .slides li {
     position: relative;
 }
-
-.flexslider .slides li strong {
-    position: absolute; top: 140px; left: 5%;
+.flexslider .slides li div {position: absolute; left: 5%; bottom: 44%;}
+.flexslider .slides li strong {    
     color: #fff; font-size: 1.5em;
+    margin-bottom: 15px; display: block;
 }
 .flexslider .slides li span {
-    position: absolute; top: 200px; left: 5%;
     color: #fff; font-size: 1em;
 }
 

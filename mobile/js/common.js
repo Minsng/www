@@ -144,6 +144,22 @@ $(document).ready(function() {
         $('.familysite > a span').html('<i class="fa-solid fa-caret-up"></i>')
       })
 
+    
+        $(window).on('scroll',function(){ //스크롤 값의 변화가 생기면
+        var scroll = $(window).scrollTop(); //스크롤의 거리
+        
+            if(scroll > 200){ // 300이상의 거리가 발생되면
+                $('.topMove').fadeIn('slow');  // top 보이기    
+            }else{
+                $('.topMove').fadeOut('fast'); // top 감추기
+            }
+        });
+
+        $('.topMove').click(function(e){
+            e.preventDefault();
+            $("html,body").stop().animate({"scrollTop":0},500); //상단으로 스르륵 이동합니다.
+        });
+
 
 
 
