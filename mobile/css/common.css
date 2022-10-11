@@ -91,7 +91,7 @@ label { cursor:pointer; }
 #gnb .mainMenu li a{display: block;}
 #gnb .mainMenu li h3 a{font-size:1.25rem; line-height: 3; font-weight:700; background-image:url(../images/navi_open.png); background-position:right 50%; background-repeat:no-repeat; background-size:15px auto;}
 #gnb .mainMenu li ul{padding:0 0 1.8rem; display: none;}
-#gnb .mainMenu li ul li a{color:#888; line-height: 2.45; padding:0 0 0 4.5%;}
+#gnb .mainMenu li ul li a{color:#888; line-height: 2.45; padding:0 0 0 4.5%; font-size: 1.1rem;}
 
 #gnb .memberMenu{margin:3rem 0 0; overflow: hidden;}
 #gnb .memberMenu li{float:left; position:relative;}
@@ -126,16 +126,17 @@ label { cursor:pointer; }
 }
 #footerArea .footerTop .sns {
     display: flex;
-    column-gap: 10px;
+    column-gap: 15px;
+    margin-top: 20px;
 }
 #footerArea .footerTop .sns li {
-    width: 33.33%;
+    width: 25%;
 }
 #footerArea .footerTop .sns li a {
     display: block;
-    width: 25px;
-    height: 25px;
-    border-radius: 15px;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
     background: #555 no-repeat 50% 50%;
     font-size: 0.857em;
     color: #fff;
@@ -147,6 +148,7 @@ label { cursor:pointer; }
     position: absolute;
     left: 31%;
     top: 25%;
+    font-size: 1rem;
 }
 #footerArea .footerTop .sns li:first-child a i {
     left: 27%;
@@ -157,14 +159,16 @@ label { cursor:pointer; }
 }
 #footerArea .identity li {
     float: left;
-    margin-right: 15px;
+    margin-right: 7px;
     margin-bottom: 5px;
+    font-size: 1.1rem;
 }
 #footerArea .identity li a {
     font-size: 0.857em;
 }
 #footerArea address {   
     padding-top: 10px;
+    font-size: 1.05rem;
 }
 #footerArea address span {
     display: block;

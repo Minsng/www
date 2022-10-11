@@ -1,0 +1,11 @@
+.main {
+    background: url(../images/sub1_visual.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%; height: 250px;
+    position: relative;
+}
+.main h3 {
+    position: absolute; left: 50%; top: 50%;
+    font-size: 1.7rem; color: #fff; font-weight: 700;
+    margin-left: -50px; margin-top: -20px;
+}
