@@ -16,22 +16,36 @@
 
 h3 {font-family: 'roboto', sans-serif; font-weight: 700;}
 
-.business h3 {font-size: 1.7rem; margin: 2.5rem 0;}
-.business {position: relative; margin: 3rem 3% 0 3%;}
-.business ul li {display: none;}
-.business ul li:nth-of-type(1) {display: block;}
-.business ul li a {display: block;}
-.business ul li h4 {font-size: 1.2rem;font-weight: 700; margin: 0.7rem 0 0.7rem 6%;}
-.business ul li img {border-radius: 2rem; width: 100%;}
+.business h3 {font-size: 1.7rem; margin: 2.5rem 0 1.5rem 3%;}
+.business {
+    position: relative; margin: 3rem 0 0;
+    width: 100%;
+}
+.business .swiper-wrapper {
+    width: 94%;
+}
 
-.business .controls {position: absolute; right: 4.5%; top: 5rem;}
-.business .controls a {
+.business .swiper-container .swiper-wrapper .swiper-slide h4 {
+    font-size: 1.2rem;font-weight: 700; margin: 0.7rem 0 0.7rem 6%;
+}
+.business .swiper-container .swiper-wrapper .swiper-slide img {
+    border-radius: 2rem; width: 100%;
+}
+.business .swiper-container .controls::after {content: none;}
+.business .swiper-container .controlss {position: absolute; right: 3%; top: 2rem;}
+.business .swiper-container .controlss div {
     float: left; width: 48px; height: 26px; display: block;
     background-size: auto 15px;
     background: url(../images/left_arrowx2.png) 50% 50% no-repeat;
     text-indent: -9999%; font-size: 0;
+    position: relative; left: 0; top: 0;
 }
-.business .controls a:nth-of-type(2) {background: url(../images/right_arrowx2.png) 50% 50% no-repeat;}
+.business .swiper-container .controlss div:nth-of-type(2) {
+    background: url(../images/right_arrowx2.png) 50% 50% no-repeat;
+}
+
+
+
 
 
 .investment {background: #f8f8f8; padding: 2.5rem 0; margin: 2.5rem 0 0 0; position: relative;}

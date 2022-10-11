@@ -130,7 +130,7 @@
             <h2 class="hidden">본문콘텐츠영역</h2>    
             <section class="business">
                 <h3>BUSINESS</h3>
-                <ul>
+                <!-- <ul>
                     <li class="fine">
                         <h4>정밀화학</h4>
                         <a href="#">
@@ -147,7 +147,30 @@
                 <div class="controls">
                     <a href="#">prev</a>
                     <a href="#">next</a>
+                </div> -->
+
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h4>정밀화학</h4>
+                            <a href="#">
+                                <img src="images/finex2.png" alt="정밀화학이미지">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <h4>전자소재</h4>
+                            <a href="#">
+                                <img src="images/elecx2.png" alt="전자소재이미지">
+                            </a>
+                        </div>                      
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="controlss">
+                        <div class="swiper-button-prev controls right"></div>
+                        <div class="swiper-button-next controls left"></div>
+                    </div>
                 </div>
+
             </section>
 
             <section class="investment">
@@ -298,6 +321,18 @@
             $('.flexslider').flexslider({
             animation: "slide"
             });
+        });
+
+        var swiper1 = new Swiper('.swiper1', {
+            effect: 'navigation',
+            grabCursor: true,
+            centeredSlides: true,
+            spaceBetween: 20,
+            slidesPerView: 'auto',
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
         });
 
         var swiper2 = new Swiper('.swiper2', {
