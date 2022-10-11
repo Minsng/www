@@ -99,8 +99,8 @@ $(document).ready(function() {
 
     //console.log(arrcount);
 
-    $(document).on('click', '#gnb .depth1 h3 a', function(e){ // ajax로 처리 시
-    //$('#gnb .depth1 h3 a').click(function(){
+    // $(document).on('click', '#gnb .depth1 h3 a', function(e){ // ajax로 처리 시
+    $('#gnb .depth1 h3 a').click(function(){
         var ind=$(this).parents('.depth1').index();
 
         //console.log(ind);
@@ -109,6 +109,8 @@ $(document).ready(function() {
             //$('#gnb .depth1 ul').hide();
             $(this).parents('.depth1').find('ul').stop().slideDown('fast'); // 클릭 ul 열기
             $(this).parents('.depth1').siblings('li').find('ul').stop().slideUp('fast'); // 클릭 ul 빼고 닫기
+
+            $(this).css({"background-image":"url(./images/navi_close.png)"});
 
             for(var i=0; i<arrcount; i++){
                 onoff[i]=false;
@@ -120,6 +122,7 @@ $(document).ready(function() {
 
         } else {
             $(this).parents('.depth1').find('ul').stop().slideUp('fast'); // 전부 닫기
+            $(this).css({"background-image":"url(./images/navi_open.png)"});
             onoff[ind]=false; // 전부 false
 
             //$(this).find('span').text('+'); // 전부 +
