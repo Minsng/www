@@ -1,7 +1,7 @@
 .main {
     background: url(../images/sub1_visual.png) 50% 50% no-repeat;
     background-size: cover;
-    width: 100%; height: 250px;
+    width: 100%; height: 200px;
     position: relative;
 }
 .main h3 {
@@ -65,12 +65,21 @@
 }
 .sub1_vision .swiper-slide dl dt {color: #0075c1; font-size: 1.035rem;}
 .sub1_vision .swiper-slide dl dd:first-of-type {color: #888; font-size: 1rem}
+
+.sub1_vision .swiper-slide dl dd {margin-top: 5px;}
+.sub1_vision .swiper-slide .textbox4 dd {margin-top: 0;}
+
 .sub1_vision .swiper-slide .textbox4 dd:last-of-type {
     color: #666; margin-left: 45px;
 }
 .sub1_vision .swiper-slide .textbox4 dd:last-of-type span {
     margin-right: 10px;
 }
+/* .sub1_vision .swiper-slide .textbox4 dd:last-of-type span:nth-of-type(1) {color: #0075c1;}
+.sub1_vision .swiper-slide .textbox4 dd:last-of-type span:nth-of-type(2) {color: #1285c1;}
+.sub1_vision .swiper-slide .textbox4 dd:last-of-type span:nth-of-type(3) {color: #2375c1;}
+.sub1_vision .swiper-slide .textbox4 dd:last-of-type span:nth-of-type(4) {color: #3475c1;}
+.sub1_vision .swiper-slide .textbox4 dd:last-of-type span:nth-of-type(5) {color: #5675c1;} */
 
 
 
@@ -103,4 +112,47 @@
 
 
 
+/* sub1_3 */
+.tab_box{margin:2.5rem 0 0; text-align: center;}
+.tab_box ul::after{content:''; display: block; clear: both;}
+.tab_box ul li{float:left; width: 25%;}
+.tab_box ul li a{position:relative; display:block; height: 45px; line-height:45px; border-width:1px 0px 1px 1px; border-style:solid; border-color:#ccc;}
+.tab_box ul li:last-of-type a {border-right-width: 1px;}
+.tab_box ul li.on a{color:#0075c1;}
+.tab_box ul li.on a::after{content:''; position:absolute; left:-1px; top:-1px; display: block; width: 100%; height: 100%; border:1px solid #0075c1; z-index: 2;}
 
+#content .history {margin: 2.5rem 0 0;}
+#content .history dl {overflow: hidden; margin: 0 4%; padding: 0.7rem 0;}
+#content .history dl dt {
+    color: #0075c1; font-size: 1.2rem; font-weight: 700; float: left;
+    width: 20%;
+}
+#content .history dl dd {
+    float: right; width: 80%;
+    padding: 5px 0;
+}
+#content .history dl dd span {display: block; float: left; width: 10%; color: #999; font-weight: 700;}
+#content .history dl dd p {float: left; width: 90%;}
+#content .history img {margin: 1rem 0;}
+
+
+
+
+/* sub1_4 */
+.tabbox .tab{margin:2.5rem 0 0; text-align: center;}
+.tabbox .tab ul::after{content:''; display: block; clear: both;}
+.tabbox .tab ul li{float:left; width: 50%;}
+.tabbox .tab ul li a{position:relative; display:block; height: 45px; line-height:45px; border-width:1px 0px 1px 1px; border-style:solid; border-color:#ccc;}
+.tabbox .tab ul li:last-of-type a {border-right-width: 1px;}
+.tabbox .tab ul li.on a{color:#0075c1;}
+.tabbox .tab ul li.on a::after{content:''; position:absolute; left:-1px; top:-1px; display: block; width: 100%; height: 100%; border:1px solid #0075c1; z-index: 2;}
+
+.sub4_intro {margin: 2rem 4%;}
+.sub4_intro h4 {font-weight: 700; font-size: 1.3rem; margin: 0.8rem 0;}
+.sub4_intro > p {text-align: center; font-size: 1rem; margin: 1.2rem 0;}
+.sub4_intro dl dt {color: #0075c1; font-weight: 700; font-size: 1rem; margin: 1.5rem 0 1rem;}
+.sub4_intro dl dd {text-align: justify;}
+.sub4_intro dl dd ul {}
+.sub4_intro dl dd li {overflow: hidden; margin: 1rem 0;}
+.sub4_intro dl dd li span {display: block; width: 25%; float: left; font-weight: 700;}
+.sub4_intro dl dd li p {width: 75%; float: left;}

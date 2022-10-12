@@ -1,4 +1,15 @@
  window.onload = function() {
+    var onoff = false;
+    $(window).on('scroll',function(){ //스크롤 값의 변화가 생기면
+        var scroll = $(window).scrollTop(); //스크롤의 거리
+        
+        if(scroll>10 && onoff == false){
+            $('#content>div').hide();
+            $('#content>div:eq(0)').show();
+           $('#content>div:eq(1)').show();
+           onoff = true;
+        }
+    });
 
     $('.map_tab li:eq(0)').addClass('on');
     $('.map_cont:eq(0)').show();
