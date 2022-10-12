@@ -148,11 +148,30 @@
 .tabbox .tab ul li.on a::after{content:''; position:absolute; left:-1px; top:-1px; display: block; width: 100%; height: 100%; border:1px solid #0075c1; z-index: 2;}
 
 .sub4_intro {margin: 2rem 4%;}
-.sub4_intro h4 {font-weight: 700; font-size: 1.3rem; margin: 0.8rem 0;}
+.sub4_intro h4 {font-weight: 700; font-size: 1.3rem; margin: 0.8rem 0 1.5rem;}
 .sub4_intro > p {text-align: center; font-size: 1rem; margin: 1.2rem 0;}
 .sub4_intro dl dt {color: #0075c1; font-weight: 700; font-size: 1rem; margin: 1.5rem 0 1rem;}
 .sub4_intro dl dd {text-align: justify;}
 .sub4_intro dl dd ul {}
 .sub4_intro dl dd li {overflow: hidden; margin: 1rem 0;}
-.sub4_intro dl dd li span {display: block; width: 25%; float: left; font-weight: 700;}
-.sub4_intro dl dd li p {width: 75%; float: left;}
+.sub4_intro dl dd li span {display: block; width: 35%; float: left; font-weight: 700;}
+.sub4_intro dl dd li p {width: 65%; float: left;}
+
+
+
+.sub4_direction {margin: 2.5rem 0 0}
+.sub4_direction h4 {font-weight: 700; font-size: 1.3rem; margin: 0.8rem 4%;}
+.sub4_direction > p:nth-of-type(1) {text-align: center; font-size: 0.9rem; margin: 1.5rem 4%;}
+.sub4_direction > p {text-align: center; font-size: 1rem; margin: 1.2rem 4% 1.5rem;}
+
+.sub4_direction .swiper-container {width: 100%; height: 450px; margin: 0 auto; padding: 1.5rem 0;}
+.sub4_direction .swiper-slide {}
+.sub4_direction .swiper-slide dl {
+    width: 260px; height: 370px; margin: 0 auto; padding: 30px 10px;
+    box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 30%); border-radius: 20px;
+}
+.sub4_direction .swiper-slide dl dt {width: 100%; height: 45px; line-height: 45px; border-bottom: 1px solid #ccc; font-size: 1.3rem; text-align: center;}
+.sub4_direction .swiper-slide dl dd {
+    margin: 0.7rem 30px; font-size: 1rem; text-indent: -10px; margin-left: 40px;
+}
+.sub4_direction .swiper-slide dl dd:first-of-type {margin-top: 2rem;}

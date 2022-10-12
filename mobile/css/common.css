@@ -134,9 +134,9 @@ label { cursor:pointer; }
 }
 #footerArea .footerTop .sns li a {
     display: block;
-    width: 36px;
-    height: 36px;
-    border-radius: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
     background: #555 no-repeat 50% 50%;
     font-size: 0.857em;
     color: #fff;
@@ -151,7 +151,7 @@ label { cursor:pointer; }
     font-size: 1rem;
 }
 #footerArea .footerTop .sns li:first-child a i {
-    left: 27%;
+    left: 20%;
 }
 #footerArea .footerTop .sns li:nth-of-type(3) a i {
     left: 35%;
