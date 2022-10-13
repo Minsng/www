@@ -93,7 +93,7 @@
 .map_tab ul li.on a{color:#0075c1;}
 .map_tab ul li.on a::after{content:''; position:absolute; left:-1px; top:-1px; display: block; width: 100%; height: 100%; border:1px solid #0075c1; z-index: 2;}
 
-.map_cont{display: none;}
+.map_cont{display: block;}
 .map_cont .kakaomapapi{width:100%; height: 300px; margin:2rem 0 0;}
 .map_cont .info{margin:0 4.5% 0;}
 .map_cont .info h3{font-size:1.5rem; font-weight:700; color:#0075c1; padding:1.75rem 0 0;}
