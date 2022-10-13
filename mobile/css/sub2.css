@@ -1,7 +1,7 @@
 .main {
     background: url(../images/sub2_visual.png) 50% 50% no-repeat;
     background-size: cover;
-    width: 100%; height: 250px;
+    width: 100%; height: 200px;
     position: relative;
 }
 .main h3 {
@@ -20,3 +20,72 @@
 .sub_menu span a::after{content:''; position:absolute; right: 4.5%; top:50%; margin-top:-6px; display:block; width:12px; height: 12px; background:url(../images/navi_open.png) 50% 50% no-repeat; background-size:100% auto; transition:transform .3s;}
 .sub_menu ul{position:absolute; left:0; top:55px; width: 100%; background:#fff; box-shadow:0 2px 2px rgba(0,0,0,0.2); padding:1rem 0; display: none;}
 .sub_menu ul li a{display: block; line-height:40px; color:#666; padding:0 0 0 4.5%;}
+
+#content > span {display: block; text-align: center; font-size: 1.5rem; font-weight: 700; margin: 2.5rem 0;}
+#content > p {text-align: center; font-size: 0.9rem; margin: 1rem 0; color: #666;}
+
+/* sub2_1 */
+.fine_list, .elec_list{margin:4rem 4% 0}
+.fine_list ul, .elec_list ul{}
+.fine_list ul li,
+.elec_list ul li{text-align:center;}
+.fine_list ul li + li,
+.elec_list ul li + li{margin:4rem 0 0;}
+.fine_list ul li .image{}
+.fine_list ul li .image img{}
+.fine_list ul li p,
+.elec_list ul li p{margin:1rem 0 0;}
+.fine_list ul li p span,
+.elec_list ul li p span{display:block; color:#999;}
+.fine_list ul li p strong,
+.elec_list ul li p strong{display:block; font-size:1.125rem;}
+.fine_list ul li p i,
+.elec_list ul li p i{display: inline-block; font-size: 0.9rem; background: #0075c1; color:#fff; margin:1rem 0 0; border:1px solid #ccc; padding:.3rem 1rem; border-radius:25px;}
+
+.fine_pop,
+.elec_pop{position:fixed; left:0; top: 0; width: 100%; height: 100%; overflow-y:scroll; background:#fff; z-index: 200; display: none;}
+.fine_pop::before,
+.elec_pop::before{content:'상세정보'; position:fixed; left:0; top: 0; width: 100%; height: 50px; line-height: 50px; font-weight:700; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.15); text-align:center;}
+.fine_pop .image,
+.elec_pop .image{margin:50px 0 0;}
+.fine_pop .image img,
+.elec_pop .image img{width: 100%;}
+.fine_pop .ttl,
+.elec_pop .ttl{margin:2rem 4.5%;}
+.fine_pop .ttl span,
+.elec_pop .ttl span{display:block; color:#999;}
+.fine_pop .ttl strong,
+.elec_pop .ttl strong{display:block; font-size:1.25rem;}
+.fine_pop .ttl p,
+.elec_pop .ttl p{margin:1rem 0 0;}
+.fine_pop .cont,
+.elec_pop .cont{background:#0099440a; padding:2rem 4.5%;}
+.fine_pop .cont dl{}
+.fine_pop .cont dl dt,
+.elec_pop .cont dl dt{color:#0075c1; font-weight:700;}
+.fine_pop .cont dl dd,
+.elec_pop .cont dl dd{margin:1rem 0 0;}
+.fine_pop .cont dl + dl,
+.elec_pop .cont dl + dl{margin:1.5rem 0 0; padding:1.5rem 0 0; border-top:1px dotted #ddd;}
+.fine_pop .close,
+.elec_pop .close{position:fixed; right: 0; top: 0; display:block; width: 50px; height: 50px; background:url(../images/close.png) 50% 50% no-repeat; background-size:16px auto; text-indent:-9999%; font-size:0;}
+
+.chart {width: 100%; text-align: center; border-collapse: collapse;}
+.chart tr {height: 30px;}
+.chart th {
+    width: 15%;
+    border: 1px solid #ccc;
+    background: #0099441e;
+    border-bottom: 0;
+    border-left: 0;
+    padding: 5px;
+}
+.chart td {
+    width: 15%;
+    border: 1px solid #ccc;
+    border-left: 0;
+    padding: 5px;
+}
+.chart th:last-of-type, .chart td:last-of-type{border-right: 0;}
+.chart th:nth-of-type(4), .chart td:nth-of-type(4) {width: 20%;}
+.chart th:nth-of-type(5), .chart td:nth-of-type(5) {width: 35%;}
