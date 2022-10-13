@@ -15,15 +15,14 @@ $(document).ready(function(){
     });
 
 
-    // sub1_3
+    // sub1_2
     var onoff = false;
     $(window).on('scroll',function(){ //스크롤 값의 변화가 생기면
         var scroll = $(window).scrollTop(); //스크롤의 거리
         
         if(scroll>10 && onoff == false){
-            $('#content>div').hide();
-            $('#content>div:eq(0)').show();
-           $('#content>div:eq(1)').show();
+            $('.map_cont').hide();
+            $('map_cont:eq(0)').show();
            onoff = true;
         }
     });
@@ -42,6 +41,26 @@ $(document).ready(function(){
 
         $('.tab_box li').removeClass('on');
         $('.tab_box li:eq('+ind+')').addClass('on');
+
+
+    });
+
+    // sub1_4
+
+    $('.tabbox li:eq(0)').addClass('on');
+    $('#content>div:eq(0)').show();
+    
+    $('.tabbox a').click(function(e){
+        e.preventDefault();
+        
+        var ind = $(this).index('.tabbox a');
+        //console.log(ind);
+
+        $('.sub1_4content').hide();
+        $('.sub1_4content:eq('+ind+')').fadeIn();
+
+        $('.tabbox li').removeClass('on');
+        $('.tabbox li:eq('+ind+')').addClass('on');
 
 
     });

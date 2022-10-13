@@ -175,3 +175,25 @@
     margin: 0.7rem 30px; font-size: 1rem; text-indent: -10px; margin-left: 40px;
 }
 .sub4_direction .swiper-slide dl dd:first-of-type {margin-top: 2rem;}
+
+.charter {margin: 2.5rem 0 0;}
+.charter h4 {font-size: 1.3rem; font-weight: 700; margin: 0.8rem 4% 0;}
+.charter dl {
+    margin: 1.2rem 0 0; overflow: hidden;
+}
+.charter dl dt {text-align: center; font-size: 1.125rem; margin: 1.3rem 0 0;}
+.charter dl dd {
+    float: left; width: 36%; height: 150px; margin: 1.3rem 7% 0;
+    text-indent: -10px; text-align: justify;
+}
+
+.codeofethics {margin: 1rem 0 0;}
+.codeofethics h4 {font-size: 1.3rem; font-weight: 700; margin: 0.8rem 4% 0;}
+.codeofethics > p {
+    margin: 1rem 0 0; padding: 1.2rem 4%; text-align: justify; background: #f8f8f8;
+    line-height: 1.5em;
+}
+
+.codeofethics dl {margin: 1rem 4%;}
+.codeofethics dl dt {color: #0075c1; margin: 1rem 0 0; font-size: 1.2rem; font-weight: 700;}
+.codeofethics dl dd {margin: 0.7rem 0 0 30px; text-indent: -17px;}
