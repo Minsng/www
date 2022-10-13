@@ -121,7 +121,8 @@
 .tab_box ul li.on a{color:#0075c1;}
 .tab_box ul li.on a::after{content:''; position:absolute; left:-1px; top:-1px; display: block; width: 100%; height: 100%; border:1px solid #0075c1; z-index: 2;}
 
-#content .history {margin: 2.5rem 0 0;}
+#content .history {margin: 2.5rem 0 0; display: none;}
+#content .history:nth-of-type(1) {display: block;}
 #content .history dl {overflow: hidden; margin: 0 4%; padding: 0.7rem 0;}
 #content .history dl dt {
     color: #0075c1; font-size: 1.2rem; font-weight: 700; float: left;
@@ -157,7 +158,7 @@
 .sub4_intro dl dd li span {display: block; width: 35%; float: left; font-weight: 700;}
 .sub4_intro dl dd li p {width: 65%; float: left;}
 
-
+.sub1_4content:last-of-type {display: none;}
 
 .sub4_direction {margin: 2.5rem 0 0}
 .sub4_direction h4 {font-weight: 700; font-size: 1.3rem; margin: 0.8rem 4%;}
