@@ -67,6 +67,18 @@ $(document).ready(function(){
 
 
     // sub3_2
+    var onoff = false;
+    $(window).on('scroll',function(){ //스크롤 값의 변화가 생기면
+        var scroll = $(window).scrollTop(); //스크롤의 거리
+        // console.log(scroll);
+        // console.log(onoff);
+        
+        if(scroll>10 && onoff == false){
+            $('.fade>div').hide();
+            $('.fade>div:eq(0)').show();
+           onoff = true;
+        }
+    });
 
     $('.tabbox li:eq(0)').addClass('on');
     $('.fade>div:eq(0)').show();
@@ -75,7 +87,7 @@ $(document).ready(function(){
         e.preventDefault();
         
         var ind = $(this).index('.tabbox a');
-        console.log(ind);
+        // console.log(ind);
 
         $('.fade>div').hide();
         $('.fade>div:eq('+ind+')').fadeIn();
