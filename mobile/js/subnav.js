@@ -16,16 +16,16 @@ $(document).ready(function(){
 
 
     // sub1_3
-    var onoff = false;
-    $(window).on('scroll',function(){ //스크롤 값의 변화가 생기면
-        var scroll = $(window).scrollTop(); //스크롤의 거리
+    // var onoff = false;
+    // $(window).on('scroll',function(){ //스크롤 값의 변화가 생기면
+    //     var scroll = $(window).scrollTop(); //스크롤의 거리
         
-        if(scroll>10 && onoff == false){
-            $('.map_cont').hide();
-            $('map_cont:eq(0)').show();
-           onoff = true;
-        }
-    });
+    //     if(scroll>10 && onoff == false){
+    //         $('.map_cont').hide();
+    //         $('map_cont:eq(0)').show();
+    //        onoff = true;
+    //     }
+    // });
 
     $('.tab_box li:eq(0)').addClass('on');
     $('.history:eq(0)').show();
