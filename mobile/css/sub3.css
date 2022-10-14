@@ -20,3 +20,15 @@
 .sub_menu span a::after{content:''; position:absolute; right: 4.5%; top:50%; margin-top:-6px; display:block; width:12px; height: 12px; background:url(../images/navi_open.png) 50% 50% no-repeat; background-size:100% auto; transition:transform .3s;}
 .sub_menu ul{position:absolute; left:0; top:55px; width: 100%; background:#fff; box-shadow:0 2px 2px rgba(0,0,0,0.2); padding:1rem 0; display: none;}
 .sub_menu ul li a{display: block; line-height:40px; color:#666; padding:0 0 0 4.5%;}
+
+
+
+/* sub3_1 */
+.sub3_1_content > h2 {text-align: center; font-size: 1.5rem; font-weight: 700; margin: 2.5rem 0;}
+.sub3_1_content ul li {margin: 5.5rem 0 0;}
+.sub3_1_content ul li img {}
+.sub3_1_content ul li h3 {margin: 1.5rem 4% 0; font-weight: 700; color: #0075c1; font-size: 1.2rem;}
+.sub3_1_content ul li p {margin: 1rem 4%; font-size: .9rem; text-align: justify;}
+.sub3_1_content ul li dl {margin: 1.5rem 0 0;}
+.sub3_1_content ul li dl dt {margin: 1rem 4% 0; font-size: 1.1rem; font-weight: 700;}
+.sub3_1_content ul li dl dd u {margin: .8rem 4% 0; font-size: .875rem; color: #999; text-align: right;}
