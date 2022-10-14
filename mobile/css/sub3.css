@@ -59,7 +59,7 @@
 .tabbox .tab ul li a span {
     display: block; height: 30px; line-height: 30px; font-size: 1rem;
 }
-.sub3_2_content > p {text-align: center; font-size: .8rem; line-height: 1.5em;}
+.sub3_2_content > p {text-align: center; font-size: .8rem; line-height: 1.5em; margin: 0 8%;}
 
 .sub3_2_content table {
     margin: 0 4%; border-collapse: collapse; width: 90%;
