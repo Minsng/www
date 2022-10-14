@@ -1,3 +1,4 @@
+/* common */
 .main {
     background: url(../images/sub4_visual.png) 50% 50% no-repeat;
     background-size: cover;
@@ -20,3 +21,66 @@
 .sub_menu span a::after{content:''; position:absolute; right: 4.5%; top:50%; margin-top:-6px; display:block; width:12px; height: 12px; background:url(../images/navi_open.png) 50% 50% no-repeat; background-size:100% auto; transition:transform .3s;}
 .sub_menu ul{position:absolute; left:0; top:55px; width: 100%; background:#fff; box-shadow:0 2px 2px rgba(0,0,0,0.2); padding:1rem 0; display: none;}
 .sub_menu ul li a{display: block; line-height:40px; color:#666; padding:0 0 0 4.5%;}
+
+#content h2 {text-align: center; font-size: 1.5rem; font-weight: 700; margin: 2.5rem 0;}
+#content > p {text-align: center; font-size: .8rem; line-height: 1.5em;}
+
+h3 {margin: 2.5rem 4% 0; font-size: 1.3rem; font-weight: 700;}
+
+
+
+
+
+/* sub4_1 */
+.tabbox .tab{margin:2.5rem 0 0; text-align: center;}
+.tabbox .tab ul::after{content:''; display: block; clear: both;}
+.tabbox .tab ul li{float:left; width: 33.3%;}
+.tabbox .tab ul li a{position:relative; display:block; height: 45px; line-height:45px; border-width:1px 0px 1px 1px; border-style:solid; border-color:#ccc;}
+.tabbox .tab ul li:last-of-type a {border-right-width: 1px;}
+.tabbox .tab ul li.on a{color:#0075c1;}
+.tabbox .tab ul li.on a::after{content:''; position:absolute; left:-1px; top:-1px; display: block; width: 100%; height: 100%; border:1px solid #0075c1; z-index: 2;}
+.chart h4 {color: #0075c1; font-size: 1.1rem; font-weight: 700; margin: 1rem 4% 0;}
+
+.chart{margin:2rem 0 0;}
+.chart::after{content:''; display: block; clear: both;}
+.chart>span{float:right; position:relative; background:#0075c1; border-radius: 10px;}
+.chart>span .all{
+    display:block; position:relative; text-align: center; border-radius: 10px;
+    width: 100px; height: 30px; line-height: 30px; color:#fff; box-sizing:border-box;
+}
+.chart>span .all::after{content:''; position:absolute; right: 1rem; top: 0; display:block; width: 13px; height: 42px; background:url(../images/arrow_select_w.png) 50% 50% no-repeat; background-size:100% auto; transition:transform .3s;}
+.chart>span .all.on::after{transform:rotate(180deg);}
+
+.chart ul{float:left; width: 100%; border-top:2px solid #333; margin:1rem 0 0;}
+.chart ul li{border-bottom:1px solid #e5e5e5;}
+.chart ul li h5{position:relative; text-align:justify; padding:0 0 0 0;}
+.chart ul li h5 > a{display:block; padding:1rem 2.6rem 1rem 1rem; background:url(../images/navi_open.png) 97% 50% no-repeat; background-size:14px auto;}
+.chart ul li>div{padding:1rem 2%; border-top:1px dotted #eee; background:#f8f8f8; display: none;}
+.chart ul li.on h5 > a{background-image:url(../images/navi_close.png);}
+
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-collapse: collapse;
+    text-align: center;
+}
+table tr {height: 20px;}
+table th {
+    border: 1px solid #ccc;
+    background: rgba(0, 117, 193, .1);
+    padding: 10px;
+}
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+/* sub4_2 */
+
+
+
+/* sub4_3 */
+
