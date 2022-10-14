@@ -1,7 +1,7 @@
 .main {
     background: url(../images/sub3_visual.png) 50% 50% no-repeat;
     background-size: cover;
-    width: 100%; height: 250px;
+    width: 100%; height: 200px;
     position: relative;
 }
 .main h3 {
@@ -23,12 +23,108 @@
 
 
 
+#content h2 {text-align: center; font-size: 1.5rem; font-weight: 700; margin: 2.5rem 0;}
+
+
 /* sub3_1 */
-.sub3_1_content > h2 {text-align: center; font-size: 1.5rem; font-weight: 700; margin: 2.5rem 0;}
-.sub3_1_content ul li {margin: 5.5rem 0 0;}
+.sub3_1_content ul li {padding: 2.75rem 0;}
 .sub3_1_content ul li img {}
 .sub3_1_content ul li h3 {margin: 1.5rem 4% 0; font-weight: 700; color: #0075c1; font-size: 1.2rem;}
 .sub3_1_content ul li p {margin: 1rem 4%; font-size: .9rem; text-align: justify;}
 .sub3_1_content ul li dl {margin: 1.5rem 0 0;}
 .sub3_1_content ul li dl dt {margin: 1rem 4% 0; font-size: 1.1rem; font-weight: 700;}
-.sub3_1_content ul li dl dd u {margin: .8rem 4% 0; font-size: .875rem; color: #999; text-align: right;}
+.sub3_1_content ul li dl dd u {margin: .8rem 4% 0; font-size: .875rem; color: #777; text-align: right;}
+.sub3_1_content ul li:nth-of-type(2) {background: #f2f2f2;}
+
+
+/* sub3_2 */
+.tabbox .tab{margin:2.5rem 0 0; text-align: center;}
+.tabbox .tab ul {margin: 0 4%;}
+.tabbox .tab ul::after{content:''; display: block; clear: both;}
+.tabbox .tab ul li{float:left; width: 32%; margin-right: 2%; box-sizing: border-box;}
+.tabbox .tab ul li:last-of-type{margin-right: 0;}
+.tabbox .tab ul li a{
+    position:relative; display:block; border-width:1px; border-style:solid; border-color:#ccc;
+    border-radius: 10px;
+}
+.tabbox .tab ul li:last-of-type a {border-right-width: 1px;}
+.tabbox .tab ul li.on a{color:#0075c1;}
+.tabbox .tab ul li.on a::after{
+    content:''; position:absolute; left:-1px; top:-1px; 
+    display: block; width: 100%; height: 100%; 
+    border:1px solid #0075c1; z-index: 2;border-radius: 10px;
+}
+
+.tabbox .tab ul li a .imgwrap img {border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.tabbox .tab ul li a span {
+    display: block; height: 30px; line-height: 30px; font-size: 1rem;
+}
+.sub3_2_content > p {text-align: center; font-size: .8rem; line-height: 1.5em;}
+
+.sub3_2_content table {
+    margin: 0 4%; border-collapse: collapse; width: 90%;
+}
+.sub3_2_content table tr {
+    height: 1rem; border: 1px solid #ccc; border-left: 0; border-right: 0;
+}
+.sub3_2_content table th {
+    width: 30%;
+    border: 1px solid #ccc; background: #f8f8f8;
+    border-left: 0;
+    padding: 10px;
+}
+.sub3_2_content table td {
+    width: 70%;
+    border: 1px solid #ccc;
+    border-right: 0;
+    padding: 10px;
+}
+.injae, .bokli {display: none;}
+
+.sub3_2_content h3 {
+    font-size: 1.2rem; font-weight: 700;
+    margin: 2.5rem 4% 0;
+}
+.sub3_2_content h4 {color: #0075c1; font-weight: 700; font-size: 1rem; margin: 1rem 4%;}
+
+
+.injae .swiper-container {
+    width: 100%; height: 24rem; margin: 1rem 0;
+    /* background-color: #f0f0f0; */
+    /* padding: 1.5rem 0; */
+}
+.injae .swiper-container .swiper-wrapper {width: 100%; height: 100%;}
+.injae .swiper-container .swiper-wrapper .swiper-slide {
+    width: 86%; height: 20rem !important; margin: 2rem 7%; 
+    border: 1px solid rgb(0 0 0 / 30%); box-sizing: border-box;
+    border-radius: 2rem; padding: 1.5rem 4%;
+    box-shadow: 2px 2px 10px 0 rgb(0 0 0 / 30%);  
+}
+.injae .swiper-container .swiper-wrapper .swiper-slide > span {color: #009944;}
+.injae .swiper-container .swiper-wrapper .swiper-slide dl {}
+.injae .swiper-container .swiper-wrapper .swiper-slide dl dt {
+    font-size: 1.2rem; color: #0075c1; font-weight: 700;
+    margin: .9rem 0;
+}
+.injae .swiper-container .swiper-wrapper .swiper-slide dl dd {
+    text-align: justify; line-height: 1.5em;
+}
+.injae .swiper-container .swiper-wrapper .swiper-slide dl dd p {margin: .8rem 0;}
+.injae .swiper-container .swiper-wrapper .swiper-slide dl dd p span {
+    display: block; color: #0075c1; margin: .8rem 0; font-weight: 700;
+}
+
+
+/* sub3_3 */
+.sub3_3_content ul {}
+.sub3_3_content ul li {position: relative; margin: 2rem 4%; border: 1px solid #ccc; padding: 1.5rem 4%; border-radius: 10px; overflow: hidden;}
+.sub3_3_content ul li .image {position: absolute; left: 1.5rem; top: 50%; margin-top:-2.5rem ; width: 5rem; height: 5rem;}
+.sub3_3_content ul li .conts {margin-left: 6rem; padding-left: 1rem;}
+.sub3_3_content ul li h3 {color: #0075c1; font-weight: 700; font-size: 1rem; margin-bottom: 10px;}
+.sub3_3_content ul li h3 span {font-size: .8rem; font-weight: 500; color: #888;}
+.sub3_3_content ul li p {text-align: justify; line-height: 1.5em;}
+
+
+
+
+

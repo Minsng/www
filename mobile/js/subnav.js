@@ -65,4 +65,25 @@ $(document).ready(function(){
 
     });
 
+
+    // sub3_2
+
+    $('.tabbox li:eq(0)').addClass('on');
+    $('.fade>div:eq(0)').show();
+    
+    $('.tabbox a').click(function(e){
+        e.preventDefault();
+        
+        var ind = $(this).index('.tabbox a');
+        console.log(ind);
+
+        $('.fade>div').hide();
+        $('.fade>div:eq('+ind+')').fadeIn();
+
+        $('.tabbox li').removeClass('on');
+        $('.tabbox li:eq('+ind+')').addClass('on');
+
+
+    });
+
 });
