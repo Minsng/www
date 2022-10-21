@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;300;400;500;700&display=swap');
 /* Reset CSS  */
 * { margin:0; padding:0; border:0; outline:0; vertical-align:top;
 -webkit-text-size-adjust:none;  }
 html {font-size: 18px;}
-body {font-family:'돋움', Dotum; font-size:18px; color:#333;}
+body {font-family:'Roboto', sans-serif; font-size:18px; color:#fff;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
 ul, ol, dl { list-style:none; }
 img, video {border:0; vertical-align:top; }
@@ -24,16 +25,28 @@ p,li,dd{ line-height:1.5em}
 /* 헤더 공통 영역 */
 #wrap{width:100%; overflow: hidden}
 #headerArea{position:fixed; z-index: 30; height: 80px;
-    background: rgba(0,0,0,.8); left:0; top: 0;
-    width: 100%}	
-#headerArea	.headerInner{width: 90%; margin: 0 5%;
-     overflow: hidden}
-#headerArea h1{ float: left; margin-top: 15px}
-#headerArea h1 a{color: #fff; text-decoration: none}	
+    left:0; top: 0; background: rgba(0, 0, 0, 0);
+    width: 100%
+}	
+#headerArea	.headerInner{width: 90%; margin: 0 5%; overflow: hidden}
+#headerArea h1{ float: left; margin: 15px 0}
+#headerArea h1 a{
+    display: block; text-decoration: none; width: 135px; height: 50px;
+    text-indent: -999px; overflow: hidden;
+    transition: all .5s;
+    background: url(../images/logo_white.png) no-repeat;
+    background-size: cover;
+}
+#headerArea h1:hover a {
+    background: url(../images/logo.png) no-repeat;
+    background-size: cover;
+}
 #headerArea #gnb{float: right;margin-top: 25px}
-#headerArea #gnb ul{overflow: hidden}
-#headerArea #gnb ul li{float: left; margin-right: 15px;}
-#headerArea #gnb ul li a{color: #fff; text-decoration: none}
+#headerArea #gnb ul{overflow: hidden;}
+#headerArea #gnb ul li{float: left; margin-left: 40px;}
+#headerArea #gnb ul li a{color: #fff; text-decoration: none; transition: all .5s;}
+#headerArea #gnb ul li a:hover {color: #004165;}
+h3 {font-family: 'Pacifico', cursive;}
 
 
 /* 푸터 공통 영역 */
