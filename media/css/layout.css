@@ -56,7 +56,7 @@
 .more:hover>span {color: #fbc834;}
 
 #content{
-   width: auto; height:5000px; background:rgba(0, 0, 0, .8);   
+   width: auto; height:5000px; background:rgba(0, 0, 0, .7);   
 }
 
 section {
@@ -294,7 +294,7 @@ section {
    padding: 0 32px;
    text-align: left;
    position: relative;
-   top: 258px;
+   top: 330px;
    transition: all .5s;
 }
 
@@ -302,17 +302,10 @@ section {
    top: 110px;
 }
 
-.activity dl dt strong {
-   font-family: 'Raleway', sans-serif;
+.activity dl dt {
    font-weight: 700;
    font-size: 1.111rem;
    color: rgba(255, 255, 255, 1);
-}
-
-.activity dl dt {
-   font-size: 0.778rem;
-   color: rgba(255, 255, 255, .5);
-   line-height: 1.5em;
 }
 
 .activity dl dt span {
@@ -372,8 +365,71 @@ section {
    margin-top: 2rem;
 }
 
+#content .place {padding-bottom: 120px;}
+#content .place h3 {text-align: center;}
+
+.place .place_main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 4rem;
+   margin: 3rem 0 0;
+}
+
+.place .place_main .place_large {
+   background-image: url(../images/place1.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 532px;
+}
+
+.place .place_main .place_text  {position: relative;}
+.place .place_main .place_text dl dt {
+   font-size: 1.3rem;
+   font-weight: 500;
+   margin: 3rem 0;
+}
+.place .place_main .place_text dl dd {
+   text-align: justify;   
+}
+.place .more {
+   display: block;
+   margin: 3rem 0;   
+}
 
 
+
+.place .place_list {
+   display: flex;  
+   flex-direction: row;
+   justify-content: space-between;
+   column-gap: 2rem;
+   margin: 2rem 0 0;
+   /* gap: 3rem; */
+
+}
+.place .place_list li {
+   width: 25%;
+   height: 250px;   
+   position: relative;
+}
+.place .place_list li a {
+   display: block;width: 100%; height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.place .place_list li:nth-of-type(1) a {background-image: url(../images/place1.png);}
+.place .place_list li:nth-of-type(2) a {background-image: url(../images/place2.png);}
+.place .place_list li:nth-of-type(3) a {background-image: url(../images/place3.png);}
+.place .place_list li:nth-of-type(4) a {background-image: url(../images/place4.png);}
+.place .place_list li span {
+   position: absolute; display: block;
+   text-align: center; bottom: -70px; left: 50%;
+   font-size: 1.5rem;
+   font-family: 'Pacifico', cursive;
+   transform:translateX(-50%) translateY(-50%);
+}
 
 
 
