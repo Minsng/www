@@ -98,7 +98,7 @@ section {
          height: 430px;
          overflow: hidden;
          position: relative;
-         border-radius: 4px;
+         border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
       }
 
       .about3 {
@@ -106,7 +106,7 @@ section {
          background-repeat: no-repeat;
          background-size: cover;
          position: relative;
-         border-radius: 0.25rem;
+         border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
       }
 
       .about ul li:nth-child(1) {
