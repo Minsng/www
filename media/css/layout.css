@@ -532,15 +532,6 @@ section {
       width: 100%;
    }
 
-   .place .place_list {
-      display: flex;  
-      flex-direction: row;
-      justify-content: space-between;
-      column-gap: 2rem;
-      margin: 2rem 0 0;
-      /* gap: 3rem; */
-   
-   }
    .place .place_list li {
       width: 33.33%;
    }
@@ -554,40 +545,43 @@ section {
 
 /* 테블릿 */
 @media screen and (max-width:1024px) {
-	.about ul li:nth-of-type(1) {display: none;}
-	.about ul li:nth-of-type(3) {display: none;}
-
-   .activity .area1 li:nth-of-type(2) {display: none;}
-   .activity .area3 li:nth-of-type(2) {display: none;}
-
-   .activity .textarea {
-      position: relative;
-      left: 0; 
-      margin: 0;
-      width: 100%;
-   }
-
-   .place .place_list {
-      display: flex;  
-      flex-direction: row;
-      justify-content: space-between;
-      column-gap: 2rem;
-      margin: 2rem 0 0;
-      /* gap: 3rem; */
+	.about ul {display: none;}
+   .about .grid {grid-template-columns: 1fr;}
+   .about .grid div .topic_area h3,
+   .about .grid div .topic_area p {text-align: center;}
    
+   .about .grid>div .topic_area a {
+      left: 50%; transform: translateX(-50%);
    }
-   .place .place_list li {
-      width: 33.33%;
-   }
-   .place .place_list li:nth-of-type(4) {display: none;}
 
-   .gallery ul {grid-template-columns: repeat(3,1fr);}
-   .gallery ul li:last-of-type {display: none;}
+   .activity .area1 li:nth-of-type(1) {display: none;}
+   .activity .area3 li:nth-of-type(1) {display: none;}
+   .activity .grid {grid-template-columns: 1fr;}
+
+   
+   .place .place_main .place_large {height: 400px;}
+   .place .place_main .place_text dl dt {margin: 1.5rem 0;}
+   .place_text dl dd p:nth-of-type(2) {display: none;}
+   .place .place_list li {
+      width: 50%;
+   }   
+   .place .place_list li:nth-of-type(3) {display: none;}
+
+   .gallery ul {grid-template-columns: repeat(2,1fr);}
+   .gallery ul li:nth-of-type(2) {display: none;}
 }
 
 /* 소형 테블릿 */
 @media screen and (max-width:768px) {
 	
+
+   .visit {display: none;}
+
+
+
+
+
+
 }
 
 /* 모바일 */
