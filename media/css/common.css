@@ -26,7 +26,7 @@ p,li,dd{ line-height:1.5em}
 #wrap{width:100%; overflow: hidden}
 #headerArea{position:fixed; z-index: 30; height: 80px;
     left:0; top: 0; background: rgba(0, 0, 0, 0);
-    width: 100%
+    width: 100%; transition: all .5s;
 }	
 #headerArea	.headerInner{width: 90%; margin: 0 5%; overflow: hidden}
 #headerArea h1{ float: left; margin: 15px 0}
@@ -41,6 +41,9 @@ p,li,dd{ line-height:1.5em}
     background: url(../images/logo.png) no-repeat;
     background-size: cover;
 }
+
+#headerArea.on {background: rgba(0, 0, 0, .8);}
+
 #headerArea #gnb{float: right;margin-top: 25px}
 #headerArea #gnb ul{overflow: hidden;}
 #headerArea #gnb ul li{float: left; margin-left: 40px;}
@@ -53,20 +56,21 @@ h3 {font-family: 'Pacifico', cursive;}
 
 #footerArea .footerInner {
     position: relative;
-    height: 150px;
-    background: #004165;    
+    height: 200px;
+    background: rgba(0, 65, 101, .9);    
 }
 #footerArea .footerInner img {
     display: block; position: relative;
-    top: 25px; left: 50%;
-    transform: translateX(-50%);
+    top: 25px; 
+    left: 50%; transform: translateX(-50%);
+    /* left: 25px; float: left; */
     
 }
-#footerArea .footerInner p {}
-#footerArea .footerInner .sns {
+#footerArea .footerInner .sns {    
     display: flex;
     position: relative;
-    left: 85%;
+    margin: 50px 0 0;
+    left: 50%; 
     transform: translateX(-50%);
     width: 185px;
     column-gap: 5px;

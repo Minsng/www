@@ -98,15 +98,19 @@ section {
          height: 430px;
          overflow: hidden;
          position: relative;
-         border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+         border-radius: 97% 3% 97% 3% / 3% 97% 3% 97%;
+         border: 5px solid #fbc834;
       }
+      .about ul li:nth-of-type(odd) {border-radius: 3% 97% 3% 97% / 97% 3% 97% 3%;}
 
       .about3 {
          background: url(../images/about3.png) center;
          background-repeat: no-repeat;
          background-size: cover;
          position: relative;
-         border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+         border: 5px solid #fbc834;
+         border-radius: 97% 3% 97% 3% / 3% 97% 3% 97%;
+         overflow: hidden;
       }
 
       .about ul li:nth-child(1) {
@@ -137,9 +141,9 @@ section {
 
 
       .about dl {
-         padding: 1rem;
+         padding: 1.5rem;
          position: absolute;
-         top: 330px;
+         top: 300px;
          transition: all .5s;
          height: 100%;
          width: 100%;
@@ -167,7 +171,7 @@ section {
 
       .about dd {
          opacity: 0;
-         padding-right: 2rem;
+         padding-right: 3rem;
       }
 
       .about li:hover dd,
@@ -215,7 +219,12 @@ section {
    overflow: hidden;
    border-radius: 8px;
    position: relative;
+   border-radius: 97% 3% 97% 3% / 3% 97% 3% 97%;
+   border: 5px solid #004165;
 }
+.activity .area1 li:nth-of-type(even) {border-radius: 3% 97% 3% 97% / 97% 3% 97% 3%;}
+.activity .area3 li:nth-of-type(odd) {border-radius: 3% 97% 3% 97% / 97% 3% 97% 3%;}
+
 .activity .area1 li:last-of-type,
 .activity .area3 li:last-of-type {height: 450px;}
 
@@ -247,6 +256,8 @@ section {
    transition: all .5s;
    overflow: hidden;
    position: relative;
+   border-radius: 97% 3% 97% 3% / 3% 97% 3% 97%;
+   border: 5px solid #004165;
 }
 
 .activity .area2::before,
@@ -348,22 +359,22 @@ section {
 }
 
 
-#content .visit {
-   margin-top: 120px;
-   height: auto;
-   background: url(../images/centerbar.png)no-repeat fixed center;
-   background-size: cover;
-   padding: 50px 72px;
-}
+   #content .visit {
+      margin-top: 120px;
+      height: auto;
+      background: url(../images/centerbar.png)no-repeat fixed center;
+      background-size: cover;
+      padding: 50px 72px;
+   }
 
-#content .visit h3 {
-   color: #fff;
-   font-family: 'roboto',sans-serif;
-}
+   #content .visit h3 {
+      color: #fff;
+      font-family: 'roboto',sans-serif;
+   }
 
-#content .visit p {
-   margin-top: 2rem;
-}
+   #content .visit p {
+      margin-top: 2rem;
+   }
 
 #content .place {padding-bottom: 120px;}
 #content .place h3 {text-align: center;}
@@ -432,6 +443,8 @@ section {
 }
 
 
+.gallery {padding-top: 60px; position: relative;}
+.gallery h3 {text-align: center;}
 
 
 

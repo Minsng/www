@@ -1,10 +1,11 @@
 $(document).ready(function() {
-  var screenSize, screenHeight;
+  var screenSize, screenHeight, visHeight;
   var current=false;
 
   function screen_size(){
       screenSize = $(window).width(); //스크린의 너비
       screenHeight = $(window).height();  //스크린의 높이
+      visHeight = $('.videoBox').height();
 
       $("#content").css('margin-top',screenHeight);
       
@@ -32,6 +33,18 @@ $(document).ready(function() {
       screenHeight = $(window).height();
       $('html,body').animate({'scrollTop':screenHeight}, 1000);
   });
+
+  $(document).scroll(function(){
+
+    var windowTop = $(window).scrollTop();
+    if(windowTop > visHeight-150){
+        $('#headerArea').addClass('on');
+    } else {
+        $('#headerArea').removeClass('on');
+    }
+
+  });
+  
   
   
 });
