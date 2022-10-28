@@ -152,7 +152,7 @@ h3 {font-family: 'Pacifico', cursive;}
 }
 
 /* 테블릿 */
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1043px) {
     #headerArea .headerInner {
         width: 100%;
         margin: 0;
