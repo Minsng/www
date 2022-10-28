@@ -43,13 +43,70 @@ p,li,dd{ line-height:1.5em}
 }
 
 #headerArea.on {background: rgba(0, 0, 0, .8);}
+#headerArea.on h1 a{background: url(../images/logo.png) no-repeat; background-size: cover;}
 
 #headerArea #gnb{float: right;margin-top: 25px}
 #headerArea #gnb ul{overflow: hidden;}
-#headerArea #gnb ul li{float: left; margin-left: 40px;}
+#headerArea #gnb ul li{
+    float: left; margin-left: 40px; height: 50px;
+    margin: 15px 0 15px 40px;
+}
 #headerArea #gnb ul li a{color: #fff; text-decoration: none; transition: all .5s;}
-#headerArea #gnb ul li a:hover {color: #004165;}
+#headerArea #gnb ul li:hover a {color: #004165;}
 h3 {font-family: 'Pacifico', cursive;}
+#headerArea #gnb ul li a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    /* background: linear-gradient(to right,#F18101, #FF9419, #F18101); */
+    transition: all 0.3s ease;
+}
+#headerArea #gnb ul li:hover a::before {
+    width: 100%;
+    left: 0;
+}
+#headerArea #gnb ul li a.current {
+    color: #fbc834;
+}
+#headerArea #gnb ul li a.current::before {
+    width: 100%;
+    left: 0;
+}
+
+#headerArea .menu_open {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: none;
+}
+#headerArea .menu_open span {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+    text-indent: -9999px;
+    display: block;
+    margin: 28.5px 20px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 푸터 공통 영역 */
@@ -96,7 +153,95 @@ h3 {font-family: 'Pacifico', cursive;}
 
 /* 테블릿 */
 @media screen and (max-width:1024px) {
-	
+    #headerArea .headerInner {
+        width: 100%;
+        margin: 0;
+    }
+    #headerArea h1 {
+        position: relative;
+        left: 50%;
+        margin-left: -65px;
+    }
+    #headerArea #gnb {
+        width: 100%;
+        margin: 0;
+        background: rgba(0, 0, 0, .8);
+        padding: 24px 0 32px;
+        display: none;
+    }
+    #headerArea #gnb ul li {
+        float: none;
+        margin-right: 0;
+        text-align: center;
+    }
+    #headerArea #gnb ul li a {
+        font-size: 1.667rem;
+        padding: 24px 0;
+    }
+
+    /* mobile header>open submenu */
+    #headerArea .menu_open {
+        display: block;
+        float: right;
+        height: 60px;
+        position: relative;
+        border-radius: 5px;
+        z-index: 110;
+        transition: all .5s;
+    }
+    #headerArea .menu_open span {
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        position: relative;
+        text-indent: -9999px;
+        display: block;
+        margin: 28.5px 20px;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+    #headerArea .menu_open span::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top: -9.5px;
+        left: 0;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+    #headerArea .menu_open span::after {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top: 9.5px;
+        left: 0;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+    #headerArea.mn_open {
+        background: rgba(0, 0, 0, .8);
+    }
+    #headerArea.mn_open h1 a {
+        background: url(../images/logo.png)no-repeat;
+        background-size: cover;
+    }
+    #headerArea.mn_open .menu_open span {
+        background: rgba(0, 0, 0, 0);
+    }
+    #headerArea.mn_open .menu_open span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    #headerArea.mn_open .menu_open span::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
 }
 
 /* 소형 테블릿 */
@@ -106,7 +251,16 @@ h3 {font-family: 'Pacifico', cursive;}
 
 /* 모바일 */
 @media screen and (max-width:640px) {
-	
+    html {
+        font-size: 16px;
+    }
+    #headerArea {
+        height: 76px;
+    }
+    #headerArea h1 a {
+        width: 120px;
+        height: 47px;
+    }
 }
 
 /* 최소 사이즈 처리 */

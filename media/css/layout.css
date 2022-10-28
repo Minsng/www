@@ -28,9 +28,22 @@
    display:none
 }
 
-.down{display: block; font-size: 20px; position: absolute; 
-	 left:50%; margin-left: -90px; bottom: 20%;
-	animation:ani 1s infinite  alternate;}
+.down{
+   display: block; font-size: 20px; position: absolute; 
+	left:50%; margin-left: -90px; bottom: 20%;
+	animation:ani 1s infinite  alternate;
+}
+.down img {
+   width: 80px; height: 80px; display: block; position: relative; left: 50%;
+   transform: translateX(-50%);
+   animation: go_left 5s infinite;
+}
+
+/* @keyframes go_left {
+	0% { left: 100%;}
+	50% { left: 0%; transform: rotateY(180deg);}
+	100% { left: 100%;}
+} */
 @keyframes ani {
 	0% { transform:scale(1); opacity:1; color:#fff;}
 	100% { transform:scale(1.2); opacity:0.8; color:#888;}
@@ -56,7 +69,9 @@
 .more:hover>span {color: #fbc834;}
 
 #content{
-   width: auto; height:5000px; background:rgba(0, 0, 0, .7);   
+   width: auto; background:rgba(0, 0, 0, .7);
+   padding-bottom: 120px;
+   /* height:4900px;    */
 }
 
 section {
@@ -443,10 +458,50 @@ section {
 }
 
 
-.gallery {padding-top: 60px; position: relative;}
+.gallery {padding: 60px 0 120px; position: relative;}
 .gallery h3 {text-align: center;}
+.gallery p {text-align: center; margin: 3rem 0 0;} 
+.gallery ul {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 1rem;
+   align-items: center;
+   position: relative;
+   padding: 80px 0 0;
+}
+.gallery ul:nth-of-type(2) {padding: 1rem 0 80px;}
+@keyframes gallery {   
 
-
+   0% {
+      transform: rotate(0);
+   }
+   25% {
+      transform: rotate(2deg);
+   }
+   75% {
+      transform: rotate(-2deg);
+   }
+   100% {
+      transform: rotate(0);
+   }
+}
+.gallery ul li {
+   overflow: hidden;
+   box-sizing: border-box;
+   border-radius: 2% 98% 2% 98% / 98% 2% 98% 2%;
+   border: 3px solid #fbc834;
+   transition: all .5s;
+   transform: rotate(0deg);
+   position: relative;
+}
+.gallery ul li:nth-of-type(even) {
+   top: 2rem; border-radius: 98% 2% 98% 2% / 2% 98% 2% 98%;
+}
+.gallery ul li:hover {
+   animation: gallery 1s infinite;
+}
+.gallery ul li img {width: 100%;}
+.gallery .more {position: relative; left: 50%; transform: translateX(-50%);}
 
 
 
