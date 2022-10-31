@@ -585,7 +585,9 @@ section {
    }
    .gallery {padding: 60px 40px 0;}
 
-   /* .visit {display: none;} */
+   #content .visit {
+      background: url(../images/centerbar2.png)no-repeat cover center;
+   }
 
 
 
@@ -602,7 +604,9 @@ section {
    
    .activity .textarea p {margin: 0 .4rem 2rem;}
    
-   #content .visit {padding: 1rem;}
+   #content .visit {
+      padding: 1rem;
+   }
    #content .place {padding-bottom: 0;}
    .place .place_main {grid-template-columns: 1fr;}
    .place .place_list {display: none;}
