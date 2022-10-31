@@ -586,7 +586,10 @@ section {
    .gallery {padding: 60px 40px 0;}
 
    #content .visit {
-      background: url(../images/centerbar2.png)no-repeat cover center;
+      background: url(../images/centerbar2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
    }
 
 
