@@ -30,7 +30,7 @@
 
 .down{
    display: block; font-size: 20px; position: absolute; 
-	left:50%; margin-left: -90px; bottom: 20%;
+	left:50%; margin-left: -68px; bottom: 20%;
 	animation:ani 1s infinite  alternate;
 }
 .down img {
@@ -596,7 +596,21 @@ section {
 
 /* 모바일 */
 @media screen and (max-width:640px) {
-	
+	section {
+      padding: 60px 20px 0;
+   }
+   
+   .activity .textarea p {margin: 0 .4rem 2rem;}
+   
+   #content .visit {padding: 1rem;}
+   #content .place {padding-bottom: 0;}
+   .place .place_main {grid-template-columns: 1fr;}
+   .place .place_list {display: none;}
+
+   .gallery {padding: 50px 1rem 0;}
+   .gallery ul {grid-template-columns: 1fr;}
+   .gallery ul li:nth-of-type(1) {display: none;}
+   
 }
 
 
