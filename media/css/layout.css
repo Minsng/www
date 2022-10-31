@@ -28,16 +28,7 @@
    display:none
 }
 
-.down{
-   display: block; font-size: 20px; position: absolute; 
-	left:50%; margin-left: -68px; bottom: 20%;
-	animation:ani 1s infinite  alternate;
-}
-.down img {
-   width: 80px; height: 80px; display: block; position: relative; left: 50%;
-   transform: translateX(-50%);
-   animation: go_left 5s infinite;
-}
+
 
 /* @keyframes go_left {
 	0% { left: 100%;}

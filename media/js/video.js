@@ -29,21 +29,6 @@ $(document).ready(function() {
       screen_size();
   }); 
   
-  $('.down').click(function(){
-      screenHeight = $(window).height();
-      $('html,body').animate({'scrollTop':screenHeight}, 1000);
-  });
-
-  $(document).scroll(function(){
-
-    var windowTop = $(window).scrollTop();
-    if(windowTop > visHeight-150){
-        $('#headerArea').addClass('on');
-    } else {
-        $('#headerArea').removeClass('on');
-    }
-
-  });
   
   
   

@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    var screenSize, screenHeight, visHeight;
     var current = 0;
     $(window).resize(function () {
         var screenSize = $(window).width();
@@ -41,4 +42,25 @@ $(document).ready(function() {
         }, 1000);
     });
 
+
+
+
+    $('.down').click(function(){
+        screenHeight = $(window).height();
+        $('html,body').animate({'scrollTop':screenHeight}, 1000);
+    });
+  
+    $(document).scroll(function(){
+  
+      var windowTop = $(window).scrollTop();
+      if(windowTop > visHeight-150){
+          $('#headerArea').addClass('on');
+      } else {
+          $('#headerArea').removeClass('on');
+      }
+  
+    });
+
+
+    
 });
