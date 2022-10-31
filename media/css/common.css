@@ -141,7 +141,31 @@ h3 {font-family: 'Pacifico', cursive;}
 #footerArea .footerInner .sns li a:hover {background: #fbc834; color: #004165;}
 #footerArea .footerInner .sns li a i {line-height: 40px;}
 
-
+/*top move*/
+.topMove {
+    display: block;
+    background:rgba(251, 200, 52, .8);
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin-left: 650px;
+    z-index: 50;
+    border-radius: 8px;
+    box-shadow: 2px 2px 30px 0 rgb(0 0 0 / 10%);
+}
+.topMove:hover {
+    background: rgba(251, 200, 52, 1);
+}
+.topMove::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/scroll_icon.png)no-repeat;
+    background-size: cover;
+}
 
 
 
