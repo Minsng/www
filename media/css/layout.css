@@ -553,10 +553,17 @@ section {
    .about .grid>div .topic_area a {
       left: 50%; transform: translateX(-50%);
    }
+   .about dl {top: 250px; padding-left: 50px;}
+   .about dl dt {font-size: 2rem;}
+   .about dl dt span{font-size: 1.5rem;}
 
    .activity .area1 li:nth-of-type(1) {display: none;}
    .activity .area3 li:nth-of-type(1) {display: none;}
    .activity .grid {grid-template-columns: 1fr;}
+   
+   .activity dl {padding-left: 50px;}
+   .activity dl dt {font-size: 2rem;}
+   .activity dl dt span{font-size: 1.5rem;}
 
    
    .place .place_main .place_large {height: 400px;}
@@ -573,9 +580,12 @@ section {
 
 /* 소형 테블릿 */
 @media screen and (max-width:768px) {
-	
+	section {
+      padding: 100px 40px 0;
+   }
+   .gallery {padding: 60px 40px 0;}
 
-   .visit {display: none;}
+   /* .visit {display: none;} */
 
 
 

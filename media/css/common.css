@@ -42,7 +42,7 @@ p,li,dd{ line-height:1.5em}
     background-size: cover;
 }
 
-#headerArea.on {background: rgba(0, 0, 0, .8);}
+#headerArea.on {background: rgba(0, 65, 101, .8);}
 #headerArea.on h1 a{background: url(../images/logo.png) no-repeat; background-size: cover;}
 
 #headerArea #gnb{float: right;margin-top: 25px}
