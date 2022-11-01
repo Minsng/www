@@ -53,6 +53,7 @@ $(document).ready(function() {
     $(document).scroll(function(){
   
       var windowTop = $(window).scrollTop();
+      visHeight = $('.videoBox').height();
       if(windowTop > visHeight-150){
           $('#headerArea').addClass('on');
       } else {

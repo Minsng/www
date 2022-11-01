@@ -1,14 +1,14 @@
 $(document).ready(function() {
     var screenSize, screenHeight, visHeight;
-    var current=false;
+    // var current=false;
   
     function screen_size(){
         screenSize = $(window).width(); //스크린의 너비
         screenHeight = $(window).height();  //스크린의 높이
         visHeight = $('.videoBox').height();
   
-        $("#content").css('margin-top',screenHeight);
-        
+        // $("#content").css('margin-top',screenHeight);
+        $('#content .pagettl').css('height', screenHeight);
     }
   
     screen_size();  //최초 실행시 호출
