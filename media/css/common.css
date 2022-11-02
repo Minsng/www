@@ -100,6 +100,7 @@ h3 {font-family: 'Pacifico', cursive;}
     display: block; font-size: 20px; position: absolute; 
      left:50%; margin-left: -68px; bottom: 20%;
      animation:ani 1s infinite  alternate;
+     font-family: 'Pacifico',cursive;
  }
  .down img {
     width: 80px; height: 80px; display: block; position: relative; left: 50%;

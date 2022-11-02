@@ -107,9 +107,9 @@
     .grid--images:hover .grid-image-item img{filter:grayscale(1); opacity: .3;}
     .grid--images:hover .grid-image-item:hover .inner{box-shadow:10px 10px 20px rgba(0,0,0,1);}
     .grid--images:hover .grid-image-item:hover img{filter:grayscale(0); opacity: 1;}
-    .grid--images .grid-image-item:hover .inner{background:rgba(163,166,255,.2);}
-    .grid--images .grid-image-item:hover strong{color:rgba(163,166,255,.9);}
-    .grid--images .grid-image-item:hover p{color:rgba(163,166,255,.9);}
+    .grid--images .grid-image-item:hover .inner{background:rgba(255,255,255,.2);}
+    .grid--images .grid-image-item:hover strong{color:rgba(255,255,255,.9);}
+    .grid--images .grid-image-item:hover p{color:rgba(255,255,255,.9);}
 }
 
 
