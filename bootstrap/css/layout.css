@@ -1,0 +1,32 @@
+
+body {
+  font-family: "대표폰트명", Arial, sans-serif;
+  font-size: 16px;
+}
+.hidden, #skipNav{
+  position: absolute; display: block;width:1px; height: 1px;
+  left:-1000%; top:0; overflow: hidden; color: #fff;
+}
+
+/* 와이드 pc */
+
+
+/* 일반pc */
+@media screen and (max-width:1200px) {
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:992px) {
+
+}
+
+/* 소형테블릿 */
+@media screen and (max-width:768px) {
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+}

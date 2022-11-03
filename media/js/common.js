@@ -62,6 +62,13 @@ $(document).ready(function() {
   
     });
 
+    // $('#headerArea').mouseover(function(){
+    //     $(this).addClass('on');
+    // });
+    // $('#headerArea').mouseleave(function(){
+    //     $(this).removeClass('on');
+    // })
+
 
     
 });
