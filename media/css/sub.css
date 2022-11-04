@@ -151,25 +151,69 @@
 
 
 
+/* sub3 */
+.sub3wrap h3 {
+   color: #fbc834; text-align: center; margin: 50px 0;
+   font-size: 2.5rem;
+}
+
+.city_inner{overflow:hidden; padding: 50px 5% 0;}
+.city_inner ul.main_ct{}
+.main_ct li{display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 130px;}
+.main_ct li dl{width:40%; margin: 0 auto;}
+.main_ct li dt{font-size: 2rem; font-weight: bold; margin-bottom: 20px;}
+.main_ct li dd{text-align: justify; line-height: 2rem;}
+
+.main_ct li .main_img{width:40%; margin: 0 auto;}
+.main_ct li .main_img>img{width: 100%; border-radius: 40% 10% / 20% 60%;}
+.main_ct li .main_gallery{width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 3%; margin-top: 50px;}
+
+.main_ct li .main_gallery span{
+   height: 270px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.main_ct li .gallery1 span:nth-of-type(1){background-image: url(../images/sydney1.jpg);}
+.main_ct li .gallery1 span:nth-of-type(2){background-image: url(../images/sydney2.jpg);}
+.main_ct li .gallery1 span:nth-of-type(3){background-image: url(../images/sydney3.jpg);}
+
+.main_ct li .gallery2 span:nth-of-type(1){background-image: url(../images/melbourne1.jpg);}
+.main_ct li .gallery2 span:nth-of-type(2){background-image: url(../images/melbourne2.jpg);}
+.main_ct li .gallery2 span:nth-of-type(3){background-image: url(../images/melbourne3.jpg);}
+
+.main_ct li .gallery3 span:nth-of-type(1){background-image: url(../images/brisbane1.jpg);}
+.main_ct li .gallery3 span:nth-of-type(2){background-image: url(../images/brisbane2.jpg);}
+.main_ct li .gallery3 span:nth-of-type(3){background-image: url(../images/brisbane3.jpg);}
+
+.main_ct li .gallery4 span:nth-of-type(1){background-image: url(../images/perth1.jpg);}
+.main_ct li .gallery4 span:nth-of-type(2){background-image: url(../images/perth2.jpg);}
+.main_ct li .gallery4 span:nth-of-type(3){background-image: url(../images/perth3.jpg);}
 
 
+.others{padding: 0 8% 120px;}
+.others ul{display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); grid-gap: 3.5rem;}
+.others ul .effect-ming{position: relative; border-radius: 30px 30px; overflow: hidden;}
+.others ul .effect-ming img{width: 100%; border-radius: 30px 30px; opacity: 0.9; transition: 0.35s;}
+.others ul .effect-ming:hover img{opacity: 0.4;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.others ul .effect-ming>div{}
+.others ul .effect-ming>div::before{
+   position: absolute; 
+   top: 5%; left: 5%;
+   width: 90%; height: 90%;
+   border: 2px solid #fff; 
+   border-radius: 30px 30px;
+   box-shadow: 0 0 0 30px rgba(0,0,0,0.2); 
+   content: ''; opacity: 0; transition: 0.35s;transform: scale3d(1.4,1.4,1); 
+}
+.others ul .effect-ming>div dl{width: 380px; text-align: center; position:absolute; left: 50%; top: 30%; margin-left: -190px; border-radius: 30px 30px;}
+.others ul .effect-ming>div dt{color: #f0f0f0; font-size: 1.8rem; font-weight: bold; transition: 0.35s; margin-bottom: 20px;}
+.others ul .effect-ming:hover>div dt{transform: scale(0.9);}
+.others ul .effect-ming>div dd{width: 60%; padding: 1.5rem 0; opacity: 0; transition: 0.35s; transform: scale(1.5); margin: 0 auto;}
+.others ul .effect-ming:hover>div::before, .others ul .effect-ming:hover>div dt, .others ul .effect-ming:hover>div dd{opacity: 1; transform: scale3d(1,1,1);}
+.others ul .effect-ming:hover>div{background-color: rgba(0,0,0,.2);}
 
 
 
@@ -216,7 +260,7 @@
 }
 
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1440px){
    .world .odd:nth-child(2)::before ,.world .odd:nth-child(2)::after,.world .even:nth-child(3)::after,.world .odd:nth-child(4)::after,.world .even:nth-child(5)::after,.world .odd:nth-child(6)::before,.world .odd:nth-child(6)::after,.world .even:nth-child(7)::after{display: none;}
 }
 
@@ -225,11 +269,43 @@
    /* sub1 */
 .world .odd dd , .world .even dd{font-size: 1rem;}   
    
+/* sub3 */
+.others ul li:nth-of-type(5){display: none;}
+.others ul li:nth-of-type(6){display: none;}
+.others ul{grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr);}
+
+.others ul .effect-ming{width:90%; margin: 0 auto;}
+
+
+.main_ct li .main_gallery{grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2,1fr);}
+.main_ct li .gallery1 span:nth-of-type(1),
+.main_ct li .gallery1 span:nth-of-type(2),
+.main_ct li .gallery1 span:nth-of-type(3),
+.main_ct li .gallery2 span:nth-of-type(1),
+.main_ct li .gallery2 span:nth-of-type(2),
+.main_ct li .gallery2 span:nth-of-type(3),
+.main_ct li .gallery4 span:nth-of-type(1),
+.main_ct li .gallery4 span:nth-of-type(2),
+.main_ct li .gallery4 span:nth-of-type(3),
+.main_ct li .gallery3 span:nth-of-type(1),
+.main_ct li .gallery3 span:nth-of-type(2),
+.main_ct li .gallery3 span:nth-of-type(3){background-size: cover; background-repeat: no-repeat; background-position: center; }
+
+.main_ct li .gallery1 span:nth-of-type(1){grid-column: 1/3; background-position-y: 0;}
+.main_ct li .gallery2 span:nth-of-type(1),
+.main_ct li .gallery4 span:nth-of-type(1),
+.main_ct li .gallery3 span:nth-of-type(1){grid-column: 1/3;background-position-y: -809px;}
+
+.main_ct li .gallery2 span:nth-of-type(1){background-position-y: -195px;}
+.main_ct li .gallery4 span:nth-of-type(1){background-position-y: -195px;}
    
    /* sub4 */
    .grid--images .grid-image-item,
    .grid--images .grid-sizer{width:33.333%;}
 }
+
+
+
 @media screen and (max-width:1024px){
 .wrap {padding: 0 3%;}
 .sub2wrap {padding: 0;}
@@ -272,6 +348,13 @@
 
 
 
+/* sub3 */
+.main_ct li dt{line-height: 2rem;}
+.main_ct li dl {width: 100%; margin: 50px 0;}
+.main_ct li .main_img {width: 100%; margin: 30px 0;}
+
+.main_ct li .gallery2 span:nth-of-type(1){background-position-y: -152px;}
+.main_ct li .gallery3 span:nth-of-type(1){background-position-y: -509px;}
 
 
 
@@ -320,7 +403,18 @@
 .clip2 .clip_part:nth-of-type(1){display: none;}
 
 
+/* sub3 */
+.main_ct li dt{font-size: 1.8rem;}
 
+.main_ct li .main_gallery{grid-template-rows: 1fr;}
+.main_ct li .gallery1 span:nth-of-type(1),
+.main_ct li .gallery2 span:nth-of-type(1),
+.main_ct li .gallery4 span:nth-of-type(1),
+.main_ct li .gallery3 span:nth-of-type(1){display: none;}
+
+.others ul .effect-ming>div dl{width: 80%; margin-left: -40%; top: 20%;}
+.others ul .effect-ming:hover>div dt{font-size: 1.25rem; margin-bottom: 5px;}
+.others ul .effect-ming>div dd{font-size: .7rem; padding: 0;}
 
 
 }
@@ -347,8 +441,12 @@
 .clip2 .contentArea .imgPart{padding-bottom: 20px;}
 .clip2 .contentArea h4{margin: 20px 0 0;}
 
-
-
+/* sub3 */
+.others ul {grid-template-columns: 1fr;}
+.others ul li:nth-of-type(3),
+.others ul li:nth-of-type(4) {display: none;}
+.others ul .effect-ming:hover>div dt{font-size: 2rem; margin-bottom: 5px;}
+.others ul .effect-ming>div dd{font-size: 1.5rem; padding: 40px 0;}
 
 
 
