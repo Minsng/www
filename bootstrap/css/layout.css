@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;700&display=swap');
 
 body {
-  font-family: "대표폰트명", Arial, sans-serif;
+  font-family: 'Lexend Deca', sans-serif;  
   font-size: 16px;
 }
 .hidden, #skipNav{
