@@ -12,12 +12,10 @@
     <link rel="apple-touch-startup-image" href="startup.jpg">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/layout.css">
 
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/jquery-migrate-1.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
 
     <script>
@@ -31,7 +29,7 @@
     </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#headerArea" data-offset="10">
     <div id="skipNav">
         <a href="#content">Go to Content</a>
         <a href="#navbar">Go to Global Navigation</a>
@@ -39,25 +37,105 @@
 
     <div class="container-fluid">
         <header id="headerArea">
+            <h1><a href="#" class="logo">B&O</a></h1>
             <nav id="navbar" class="navbar navber-default navbar-fixed-top" role="navigation">
-                <h1 class="hidden"><a href="#" class="logo">B&O</a></h1>
                 <h2 class="hidden">Global Navigation</h2>
 
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#brand">
+                                <h3>Brand</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#product">
+                                <h3>Product</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#technology">
+                                <h3>Technology</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#collaboration">
+                                <h3>Collaboration</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </nav>
         </header>
         <div class="main_visual">
-            <div></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img"><img src="images/visual1.jpg" alt="visual image"></div>
+                        <div class="caption">
+                            <span>SEOUL, APGUJEONG</span>
+                            <strong>Bang & Olufsen Showroom opening</strong>
+                            <p>A celebration of Danish design in Seoul, our new flagship store on Apgujeong offers an opportunity to experience the brand in a unique space that connects Bang & Olufsen past, present and future.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"><img src="images/visual2.jpg" alt="visual image"></div>
+                        <div class="caption">
+                            <span>SOUND AND VISION, REDEFINED.</span>
+                            <strong>Your senses. Set free.</strong>
+                            <p>The songs and films you love, fresh with new flourishes. Like you're experiencing them for the very first time. Step into the moment with sound and vision experiences for your home.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img"><img src="images/visual3.jpg" alt="visual image"></div>
+                        <div class="caption">
+                            <span>SPEAKERS TO ENHANCE HOME INTERIOR</span>
+                            <strong>Choose the right speakers for your home</strong>
+                            <p>It’s Friday night and you’re relaxing in your comfortable home after a long day. You turn on the speaker to listen to the track that always has the power to move you and just like that, your evening has been transformed. The
+                                right music can instantly elevate your mood and the right home speaker means you can enjoy those mood-lifting moments whenever you need them most.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
         </div>
         <article id="content">
             <h2 class="hidden">Content Area</h2>
 
+            <div id="brand"></div>
+            <div id="Product"></div>
+            <div id="technology"></div>
+            <div id="collaboration"></div>
 
         </article>
         <footer id="footerArea">
+            <div class="quicktop"><a href="#">To the top</a></div>
 
         </footer>
     </div>
 
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/swiper.min.js"></script>
 
 </body>
 
