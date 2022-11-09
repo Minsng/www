@@ -63,16 +63,20 @@ a:hover {
     display: block;
     width: 6.25rem;
     height: 5rem;
-    background: url(../images/logo.png) 0 50% no-repeat;
+    background: url(../images/logo.png) 50% 50% no-repeat;
     background-size: auto 2.1875rem;
     font-size: 0;
     text-indent: -9999px;
-    z-index: 100;
+    z-index: 1040;
     transition: all .5s;
 }
 
+.navbar-nav {
+    margin: 0;
+}
+
 .navbar-nav>li {
-    margin-left: 3.1rem;
+    padding-left: 3.1rem;
 }
 
 .navbar-nav>li>a {
@@ -111,13 +115,17 @@ a:hover {
     }
 }
 
+.nav {
+    background: #fff;
+}
+
 .nav>li>a:focus,
 .nav>li>a:hover {
     background: #fff;
 }
 
 .navbar-right {
-    margin-right: 4%;
+    padding-right: 4%;
 }
 
 .navbar-default .navbar-toggle {
@@ -135,9 +143,14 @@ a:hover {
     background: #000;
 }
 
+.navbar-collapse {
+    border: 0;
+    padding: 0;
+}
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #333;
+    border: 0;
 }
 
 .navbar-toggle {
@@ -160,6 +173,221 @@ a:hover {
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
+}
+
+.navbar-toggle:hover {
+    background: #ffc356;
+}
+
+
+/* visual */
+
+@keyframes vis_image {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes vis_caption {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.main_visual .swiper-slide-active img {
+    animation: vis_image 1 5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.main_visual .swiper-slide-active .caption span,
+.main_visual .swiper-slide-active .caption strong,
+.main_visual .swiper-slide-active .caption p {
+    animation: vis_caption 1 .4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.main_visual .swiper-slide-active .caption span {
+    animation-delay: .3s;
+}
+
+.main_visual .swiper-slide-active .caption strong {
+    animation-delay: .5s;
+}
+
+.main_visual .swiper-slide-active .caption p {
+    animation-delay: .7s;
+}
+
+:root {
+    --swiper-navigation-size: 50px;
+    --swiper-theme-color: #333;
+}
+
+.main_visual .swiper-container {
+    overflow: visible;
+}
+
+.main_visual .swiper-slide .img {
+    overflow: hidden;
+}
+
+.main_visual .swiper-slide img {
+    width: 100%;
+}
+
+.main_visual .swiper-slide .caption {
+    position: absolute;
+    top: 100%;
+    padding: 3.75rem 4% 0;
+}
+
+.main_visual .swiper-slide .caption span {
+    display: block;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    opacity: 0;
+}
+
+.main_visual .swiper-slide .caption strong {
+    display: block;
+    font-size: 2.8125rem;
+    font-weight: 900;
+    opacity: 0;
+}
+
+.main_visual .swiper-slide .caption p {
+    width: 70%;
+    margin: 1.75rem 0 0;
+    line-height: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.main_visual .swiper-pagination {
+    width: auto;
+    left: auto;
+    right: 4%;
+    bottom: -3rem;
+}
+
+.main_visual .swiper-pagination .swiper-pagination-bullet {
+    background: #fff;
+    opacity: .5;
+}
+
+.main_visual .swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+
+/* common */
+
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+    padding: 0;
+}
+
+#content {
+    margin: 21rem 0 0;
+}
+
+section {
+    padding: 5rem 4%;
+}
+
+section>h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* brand */
+
+#brand>.row {
+    background: #fafafa;
+    margin: 60px 0 0;
+}
+
+.brandimg {
+    overflow: hidden;
+}
+
+.brandimg img {
+    width: 100%;
+}
+
+#brand span {
+    display: block;
+}
+
+#brand strong {
+    display: block;
+}
+
+#brand p {
+    display: block;
+}
+
+.brandtext {
+    padding: 5rem;
 }
 
 
