@@ -361,6 +361,7 @@ section>h3 {
 
 /* brand */
 
+#collaboration>div .row,
 #brand>.row {
     background: #fafafa;
     margin: 60px 0 0;
@@ -475,7 +476,7 @@ section>h3 {
 #technology .swiper .swiper-slide img{width: 100%;}
 #technology .swiper .swiper-slide p{font-weight: 700; margin:2rem 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 #technology .swiper .swiper-slide span{display:block; font-size: 0.75rem; color:#777; margin:0.75rem 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-#technology .swiper .swiper-slide strong{display:block; font-size: 1.0625rem; font-weight: 500;}
+#technology .swiper .swiper-slide strong{display:block; font-size: 1.0625rem; font-weight: 500; margin-top: .4rem;}
 
 
 
@@ -489,7 +490,7 @@ section>h3 {
 /* 테블릿 */
 
 @media screen and (max-width:991px) {
-
+    #collaboration>div .row,
     #brand .row {
         flex-direction: column;
     }
