@@ -479,7 +479,12 @@ section>h3 {
 #technology .swiper .swiper-slide strong{display:block; font-size: 1.0625rem; font-weight: 500; margin-top: .4rem;}
 
 
-
+#collaboration>div strong {
+    display: block;
+    font-size: 1.875rem;
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
 
 
 /* 일반pc */
