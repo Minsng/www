@@ -259,7 +259,7 @@ a:hover {
 .main_visual .swiper-slide .caption strong {
     display: block;
     font-size: 2.8125rem;
-    font-weight: 900;
+    font-weight: 700;
     opacity: 0;
 }
 
@@ -364,6 +364,10 @@ section>h3 {
 #brand>.row {
     background: #fafafa;
     margin: 60px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .brandimg {
@@ -374,20 +378,87 @@ section>h3 {
     width: 100%;
 }
 
-#brand span {
-    display: block;
-}
-
-#brand strong {
-    display: block;
-}
-
-#brand p {
-    display: block;
-}
-
 .brandtext {
-    padding: 5rem;
+    height: 100%;
+}
+.textwrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    
+}
+.brandtext span {    
+    display: block;
+    font-size:1.125rem;    
+}
+.brandtext h4 {
+    display: block;
+    font-size: 1.875rem;
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+.brandtext p {}
+
+#product {}
+
+#product .row {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+#product .row {margin: 60px 0 0;}
+#product .row>div {overflow: hidden;}
+#product .row>div>a {}
+#product .row>div>a>img {position: relative;;width: 100%; transition: all .2s;}
+#product .row>div>a>img:hover {transform: scale(1.2);}
+#product .row>div>a>h4 {
+    position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%);
+    display: block; color: #fff; font-size: 1.5rem;
+}
+
+#banner {
+    background: url(../images/banner.jpg)no-repeat center fixed;
+    background-size: cover;
+    width: 100%;    
+    padding: 72px 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+#banner>div {}
+#banner>div span {font-size: 1.125rem;}
+#banner>div h4 {font-size: 1.875rem;}
+#banner>div p {}
+
+#technology {
+    margin-top: 5rem;
+    background-color: #fafafa;
+}
+#technology>h3 {margin: 0;}
+#technology>span {
+    display: block;
+    text-align: center;    
+    margin: 2rem 0 0;
+}
+#technology>h4 {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin: 0;
+}
+#technology>p:nth-of-type(1) {
+    text-align: center;
+    font-size: 1.125rem;
+    margin: 2rem 0;
+    
+}
+#technology>p:nth-of-type(2) {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
 }
 
 
@@ -398,12 +469,23 @@ section>h3 {
 
 /* 테블릿 */
 
-@media screen and (max-width:992px) {}
+@media screen and (max-width:991px) {
+
+    #brand .row {
+        flex-direction: column;
+    }
+}
 
 
 /* 소형테블릿 */
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:767px) {
+
+    #product .row {
+        flex-direction: column;
+        row-gap: 1rem;  
+    }
+}
 
 
 /* 모바일 */
