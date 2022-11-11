@@ -56,42 +56,6 @@ $(document).ready(function() {
         },
     });
 
-    $(document).ready(function() {
-        var swiper3 = new Swiper("#product .mySwiper3", {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            slidesPerGroup: 1,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            navigation: {
-                nextEl: "#product .swiper-button-next",
-                prevEl: "#product .swiper-button-prev",
-            },
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                    slidesPerGroup: 1,
-                },
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 50,
-                    slidesPerGroup: 1,
-                },
-                991: {
-                    slidesPerView: 1,
-                    spaceBetween: 40,
-                    slidesPerGroup: 1,
-                },
-                1280: {
-                    slidesPerView: 2,
-                    spaceBetween: 50,
-                    slidesPerGroup: 1,
-                },
-            },
-        });
-
-    });
     
 
     screenWidth = $(window).width();
