@@ -420,22 +420,6 @@ section>h3 {
     display: block; color: #fff; font-size: 1.5rem;
 }
 
-/* :root {
-    --swiper-navigation-size: 50px;
-    --swiper-theme-color: #black;
-} */
-
-
-/* #product .swiper-wrapper{align-content: flex-start;}
-#product .swiper{position: relative; margin: 2.5rem 0; padding: 0 4%;}
-
-#product .swiper .swiper-slide{text-align:center; }
-#product .swiper .swiper-slide .image{position:relative; width:50%; max-width: 300px; overflow: hidden; margin: 0 auto;}
-#product .swiper .swiper-slide img{width: 100%;}
-
-#product .swiper .swiper-slide p{font-weight: 700; margin:2rem 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-#product .swiper .swiper-slide span{display:block; font-size: 0.75rem; color:#777; margin:0.75rem 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-#product .swiper .swiper-slide strong{display:block; font-size: 1.0625rem; font-weight: 500; margin-top: .4rem;} */
 
 .modal-body .row {}
 .modal-body .row .image {overflow: hidden; padding: 2rem;}
@@ -586,4 +570,12 @@ section>h3 {
 
 /* 모바일 */
 
-@media screen and (max-width:640px) {}
+@media screen and (max-width:640px) {
+
+    #collaboration .nav-pills li {
+        width: 48.5%;
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
