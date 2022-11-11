@@ -419,6 +419,29 @@ section>h3 {
     display: block; color: #fff; font-size: 1.5rem;
 }
 
+:root {
+    --swiper-navigation-size: 50px;
+    --swiper-theme-color: #black;
+}
+
+
+#product .swiper-wrapper{align-content: flex-start;}
+#product .swiper{position: relative; margin: 2.5rem 0; padding: 0 4%;}
+
+#product .swiper .swiper-slide{text-align:center; }
+#product .swiper .swiper-slide .image{position:relative; width:50%; max-width: 300px; overflow: hidden; margin: 0 auto;}
+#product .swiper .swiper-slide img{width: 100%;}
+
+#product .swiper .swiper-slide p{font-weight: 700; margin:2rem 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#product .swiper .swiper-slide span{display:block; font-size: 0.75rem; color:#777; margin:0.75rem 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#product .swiper .swiper-slide strong{display:block; font-size: 1.0625rem; font-weight: 500; margin-top: .4rem;}
+
+
+
+
+
+
+
 #banner {
     background: url(../images/banner.jpg)no-repeat center fixed;
     background-size: cover;
@@ -505,6 +528,7 @@ section>h3 {
 #footerArea {
     background-color: #0a0a0a;
     padding: 3rem 0;
+    position: relative;
 }
 #footerArea .footerimg {
     width: 3rem;
@@ -516,6 +540,10 @@ section>h3 {
 #footerArea .footerimg img{width: 100%;}
 #footerArea p{color: #fff; text-align: center;}
 
+.quicktop{position:fixed; right: 1rem; bottom:1rem; z-index: 99; display: none;}
+.quicktop a{
+    display: block; width:4.375rem; height:4.375rem; border-radius:.75rem; background:url(../images/top.png) 50% 0 no-repeat #ffc356; background-size:100% auto; text-indent:-9999%; font-size: 0; overflow: hidden; transition:all .5s;
+}
 
 /* 일반pc */
 
