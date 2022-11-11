@@ -99,6 +99,7 @@ a:hover {
 #headerArea .navbar-default .navbar-nav>.active a h3 {
     color: #ffc356;
 }
+.nav li.active a {color: #ffc356;}
 
 #headerArea .navbar-default .navbar-nav>.active>a,
 #headerArea .navbar-default .navbar-nav>.active>a:focus,
@@ -404,28 +405,28 @@ section>h3 {
 
 #product {}
 
-#product .row {
+#product>.row {
     display: flex;
     flex-direction: row;
     gap: 3%;
 }
-#product .row {margin: 60px 0 0;}
-#product .row>div {overflow: hidden;}
-#product .row>div>a {}
-#product .row>div>a>img {position: relative;;width: 100%; transition: all .2s;}
-#product .row>div>a>img:hover {transform: scale(1.2);}
-#product .row>div>a>h4 {
+#product>.row {margin: 60px 0 0;}
+#product>.row>div {overflow: hidden;}
+#product>.row>div>a {}
+#product>.row>div>a>img {position: relative;;width: 100%; transition: all .2s;}
+#product>.row>div>a>img:hover {transform: scale(1.2);}
+#product>.row>div>a>h4 {
     position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%);
     display: block; color: #fff; font-size: 1.5rem;
 }
 
-:root {
+/* :root {
     --swiper-navigation-size: 50px;
     --swiper-theme-color: #black;
-}
+} */
 
 
-#product .swiper-wrapper{align-content: flex-start;}
+/* #product .swiper-wrapper{align-content: flex-start;}
 #product .swiper{position: relative; margin: 2.5rem 0; padding: 0 4%;}
 
 #product .swiper .swiper-slide{text-align:center; }
@@ -434,11 +435,15 @@ section>h3 {
 
 #product .swiper .swiper-slide p{font-weight: 700; margin:2rem 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 #product .swiper .swiper-slide span{display:block; font-size: 0.75rem; color:#777; margin:0.75rem 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-#product .swiper .swiper-slide strong{display:block; font-size: 1.0625rem; font-weight: 500; margin-top: .4rem;}
+#product .swiper .swiper-slide strong{display:block; font-size: 1.0625rem; font-weight: 500; margin-top: .4rem;} */
 
+.modal-body .row {}
+.modal-body .row .image {overflow: hidden; padding: 2rem;}
+.modal-body .row .image img{width: 100%;}
 
-
-
+.modal-body .row p{text-align: center; font-weight: 700; margin:2rem 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.modal-body .row span{text-align: center; display:block; font-size: 0.75rem; color:#777; margin:0.75rem 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.modal-body .row strong{text-align: center; display:block; font-size: 1.0625rem; font-weight: 500; margin-top: .4rem;} */
 
 
 
