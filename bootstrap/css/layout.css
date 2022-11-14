@@ -432,7 +432,10 @@ section>h3 {
 
 
 #banner {
-    background: url(../images/banner.jpg)no-repeat center fixed;
+    background-image: url(../images/banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     width: 100%;    
     padding: 72px 0;
