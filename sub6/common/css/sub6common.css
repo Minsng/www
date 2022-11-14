@@ -11,7 +11,7 @@
 
 
 .subNav {border-bottom: 1px solid #ccc;}
-    .subNav ul {width: 400px; overflow: hidden; margin: 0 auto;}
+    .subNav ul {width: 800px; overflow: hidden; margin: 0 auto;}
     .subNav ul li {position: relative; width: 200px; height: 70%; float: left; text-align: center;}
     .subNav ul li a {display: block;font-size: 1.2em; padding: 20px 0; font-weight: 500; transition: all .5s;}
     .subNav ul li a:hover {color: #0075c1;}
