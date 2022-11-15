@@ -1,5 +1,8 @@
 <? 
 	session_start(); 
+    @extract($_POST);
+    @extract($_GET);
+    @extract($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +11,7 @@
 	<meta charset="UTF-8">
 	<title>회원가입</title>
 	<link rel="stylesheet" href="../common/css/common.css">
-	<link rel="stylesheet" href="css/member_form.css">
+	<link rel="stylesheet" href="./css/member_form.css">
 	
 	
     <script src="./js/jquery-1.12.4.min.js"></script>
