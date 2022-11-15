@@ -36,7 +36,7 @@ email1 , email2
    {            // 레코드 삽입 명령을 $sql에 입력
 	    $sql = "insert into member(id, pass, name, nick, hp, email, regist_day, level) ";
 		$sql .= "values('$id', password('$pass'), '$name', '$nick', '$hp', '$email', '$regist_day', 9)";
-
+    
 		mysql_query($sql, $connect);  // $sql 에 저장된 명령 실행
    }
 
