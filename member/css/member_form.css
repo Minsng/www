@@ -1,1 +1,172 @@
 
+body {
+    background-color: #f8f8f8;
+}
+
+.logo {
+    margin: 50px auto 0;
+    display: block;
+    width: 240px; height: 100px;
+}
+h1 {float: none; margin: 0 auto;}
+h1 a {background: url(../../common/images/header_logo240100.png);}
+#content {
+    width: 600px;
+    margin: 50px auto 150px;
+    padding: 70px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 0 40px #0000001a;
+}
+
+#content::before {
+    content: '';
+    width: 66.66%;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #0075c1b7;
+}
+
+#content>div {
+    position: relative;
+}
+
+#content h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+#content h2 span {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#content h2::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #0075c1;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 55%;
+    border: none;
+    height: 60px;
+    padding-left: 20px;
+    font-weight: 500;
+    background-color: #fcfcfc;
+}
+
+input#name,
+input#nick {
+    width: 100%;
+}
+
+#nametext,
+#loadtext2,
+#nametext span,
+#loadtext2 span {
+    line-height: 40px;
+    float: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+form>div {
+    margin-bottom: 20px;
+}
+
+form>div span i {
+    margin: 0 5px;
+}
+
+.tel,
+.name,
+.nick {
+    margin-bottom: 40px;
+}
+
+.inner {
+    border: 1px solid rgb(224, 224, 224);
+    height: 60px;
+    background-color: #fcfcfc;
+    width: 100%;
+}
+.tel {overflow: hidden; width: 100%;}
+.tel>label {width: 100%;}
+.tel>.tel_inner {width: 29.9%; float: left;}
+.tel>p {
+    width: 5%; float: left; text-align: center; 
+    height: 60px; line-height: 60px; font-size: 20px;
+    font-weight: 500;
+}
+.tel>.tel_inner>.inner {width: 100%;}
+.tel input {width: 100%;}
+
+.mail {clear: both;}
+
+select {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+form>div span {
+    float: right;
+    font-weight: 500;
+    line-height: 60px;
+    margin-right: 10px;
+}
+
+.name,
+.nick {
+    float: left;
+    width: 49%;
+}
+
+.name {
+    margin-right: 2%;
+}
+
+.button {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.button a {
+    display: inline-block;
+    width: 200px;
+    line-height: 24px;
+    padding: 16px 0;
+    border: none;
+    background: #0075c1;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.button a:last-of-type {
+    background-color: #999;
+}

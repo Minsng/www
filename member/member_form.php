@@ -12,8 +12,6 @@
 	<title>회원가입</title>
 	<link rel="stylesheet" href="../common/css/common.css">
 	<link rel="stylesheet" href="./css/member_form.css">
-	
-	
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery-migrate-1.4.1.min.js"></script>
     
@@ -142,84 +140,103 @@ $("#nick").keyup(function() {    // id입력 상자에 id값 입력시
 </script>
 </head>
 <body>
-	 <? include "../common/subhead.html" ?>
-	 
-	<article id="content">  
-	  
-	  <h2>회원가입</h2>
-	  <form  name="member_form" method="post" action="insert.php"> 
-		
-     <table>
-      <caption class="hidden">회원가입</caption>
-     	<tr>
-     		<th scope="col"><label for="id">아이디</label></th>
-     		<td>
-     			 <input type="text" name="id" id="id" required>
-			     <span id="loadtext"></span>
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col"><label for="pass">비밀번호</label></th>
-     		<td>
-     			 <input type="password" name="pass" id="pass" required>
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col"><label for="pass_confirm">비밀번호확인</label></th>
-     		<td>
-     			<input type="password" name="pass_confirm" id="pass_confirm"  required>
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col"><label for="name">이름</label></th>
-     		<td>
-     			<input type="text" name="name" id="name"  required> 
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col"><label for="nick">닉네임</label></th>
-     		<td>
-     			 <input type="text" name="nick" id="nick"  required>
-			     <span id="loadtext2"></span>
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col">휴대폰</th>
-     		<td>
-     			<label class="hidden" for="hp1">전화번호앞3자리</label>
-     			<select class="hp" name="hp1" id="hp1"> 
-              <option value='010'>010</option>
-              <option value='011'>011</option>
-              <option value='016'>016</option>
-              <option value='017'>017</option>
-              <option value='018'>018</option>
-              <option value='019'>019</option>
-          </select>  - 
-          <label class="hidden" for="hp2">전화번호중간4자리</label><input type="text" class="hp" name="hp2" id="hp2"  required> - <label class="hidden" for="hp3">전화번호끝4자리</label><input type="text" class="hp" name="hp3" id="hp3"  required>
-     			
-     		</td>
-     	</tr>
-     	<tr>
-     		<th scope="col">이메일</th>
-     		<td>
-     		  <label class="hidden" for="email1">이메일아이디</label>
-     			<input type="text" id="email1" name="email1"  required> @ 
-     			<label class="hidden" for="email2">이메일주소</label>
-     			<input type="text" name="email2" id="email2"  required>
-     		</td>
-     	</tr>
-     	<tr>
-     		<td colspan="2">
-     			<a href="#"><img src="images/button_save.gif"  onclick="check_input()"></a>&nbsp;&nbsp;
-				 <a href="#"><img src="images/button_reset.gif" onclick="reset_form()"></a>
-     		</td>
-     	</tr>
-     </table>
-
-	 </form>
-	  
-	</article>
-	 <? include "../common/subfoot.html" ?>
+    <header>
+        <h1><a class="logo" href="../index.html"><img src="../common/images/navlogo.png" alt="한샘로고"></a></h1>
+    </header>
+    <article id="content">  	  
+        <div>
+            <h2>정보 입력</h2>
+            <form name="member_form" method="post" action="insert.php">
+                <div>
+                    <label for="id">아이디</label>
+                    <div class="inner inid">
+                        <input type="text" name="id" id="id" required>
+                        <span id="loadtext" ></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="pass">비밀번호</label>
+                    <div class="inner inpass">
+                        <input type="password" name="pass" id="pass" required>
+                        <span id="passtext"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="pass_confirm">비밀번호 재확인</label>
+                    <div class="inner inpasscon">
+                        <input type="password" name="pass_confirm" id="pass_confirm" required>
+                        <span id="passcontext"></span>
+                    </div>
+                </div>
+                <div class="name">
+                    <label for="name">이름</label>
+                    <div class="inner inname">
+                        <input type="text" name="name" id="name" required>
+                        <span id="nametext"></span>
+                    </div>
+                </div>
+                <div class="nick">
+                    <label for="nick">닉네임</label>
+                    <div class="inner innick">
+                        <input type="text" name="nick" id="nick" required>
+                        <span id="loadtext2"></span>
+                    </div>
+                </div>
+                <div class="tel">
+                    <label for="hp">휴대전화</label>
+                        <div class="tel_inner">
+                            <div class="inner inhp">
+                                <input type="text" maxlength="3" name="hp1" id="hp1" required>
+                                <span id="teltext"></span>
+                            </div>
+                        </div>
+                        <p>-</p>
+                        <div class="tel_inner">
+                            <div class="inner inhp">
+                                <input type="text" maxlength="4" name="hp2" id="hp2" required>
+                                <span id="teltext"></span>
+                            </div>
+                        </div>
+                        <p>-</p>
+                        <div class="tel_inner">
+                            <div class="inner inhp">
+                                <input type="text" maxlength="4" name="hp3" id="hp3" required>
+                                <span id="teltext"></span>
+                            </div>
+                        </div>
+                    <!-- <div class="tel_inner">
+                        <label class="hidden" for="hp1">전화번호앞3자리</label>
+                        <select class="hp" name="hp1" id="hp1"> 
+                            <option value='010'>010</option>
+                            <option value='011'>011</option>
+                            <option value='016'>016</option>
+                            <option value='017'>017</option>
+                            <option value='018'>018</option>
+                            <option value='019'>019</option>
+                        </select>
+                        <p>-</p>
+                        <label class="hidden" for="hp2">전화번호중간4자리</label>
+                        <input type="text" class="hp" name="hp2" id="hp2" maxlength="4" required>
+                        <p>-</p>
+                        <label class="hidden" for="hp3">전화번호끝4자리</label>
+                        <input type="text" class="hp" name="hp3" id="hp3" maxlength="4" required>
+                    </div> -->
+                </div>
+                <div class="mail">
+                    <label for="email">이메일</label>
+                    <div class="inner inmail">
+                        <input type="email" name="email" id="email" required placeholder="admin@hansol.com">
+                        <span id="mailtext"></span>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#" class="reg" id="reg" onclick="check_input()">가입하기</a>
+                    <a href="#" onclick="reset_form()">다시작성하기</a>
+                </div>
+            </form>
+        </div>
+    </article>
+<!-- <a href="#"><img src="images/button_reset.gif" onclick="reset_form()"></a> -->
 </body>
 </html>
 

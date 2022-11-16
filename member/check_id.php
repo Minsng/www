@@ -27,7 +27,7 @@
       }
       else
       {
-         echo "<span style='color:green'>사용가능한 아이디입니다.</span>";
+         echo "<span style='color:#009944'>사용가능한 아이디입니다.</span>";
       }
     
  

@@ -1,16 +1,9 @@
 <meta charset="utf-8">
 <?
 @extract($_POST);
+@extract($_GET);
+@extract($_SESSION);
 
-/*
-id
-pass
-pass_confirm
-name
-nick
-hp1 , hp2 , hp3
-email1 , email2
-*/
    $hp = $hp1."-".$hp2."-".$hp3;
    $email = $email1."@".$email2;
 
@@ -42,9 +35,8 @@ email1 , email2
 
    mysql_close();                // DB 연결 끊기
    echo "
-	   <script>
-     alert('회원가입이 완료되었습니다.');
-     history.go(-1);
+	   <script>     
+     location.href = '../member/welcome.html?nick=$nick';
 	   </script>
 	";
 ?>

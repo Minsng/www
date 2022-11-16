@@ -1,0 +1,41 @@
+<?
+    @extract($_POST);
+    @extract($_GET);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가입 완료</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./css/welcome.css">
+
+    
+</head>
+<body>
+    <header>
+        <h1>
+            <a class="logo" href="../index.html">
+                <img src="../common/images/header_logo240100.png" alt="한솔케미칼로고">
+            </a>
+        </h1>
+    </header>
+    <article id="content">
+        <i class="fas fa-check"></i>
+        <h2>회원가입이 <span>완료</span>되었습니다.</h2>
+        <div>
+            <p><span><? echo"$nick" ?></span>님의 회원가입을 축하합니다.</p>
+            <!-- <p>항상 고객님을 최우선으로 생각하는 한샘이 되겠습니다.</p> -->
+        </div>
+        <div>
+            <a href="../index.html">홈으로</a>
+            <a href="../login/login_form.php">로그인</a>
+        </div>
+    </article>
+    <script src="https://kit.fontawesome.com/d488d1cfdc.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -24,7 +24,7 @@
       }
       else
       {
-         echo "<span style='color:green'>사용가능한 닉네입니다.</span>";
+         echo "<span style='color:#009944'>사용가능한 닉네입니다.</span>";
       }
 		 
       mysql_close();
