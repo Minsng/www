@@ -12,8 +12,8 @@
     <title>서대문자연사박물관-비밀번호찾기</title>
 <link rel="stylesheet" href="css/member.css">
 <script src="https://kit.fontawesome.com/f8a0f5a24e.js" crossorigin="anonymous"></script>
-<script src="../member/js/jquery-1.12.4.min.js"></script>
-<script src="../member/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="../common/js/jquery-1.12.4.min.js"></script>
+<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
 <script>
 	$(document).ready(function() {
 
