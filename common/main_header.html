@@ -12,11 +12,31 @@
                     <a href="index.html">한솔케미칼로고</a>
                 </h1>
                 <div class="top_menu">
+                    <?
+                    @extract($_POST);
+                    @extract($_GET);
+                    @extract($_SESSION);
+                        if(!$userid)
+                        {
+                    ?>
                     <ul>
-                        <li><a href="#">Log In</a></li>
+                        <li><a href="./login/login_form.php">Log In</a></li>
                         <li><a href="./member/join.html">Join Us</a></li>
                         <li><a href="#" class="searchimg"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     </ul>
+                    <?
+                        }
+                        else
+                        {
+                    ?>
+                    <ul>
+                        <li><a href="./login/logout.php">Log Out</a></li>
+                        <li><a href="./login/member_form_modify.php">Modify</a></li>
+                        <li><a href="#" class="searchimg"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    </ul>
+                    <?
+                        }
+                    ?>
                 </div>
             </div>
             <nav id="gnb">
