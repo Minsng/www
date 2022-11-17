@@ -39,8 +39,8 @@
                     <button type="submit">로그인</button>
                 </form>
                 <ul class="lastlist">
-                    <li><a href="pw_find.php">비밀번호 찾기</a></li>
                     <li><a href="id_find.php">아이디 찾기</a></li>
+                    <li><a href="pw_find.php">비밀번호 찾기</a></li>
                     <li><a href="../member/join.html">회원가입</a></li>
                 </ul>
             </article>

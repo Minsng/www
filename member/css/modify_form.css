@@ -180,3 +180,8 @@ form>div span {
 .button a:last-of-type {
     background-color: #999;
 }
+.button2 {margin-top: 60px;}
+.button2 a:last-of-type {
+    background-color: rgba(255, 0, 0, .9);
+    margin: 0 auto;
+}

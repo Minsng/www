@@ -8,7 +8,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>서대문자연사박물관-아이디찾기</title>
+    <title>아이디 찾기</title>
 <link rel="stylesheet" href="css/member.css">
 <script src="https://kit.fontawesome.com/f8a0f5a24e.js" crossorigin="anonymous"></script>
 <script src="../common/js/jquery-1.12.4.min.js"></script>
