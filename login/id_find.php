@@ -8,11 +8,14 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이디 찾기</title>
-<link rel="stylesheet" href="css/member.css">
-<script src="https://kit.fontawesome.com/f8a0f5a24e.js" crossorigin="anonymous"></script>
-<script src="../common/js/jquery-1.12.4.min.js"></script>
-<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="./css/login.css">
+    <script src="https://kit.fontawesome.com/f8a0f5a24e.js" crossorigin="anonymous"></script>
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
 <script>
 	$(document).ready(function() {
 
@@ -26,6 +29,7 @@
                 type: "POST",
                 url: "find.php", 
                 data: "name="+ name+ "&hp1="+hp1+ "&hp2="+hp2+ "&hp3="+hp3,  /*매개변수id도 같이 넘겨줌*/
+                // data: "name="+ name+ "&hp="+hp,  /*매개변수id도 같이 넘겨줌*/
                 cache: false, 
                 success: function(data) /*이 메소드가 완료되면 data라는 변수 안에 echo문이 들어감*/
                 {
@@ -40,61 +44,44 @@
 </script>
 </head>
 <body>
-    <div id="wrap">
-    <h1><a href="../index.html" class="logo">서대문자연사박물관</a></h1>
-	<div id="col2">
-        <form name="find" method="get" action="find.php"> 
-		<div id="title">
-			<h2 class="hidden">아이디찾기</h2>
-			<p>가입 시 입력하신 정보로 아이디를 찾아드립니다</p>
-		</div>
-       
-		<div id="login_form">
-			 <div class="clear"></div>
-
-			 <div id="login2">
-				<div id="id_input_button">
-					<fieldset>
-                        <input type="text" name="name" class="find_input" id="name" placeholder="이름 (ex. test)">
-                        <div class="telBox">
-                            <label class="hidden" for="hp1">연락처 앞3자리</label>
-                            <select name="hp1" id="hp1" title="휴대폰 앞3자리를 선택하세요." class="find_input">
-                                <option>010</option>
-                                <option>011</option>
-                                <option>016</option>
-                                <option>017</option>
-                                <option>018</option>
-                                <option>019</option>
-                            </select> ㅡ
-                            <label class="hidden" for="hp2">연락처 가운데3자리</label>
-                            <input class="find_input" type="text" id="hp2" name="hp2" title="연락처 가운데3자리를 입력하세요." maxlength="4" placeholder="(ex. 1111)"> ㅡ
-                            <label class="hidden" for="hp3">연락처 마지막3자리</label>
-                            <input class="find_input" type="text" id="hp3" name="hp3" title="연락처 마지막3자리를 입력하세요." maxlength="4" placeholder="(ex. 2222)">
+    <div class="wrap">
+        <div>
+        <header>
+                <h1>
+                    <a class="logo" href="../index.html">
+                        <img src="../common/images/header_logo240100.png" alt="한솔케미칼로고">
+                    </a>
+                </h1>
+            </header>
+            <article id="content">
+                <ul class="find_list">
+                    <li><a href="id_find.php" class="selected">아이디 찾기</a></li>
+                    <li><a href="pw_find.php">비밀번호 찾기</a></li>
+                </ul>
+                <form name="find" method="post" action="find.php">
+                    <div>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="name">휴대전화</label>
+                        <div class="contact">
+                            <input type="text" id="hp1" name="hp1" maxlength="3">
+                            <p>-</p>
+                            <input type="text" id="hp2" name="hp2" maxlength="3">
+                            <p>-</p>
+                            <input type="text" id="hp3" name="hp3" maxlength="3">
                         </div>
-                        <input type="button" value="아이디찾기" class="find">
-                    </fieldset>
-
-                    <span id="loadtext">
-
-
-                    </span>
-
-                    <ul class="go">
-                        <li><a href="login_form.php"><i class="fas fa-sign-in-alt"></i>로그인하기</a></li>
-                        <li>비밀번호를 잊으셨나요?<a href="pw_find.php">비밀번호 찾기</a></li>
-                    </ul>
-
-				</div>
-				<div class="clear"></div>
-				
-                <div id="login_line"></div>
-				<div id="join_button"><p>아직도 회원이 아니신가요?</p><a href="../member/join.html" class="go_join">회원가입</a></div>
-			 </div>			 
-		</div> <!-- end of form_login -->
-
-	    </form>
-	</div> <!-- end of col2 -->
-
-</div> <!-- end of wrap -->
+                    </div>
+                    <span id="loadtext"></span>
+                    <button class="find" type="button">아이디 찾기</button>
+                </form>
+                <ul class="lastlist findform">
+                    <li><a href="login_form.php">로그인</a></li>
+                    <li><a href="../member/member_check.html">회원가입</a></li>
+                </ul>
+            </article>
+        </div>
+    </div> 
 </body>
 </html>

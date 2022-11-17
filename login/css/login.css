@@ -140,7 +140,7 @@ body {
   }
   
   button.find {
-    background-color: #004f98;
+    background-color: #0075c1;
   }
   
   #loadtext {
@@ -187,7 +187,7 @@ body {
   
   .find_list li a {
     display: block;
-    border-bottom: 5px solid #004f98;
+    border-bottom: 5px solid #0075c1;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -196,6 +196,13 @@ body {
   }
   
   .find_list li a.selected {
-    background-color: #004f98;
+    background-color: #0075c1;
     color: white;
+  }
+
+  .contact {overflow: hidden;}
+  .contact input {float: left; width: 133px;}
+  .contact p {
+    float: left; width: 18px;
+    text-align: center; line-height: ;
   }
