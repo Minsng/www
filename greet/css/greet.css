@@ -1,0 +1,315 @@
+
+
+#content .contentArea {
+    margin: 120px 0;
+  }
+  
+  #content .list_header {
+    overflow: hidden;
+    font-size: 20px;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  
+  #content .list_header>div {
+    float: left;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  
+  #content .list_header select {
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+  }
+  
+  #content .list_header>div span {
+    font-weight: bold;
+    color: #0075c1;
+  }
+  
+  #content .list_header select {
+    float: right;
+  }
+  
+  #content .list_title {
+    font-weight: 500;
+    font-size: 18px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  
+  #content .list_item {
+    border-bottom: 1px solid #ccc;
+    font-weight: 300;
+  }
+  
+  #content .list_item li:first-of-type {
+    font-weight: bold;
+  }
+  
+  #content .list {
+    overflow: hidden;
+  }
+  
+  #content .list li {
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    width: 10%;
+  }
+  
+  #content .list li:nth-of-type(2) {
+    width: 60%;
+  }
+  
+  #content .list_item>li:nth-of-type(2) {
+    text-align: left;
+  }
+  
+  #content .list_item:hover {
+    background-color: #f8f8f8;
+  }
+  
+  #content .page_num {
+    text-align: center;
+  }
+  
+  #content .page_button {
+    position: relative;
+    padding: 40px 0 20px;
+  }
+  
+  #content .button {
+    position: absolute;
+    right: 20px;
+    top: 45px;
+  }
+  
+  #content .button a {
+    display: block;
+    float: left;
+    margin: 0 5px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 7px 25px;
+  }
+  
+  #content i {
+    margin-right: 5px;
+  }
+  
+  #content form {
+    padding: 50px 0;
+  }
+  
+  #content form .list_inner {
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+  }
+  
+  #content form .list_inner>* {
+    float: left;
+    box-sizing: border-box;
+  }
+  
+  #content form select,
+  #content form button {
+    width: 20%;
+  }
+  
+  #content form select,
+  #content form button,
+  #content form input,
+  #content form textarea {
+    outline: none;
+    border: none;
+    padding: 7px 10px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #ccc;
+  }
+  
+  #content form select {
+    padding: 6px 0;
+    text-align: center;
+  }
+  
+  #content form button {
+    background-color: black;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+  }
+  
+  #content form>div input {
+    width: 57%;
+    margin: 0 1.5%;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+  
+  #content .page_num {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px 0;
+  }
+  
+  #content .page_num span {
+    border: 1px solid #ccc;
+    padding: 5px 10px 6px 13px;
+    color: black;
+    font-weight: bold;
+    margin: 0 5px;
+    background-color: white;
+  }
+  
+  #content .page_num a {
+    padding: 5px 10px;
+    font-weight: 500;
+    margin: 0 5px;
+    color: rgba(0, 0, 0, 0.473);
+  }
+  
+  #content .title {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  #content .title_desc {
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    position: relative;
+  }
+  
+  #content .title_desc span {
+    font-weight: 400;
+    color: #999;
+  }
+  
+  #content .title_desc>div:last-of-type {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  #content .content_desc {
+    padding: 70px 40px;
+    border-bottom: 2px solid black;
+    font-weight: 300;
+  }
+  
+  #content .view_button {
+    margin: 20px 5px;
+  }
+  
+  #content .write_btn {
+    display: block;
+    float: right;
+    margin: 0 5px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 7px 25px;
+    color: white;
+    background-color: #0075c1;
+    border: 1px solid #0075c1;
+  }
+  
+  #content .list_btn,
+  #content .modi_btn,
+  #content .del_btn {
+    display: block;
+    float: right;
+    margin: 0 5px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 7px 25px;
+    color: black;
+    border: 1px solid #ccc
+  }
+  
+  #content .contentArea.write {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #content .write_title,
+  #content textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #content .write_title {
+    padding: 15px 20px;
+  }
+  
+  #content form textarea {
+    resize: none;
+    height: 500px;
+    padding: 20px;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  
+  #content .content_outer {
+    position: relative;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 50px;
+  }
+  
+  #content .content_outer>div {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: 300;
+  }
+  
+  #content .checkbox_outer label {
+    margin-left: 5px;
+    cursor: pointer;
+    line-height: 40px;
+  }
+  
+  #content input.html_check {
+    margin: 0;
+    width: auto;
+    border: 1px solid red;
+  }
+  
+  #content .write h2 {
+    margin-top: 40px;
+    font-size: 34px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+  }
+  
+  #content .bottom_button {
+    margin-top: 30px;
+  }
+  
+  #content .bottom_button button {
+    float: right;
+  }
+  
+  #content .checkbox_outer {
+    float: right;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0 15px;
+    color: black;
+  }
