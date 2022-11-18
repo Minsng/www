@@ -78,7 +78,7 @@
                 </form>
                 <ul class="lastlist findform">
                     <li><a href="login_form.php">로그인</a></li>
-                    <li><a href="../member/member_check.html">회원가입</a></li>
+                    <li><a href="../member/join.html">회원가입</a></li>
                 </ul>
             </article>
         </div>
