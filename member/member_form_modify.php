@@ -96,7 +96,7 @@
       return;
    }
    function bye_form(){
-    var bye = confirm('정말 탈퇴하시겠습니까?');
+        var bye = confirm('정말 탈퇴하시겠습니까?');
         if (bye) {
             location.href="./delete.php?id='<?=$userid?>'";
         } else {

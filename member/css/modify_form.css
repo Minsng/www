@@ -19,7 +19,7 @@ h1 a {background: url(../../common/images/header_logo240100.png);}
     box-shadow: 0 0 40px #0000001a;
 }
 
-#content::before {
+/* #content::before {
     content: '';
     width: 66.66%;
     height: 3px;
@@ -28,7 +28,7 @@ h1 a {background: url(../../common/images/header_logo240100.png);}
     left: 0;
     top: 0;
     background-color: #0075c1b7;
-}
+} */
 
 #content>div {
     position: relative;

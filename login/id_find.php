@@ -68,9 +68,9 @@
                         <div class="contact">
                             <input type="text" id="hp1" name="hp1" maxlength="3">
                             <p>-</p>
-                            <input type="text" id="hp2" name="hp2" maxlength="3">
+                            <input type="text" id="hp2" name="hp2" maxlength="4">
                             <p>-</p>
-                            <input type="text" id="hp3" name="hp3" maxlength="3">
+                            <input type="text" id="hp3" name="hp3" maxlength="4">
                         </div>
                     </div>
                     <span id="loadtext"></span>
