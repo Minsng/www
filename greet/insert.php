@@ -6,50 +6,33 @@
 @extract($_SESSION);
 
 
-/*
-	새 글 저장 => post
-	$html_ok='y'
-	$subject='제목글';
-	$content='본문글';
-*/
-
-/*
-	글 수정 post
-	$html_ok='y'
-	$subject='제목글';
-	$content='본문글';
-	
-	글 수정 get
-	$mode = modify
-	$num
-*/
 
 	if(!$userid) {
 		echo("
-		<script>
-	     window.alert('로그인 후 이용해 주세요.')
-	     history.go(-1)
-	   </script>
+			<script>
+				window.alert('로그인 후 이용해 주세요.')
+				history.go(-1)
+			</script>
 		");
 		exit;
 	}
 
 	if(!$subject) {
 		echo("
-	   <script>
-	     window.alert('제목을 입력하세요.')
-	     history.go(-1)
-	   </script>
+			<script>
+				window.alert('제목을 입력하세요.')
+				history.go(-1)
+			</script>
 		");
 	 exit;
 	}
 
 	if(!$content) {
 		echo("
-	   <script>
-	     window.alert('내용을 입력하세요.')
-	     history.go(-1)
-	   </script>
+			<script>
+				window.alert('내용을 입력하세요.')
+				history.go(-1)
+			</script>
 		");
 	 exit;
 	}
@@ -82,7 +65,7 @@
 		$content = htmlspecialchars($content);
 		$subject = str_replace("'", "&#039;", $subject);
 		$content = str_replace("'", "&#039;", $content);
-	 //  "(&quot;) '(&#039;) &(&amp;) <(&lt;) >(&gt;)
+	 	//  "(&quot;) '(&#039;) &(&amp;) <(&lt;) >(&gt;)
 
 		$sql = "insert into greet (id, name, nick, subject, content, regist_day, hit, is_html) ";
 		$sql .= "values('$userid', '$username', '$usernick', '$subject', '$content', '$regist_day', 0, '$is_html')";
@@ -92,9 +75,9 @@
 	mysql_close();                // DB 연결 끊기
 
 	echo "
-	   <script>
-	    location.href = 'list.php?page=$page';
-	   </script>
+		<script>
+			location.href = 'list.php?page=$page&liststyle=$liststyle';
+		</script>
 	";
 ?>
 

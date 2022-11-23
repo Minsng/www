@@ -1,12 +1,8 @@
 <? 
 	session_start();
-/*
-	$num=1 게시글번호
-	$page, $scale
-*/
 	@extract($_GET); 
-  @extract($_POST); 
-  @extract($_SESSION); 
+	@extract($_POST); 
+	@extract($_SESSION); 
 
 	include "../lib/dbconn.php";
 
@@ -40,85 +36,106 @@
 	$sql = "update greet set hit=$new_hit where num=$num";   // 글 조회수 증가시킴
 	mysql_query($sql, $connect);
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head> 
-<meta charset="utf-8">
-<link href="../css/common.css" rel="stylesheet" type="text/css" media="all">
-<link href="../css/greet.css" rel="stylesheet" type="text/css" media="all">
-<script>
-    function del(href) 
-    {
-        if(confirm("한번 삭제한 자료는 복구할 방법이 없습니다.\n\n정말 삭제하시겠습니까?")) {
-                document.location.href = href;
-        }
-    }
-</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../sub6/common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/greet.css">
+	
+	<script src="https://kit.fontawesome.com/d488d1cfdc.js" crossorigin="anonymous"></script>
+	<script src="../common/js/prefixfree.min.js"></script>
+	<script>
+		function del(href) 
+		{
+			if(confirm("한번 삭제한 자료는 복구할 방법이 없습니다.\n\n정말 삭제하시겠습니까?")) {
+					document.location.href = href;
+			}
+		}
+	</script>
 </head>
 
 <body>
-<div id="wrap">
-  <div id="header">
-    <? include "../lib/top_login2.php"; ?>
-  </div>  <!-- end of header -->
+	<? include "../common/sub_header.html" ?>
+		<div class="main">
+            <img src="../sub6/images/sub6visual.png" alt="서브6비주얼이미지">
+            <h3>고객지원</h3>
+        </div>
+		<div class="subNav">
+            <ul>
+                <li><a href="../greet/list.php" class="current">공지사항</a></li>
+                <li><a href="../sub6/sub6_2.html">뉴스</a></li>
+                <li><a href="../sub6/sub6_3.html">제품검색</a></li>
+                <li><a href="../sub6/sub6_4.html">문의하기</a></li>
+            </ul>
+        </div>
+		<article id="content">
 
-  <div id="menu">
-	<? include "../lib/top_menu2.php"; ?>
-  </div>  <!-- end of menu --> 
-  
-  <div id="content">
-	<div id="col1">
-		<div id="left_menu">
-<?
-			include "../lib/left_menu.php";
-?>
-		</div>
-	</div>
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt; <span>고객지원</span> &gt; <span>공지사항</span>
+                </div>
+                <h2>공지사항</h2>
+            </div>
+			<div class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
 
-	<div id="col2">
-        
-		<div id="title">
-			<img src="../img/title_greet.gif">
-		</div>
 
-		<div id="view_comment"> &nbsp;</div>
+				
+				<div class="bbs_wrap">
 
-		<div id="view_title">
-			<div id="view_title1"><?= $item_subject ?></div>
-			<div id="view_title2"><?= $item_nick ?> | 조회 : <?= $item_hit ?>  
-			                      | <?= $item_date ?> </div>	
-		</div>
+					<ul class="bbs_view_ttl">
+						<li><?= $item_subject ?></li>
+						<li>
+							<span><?= $item_nick ?></span>
+							<span><?= $item_date ?></span>
+							<span><i class="fa-regular fa-eye"><i>조회수</i></i> <?= $item_hit ?></span>
+						</li>
+					</ul>
 
-		<div id="view_content">
-			<?= $item_content ?>
-		</div>
+					
+					<div class="bbs_view_cont"><?= $item_content ?></div>
+					
+					<div class="btn_wrap">
+						<a href="list.php?page=<?=$page?>&liststyle=<?=$liststyle?>">목록</a>
+						<? 
+							if($userid==$item_id || $userlevel==1 || $userid=="admin")
+							// 로그인된 아이디 == 글쓴이 이거나 최고 관리자면 참
+							{
+						?>
+						<a href="modify_form.php?num=<?=$num?>&page=<?=$page?>&liststyle=<?=$liststyle?>">수정</a>
+						<a href="javascript:del('delete.php?num=<?=$num?>&liststyle=<?=$liststyle?>')">삭제</a>
+						<?
+							}
+						?>
+						<? 
+							if($userid)  //로그인이 되면 글쓰기
+							{
+						?>
+						<a href="write_form.php?liststyle=<?=$liststyle?>" class='active'>글쓰기</a>
+						<?
+							}
+						?>
+					</div>
+				</div>
 
-		<div id="view_button">
-				<a href="list.php?page=<?=$page?>&scale=<?=$scale?>"><img src="../img/list.png"></a>&nbsp;
-<? 
-	if($userid==$item_id || $userlevel==1 || $userid=="admin")
-	{
-?>
-				<a href="modify_form.php?num=<?=$num?>&page=<?=$page?>&scale=<?=$scale?>"><img src="../img/modify.png"></a>&nbsp;
-				<a href="javascript:del('delete.php?num=<?=$num?>')"><img src="../img/delete.png"></a>&nbsp;
-<?
-	}
-?>
-<? 
-	if($userid )
-	{
-?>
-				<a href="write_form.php?page=<?=$page?>&num=<?=$num?>"><img src="../img/write.png"></a>
-<?
-	}
-?>
-		</div>
 
-		<div class="clear"></div>
 
-	</div> <!-- end of col2 -->
-  </div> <!-- end of content -->
-</div> <!-- end of wrap -->
+
+
+
+
+
+
+
+
+
+				</div>
+        </article>
+    <? include '../common/sub_footer.html' ?>
 
 </body>
 </html>

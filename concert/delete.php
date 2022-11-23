@@ -1,5 +1,8 @@
 <?
    session_start();
+   @extract($_GET); 
+@extract($_POST); 
+@extract($_SESSION); 
    include "../lib/dbconn.php";
 
    $sql = "select * from $table where num = $num";

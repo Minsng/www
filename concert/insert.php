@@ -1,4 +1,8 @@
-<? session_start(); ?>
+<? session_start(); 
+@extract($_GET); 
+@extract($_POST); 
+@extract($_SESSION); 
+?>
 
 <meta charset="utf-8">
 <?

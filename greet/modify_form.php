@@ -1,8 +1,8 @@
 <? 
 	session_start(); 
-	@extract($_GET); 
-  @extract($_POST); 
-  @extract($_SESSION); 
+	@extract($_GET); 	
+	@extract($_POST); 
+	@extract($_SESSION); 
 	include "../lib/dbconn.php";
 
 	$sql = "select * from greet where num=$num";
@@ -12,74 +12,92 @@
 	$item_subject     = $row[subject];
 	$item_content     = $row[content];
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head> 
-<meta charset="utf-8">
-<link href="../css/common.css" rel="stylesheet" type="text/css" media="all">
-<link href="../css/greet.css" rel="stylesheet" type="text/css" media="all">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../sub6/common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/greet.css">
+	
+	<script src="https://kit.fontawesome.com/d488d1cfdc.js" crossorigin="anonymous"></script>
+	<script src="../common/js/prefixfree.min.js"></script>
+	<script>
+		function del(href) 
+		{
+			if(confirm("한번 삭제한 자료는 복구할 방법이 없습니다.\n\n정말 삭제하시겠습니까?")) {
+					document.location.href = href;
+			}
+		}
+	</script>
 </head>
 
 <body>
-<div id="wrap">
-  <div id="header">
-    <? include "../lib/top_login2.php"; ?>
-  </div>  <!-- end of header -->
+	<? include "../common/sub_header.html" ?>
+		<div class="main">
+            <img src="../sub6/images/sub6visual.png" alt="서브6비주얼이미지">
+            <h3>고객지원</h3>
+        </div>
+		<div class="subNav">
+            <ul>
+                <li><a href="../greet/list.php" class="current">공지사항</a></li>
+                <li><a href="../sub6/sub6_2.html">뉴스</a></li>
+                <li><a href="../sub6/sub6_3.html">제품검색</a></li>
+                <li><a href="../sub6/sub6_4.html">문의하기</a></li>
+            </ul>
+        </div>
+		<article id="content">
 
-  <div id="menu">
-	<? include "../lib/top_menu2.php"; ?>
-  </div>  <!-- end of menu --> 
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt; <span>고객지원</span> &gt; <span>공지사항</span>
+                </div>
+                <h2>공지사항</h2>
+            </div>
+			<div class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+				<div class="bbs_wrap">
+					<form  name="board_form" method="post" action="insert.php?mode=modify&num=<?=$num?>&page=<?=$page?>&liststyle=<?=$liststyle?>">
+						<ul class="bbs_write_top">
+							<li>
+								<dl>
+									<dt>닉네임</dt>
+									<dd><?=$usernick?></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><label for="subject">제목</label></dt>
+									<dd>
+										<input type="text" name="subject" id="subject" value="<?=$item_subject?>" >
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><label for="content">내용</label></dt>
+									<dd>
+										<textarea name="content" id="content"><?=$item_content?></textarea>
+									</dd>
+								</dl>
+							</li>
+						</ul>
 
-  <div id="content">
-	<div id="col1">
-		<div id="left_menu">
-<?
-			include "../lib/left_menu.php";
-?>
-		</div>
-	</div> <!-- end of col1 -->
+					
+						<div class="btn_wrap">
+							<a href="list.php?page=<?=$page?>&liststyle=<?=$liststyle?>">목록</a>
+							<button type="subit" class='active'>완료</button>
+						</div>
 
-	<div id="col2">        
-		<div id="title">
-			<img src="../img/title_greet.gif">
-		</div>
+					</form>
+				</div>
 
-		<div class="clear"></div>
 
-		<div id="write_form_title">
-			<img src="../img/write_form_title.gif">
-		</div>
-
-		<div class="clear"></div>
-		<form  name="board_form" method="post" action="insert.php?mode=modify&num=<?=$num?>&page=<?=$page?>"> 
-		<div id="write_form">
-			<div class="write_line"></div>
-			<div id="write_row1">
-				<div class="col1"> 닉네임 </div>
-				<div class="col2"><?=$usernick?></div>
-			</div>
-			<div class="write_line"></div>
-			<div id="write_row2">
-				<div class="col1"> 제목   </div>
-			    <div class="col2"><input type="text" name="subject" value="<?=$item_subject?>" ></div>
-			</div>
-			<div class="write_line"></div>
-			<div id="write_row3">
-				<div class="col1"> 내용   </div>
-				<div class="col2"><textarea rows="15" cols="79" name="content"><?=$item_content?></textarea></div>
-			</div>
-			<div class="write_line"></div>
-		</div>
-
-		<div id="write_button">
-			<input type="image" src="../img/ok.png">&nbsp;
-			<a href="list.php?page=<?=$page?>&scale=<?=$scale?>"><img src="../img/list.png"></a>
-		</div>
-		</form>
-
-	</div> <!-- end of col2 -->
-  </div> <!-- end of content -->
-</div> <!-- end of wrap -->
+				</div>
+        </article>
+    <? include '../common/sub_footer.html' ?>
 
 </body>
 </html>

@@ -10,6 +10,9 @@
 <link href="../css/concert.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <?
+@extract($_GET); 
+@extract($_POST); 
+@extract($_SESSION); 
 	include "../lib/dbconn.php";
 	$scale=10;			// 한 화면에 표시되는 글 수
 
