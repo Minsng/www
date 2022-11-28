@@ -389,7 +389,8 @@
 
 
 .news {
-    width: 2010px; height: 620px;
+    width: 2010px;
+    height: 680px;
     position: relative; left: 50%; 
     margin: 120px 0 120px -1005px;
     overflow: hidden;
@@ -404,7 +405,7 @@
         padding: 60px 0 70px;
     }
     .newsgallery {
-        width: 4100px;
+        width: 4100px; padding: 30px 0;
         position: relative; left: 0; top: 0; overflow: hidden;
     }
     .news ul {
@@ -426,7 +427,7 @@
     /* .news ul li:last-of-type {margin-right: 0;} */
     
     .news ul li img {
-        border-radius: 50px;
+        border-radius: 50px; width: 100%;
         transform: scale(1); transition: all .2s ease-in-out;        
     }
 

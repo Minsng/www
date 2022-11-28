@@ -1,4 +1,9 @@
-<? session_start(); ?>
+<? 
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -186,12 +191,14 @@
                 <a href="sub4/sub4_1.html"><span>바로가기</span></a>
             </section>
 
+            <? include "./lib/func.php"; ?>
             <section class="news">
                 <h3>News</h3>
                 <p>한솔케미칼의 소식을 전해드립니다.</p>
                 <div class="newsgallery">
                     <ul>
-                        <li>
+                        <? latest_article("concert", 5, 30, 90); ?>
+                        <!-- <li>
                             <img src="images/news01.png" alt="뉴스1">
                             <dl>
                                 <dt>[IR52 장영실상] 삼성SDI&middot;한솔케미칼 / 리튬이온전지 고접착 수성바인더</dt>
@@ -230,7 +237,7 @@
                                 <dd>한솔케미칼은 매년 다이어리와 달력을 제작, 임직원 및 거래처 등에 배포하고 있는데요, 2022년 다이어리는 더욱 특별함에 감성까지 더해 제작해 보았습니다.</dd>
                             </dl>
                             <span>2022-08-03</span>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>                               
                 <div class="newsbtn">
