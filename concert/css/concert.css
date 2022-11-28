@@ -57,7 +57,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     .photo_bbs_wrap .bbs_lst .lst_cont li:hover .img img{transform:translate(-50%, -50%) scale(1.1);}
     .photo_bbs_wrap .bbs_lst .lst_cont li .cont{margin-left:470px;}
     .photo_bbs_wrap .bbs_lst .lst_cont li .cont strong{display:block; font-size:1.5rem; white-space:nowrap; text-overflow: ellipsis; overflow: hidden; margin:2.25rem 0 0;}
-    .photo_bbs_wrap .bbs_lst .lst_cont li .cont p{height:78px; font-size:1rem; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; margin:1.25rem 0 2rem;}
+    .photo_bbs_wrap .bbs_lst .lst_cont li .cont p{height:72px; font-size:1rem; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; margin:1.25rem 0 2rem;}
     .photo_bbs_wrap .bbs_lst .lst_cont li .cont span{color:#999; font-size:1rem;}
     .photo_bbs_wrap .bbs_lst .lst_cont li .cont span + span::before{content:'/'; display:inline-block; padding:0 10px; color:#ddd;}
     .photo_bbs_wrap .bbs_lst .lst_cont li .cont i{font-size:.75rem; padding-right:2px;}
@@ -114,7 +114,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     .photo_bbs_wrap .bbs_search select{width: 120px;}
     .photo_bbs_wrap .bbs_search input{width: 250px;}
     .photo_bbs_wrap .bbs_search button{width:80px; height:44px; background:#0075c1; color:#fff; transition:all .3s;}
-    .photo_bbs_wrap .bbs_search button:hover{background:#0075c1;}
+    .photo_bbs_wrap .bbs_search button:hover{background:#009944;}
     
     
     
