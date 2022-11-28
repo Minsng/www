@@ -205,7 +205,6 @@
 							<select name="find">
 								<option value='subject'>제목</option>
 								<option value='content'>내용</option>
-								<option value='nick'>별명</option>
 								<option value='name'>이름</option>
 							</select>
 							<label class="hidden" for="search"></label>
