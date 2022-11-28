@@ -1,17 +1,17 @@
-<? session_start(); 
-@extract($_GET); 
-@extract($_POST); 
-@extract($_SESSION); 
-?>
+<? session_start(); ?>
 
 <meta charset="utf-8">
 <?
+	@extract($_GET); 
+	@extract($_POST); 
+	@extract($_SESSION); 
+
 	if(!$userid) {
 		echo("
-		<script>
-	     window.alert('로그인 후 이용해 주세요.')
-	     history.go(-1)
-	   </script>
+			<script>
+				window.alert('로그인 후 이용해 주세요.')
+				history.go(-1)
+			</script>
 		");
 		exit;
 	}
@@ -169,7 +169,7 @@
 
 	echo "
 	   <script>
-	    location.href = 'list.php?table=$table&page=$page';
+	   location.href = 'list.php?table=$table&page=$page&liststyle=$liststyle';
 	   </script>
 	";
 ?>

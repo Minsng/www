@@ -1,21 +1,33 @@
 <? 
 	session_start(); 
-	$table = "concert";
+	@extract($_POST);
+	@extract($_GET);
+	@extract($_SESSION);
+
+	$table = "concert";	// sql문에서 table명을 변수로 처리
+	$ripple = "concert_ripple";
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head> 
-<meta charset="utf-8">
-<link href="../css/common.css" rel="stylesheet" type="text/css" media="all">
-<link href="../css/concert.css" rel="stylesheet" type="text/css" media="all">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>고객지원 - 뉴스</title>
+	<link rel="stylesheet" href="../common/css/common.css">
+	<link rel="stylesheet" href="../sub6/common/css/sub6common.css">
+	<link rel="stylesheet" href="./css/concert.css">
+	<script src="https://kit.fontawesome.com/d488d1cfdc.js" crossorigin="anonymous"></script>
+	<script src="../common/js/prefixfree.min.js"></script>
 </head>
 <?
-@extract($_GET); 
-@extract($_POST); 
-@extract($_SESSION); 
 	include "../lib/dbconn.php";
-	$scale=10;			// 한 화면에 표시되는 글 수
 
+    
+   if (!$scale)
+    $scale=6;			// 한 화면에 표시되는 글 수
+
+    
     if ($mode=="search")
 	{
 		if(!$search)
@@ -54,120 +66,180 @@
 	$number = $total_record - $start;
 ?>
 <body>
-<div id="wrap">
-  <div id="header">
-    <? include "../lib/top_login2.php"; ?>
-  </div>  <!-- end of header -->
+	<? include "../common/sub_header.html" ?>
+		<div class="main">
+            <img src="../sub6/images/sub6visual.png" alt="서브6비주얼이미지">
+            <h3>고객지원</h3>
+        </div>
+		<div class="subNav">
+            <ul>
+                <li><a href="../greet/list.php">공지사항</a></li>
+                <li><a href="../concert/list.php" class="current">뉴스</a></li>
+                <li><a href="../sub6/sub6_3.html">제품검색</a></li>
+                <li><a href="../sub6/sub6_4.html">문의하기</a></li>
+            </ul>
+        </div>
+		<article id="content">
 
-  <div id="menu">
-	<? include "../lib/top_menu2.php"; ?>
-  </div>  <!-- end of menu --> 
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt; <span>고객지원</span> &gt; <span>뉴스</span>
+                </div>
+                <h2>뉴스</h2>
+            </div>
+			<div class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+				<div class="photo_bbs_wrap">
 
-  <div id="content">
-	<div id="col1">
-		<div id="left_menu">
-<?
-			include "../lib/left_menu.php";
-?>
-		</div>
-	</div>
-	<div id="col2">        
-		<div id="title">
-			<img src="../img/title_concert.gif">
-		</div>
+					<div class="bbs_sort">
+						<div class="total">총 <b><?= $total_record ?></b> 개의 게시물이 있습니다.</div>
 
-		<form  name="board_form" method="post" action="list.php?table=<?=$table?>&mode=search"> 
-		<div id="list_search">
-			<div id="list_search1">▷ 총 <?= $total_record ?> 개의 게시물이 있습니다.  </div>
-			<div id="list_search2"><img src="../img/select_search.gif"></div>
-			<div id="list_search3">
-				<select name="find">
-                    <option value='subject'>제목</option>
-                    <option value='content'>내용</option>
-                    <option value='nick'>별명</option>
-                    <option value='name'>이름</option>
-				</select></div>
-			<div id="list_search4"><input type="text" name="search"></div>
-			<div id="list_search5"><input type="image" src="../img/list_search_button.gif"></div>
-		</div>
-		</form>
-		<div class="clear"></div>
+						<select class="scale" name="scale" onchange="location.href='list.php?scale='+this.value+'&liststyle=<?=$liststyle?>'">
+							<option value=''><?=$scale?>개씩</option>
+							<option value='6'>6개씩</option>
+							<option value='9'>9개씩</option>
+							<option value='12'>12개씩</option>
+							<option value='15'>15개씩</option>
+						</select>
 
-		<div id="list_top_title">
-			<ul>
-				<li id="list_title1"><img src="../img/list_title1.gif"></li>
-				<li id="list_title2"><img src="../img/list_title2.gif"></li>
-				<li id="list_title3"><img src="../img/list_title3.gif"></li>
-				<li id="list_title4"><img src="../img/list_title4.gif"></li>
-				<li id="list_title5"><img src="../img/list_title5.gif"></li>
-			</ul>		
-		</div>
+						<ul class="lst_style">
+							<li class="active"><a href="list.php?liststyle=list&scale=<?=$scale?>">목록형</a></li>
+							<li><a href="list.php?liststyle=box&scale=<?=$scale?>">박스형</a></li>
+						</ul>
+					</div>
+					
 
-		<div id="list_content">
-<?		
-   for ($i=$start; $i<$start+$scale && $i < $total_record; $i++)                    
-   {
-      mysql_data_seek($result, $i);       
-      // 가져올 레코드로 위치(포인터) 이동  
-      $row = mysql_fetch_array($result);       
-      // 하나의 레코드 가져오기
-	
-	  $item_num     = $row[num];
-	  $item_id      = $row[id];
-	  $item_name    = $row[name];
-  	  $item_nick    = $row[nick];
-	  $item_hit     = $row[hit];
-      $item_date    = $row[regist_day];
-	  $item_date = substr($item_date, 0, 10);  
-	  $item_subject = str_replace(" ", "&nbsp;", $row[subject]);
-?>
-			<div id="list_item">
-				<div id="list_item1"><?= $number ?></div>
-				<div id="list_item2"><a href="view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>"><?= $item_subject ?></a></div>
-				<div id="list_item3"><?= $item_nick ?></div>
-				<div id="list_item4"><?= $item_date ?></div>
-				<div id="list_item5"><?= $item_hit ?></div>
+
+					<div class="bbs_lst">
+						<ul class="lst_cont">
+							<?		
+								for ($i=$start; $i<$start+$scale && $i < $total_record; $i++)                    
+								{
+									mysql_data_seek($result, $i);       
+									// 가져올 레코드로 위치(포인터) 이동  
+									$row = mysql_fetch_array($result);
+									// 하나의 레코드 가져오기
+									
+									$item_num     = $row[num];
+									$item_id      = $row[id];
+									$item_name    = $row[name];
+									$item_nick    = $row[nick];
+									$item_hit     = $row[hit];
+									$item_date    = $row[regist_day];
+									$item_date = substr($item_date, 0, 10);  
+									$item_subject = str_replace(" ", "&nbsp;", $row[subject]);
+									$item_content = str_replace(" ", "&nbsp;", $row[content]);
+
+									$sql = "select * from $ripple where parent=$item_num"; // 추가 $item_num=메인게시글의 num
+									$result2 = mysql_query($sql, $connect); // 추가
+									$num_ripple = mysql_num_rows($result2); // 추가 해당 메인게시글의 댓글의 갯수
+									
+									// 이미지 경로 가져오기
+									if($row[file_copied_0]){	// 첨부된 첫번째 이미지가 있으면 해당 이미지
+										$item_img = './data/'.$row[file_copied_0];
+									}else{
+										$item_img = './data/default.jpg';	// 이미지가 없으면 default.jpg
+									}
+									
+							?>
+							<li>
+								<a href="view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>&liststyle=<?=$liststyle?>">
+									<div class="img"><img src="<?=$item_img?>" alt="첨부된 이미지"></div>
+									<div class="cont">
+										<strong><?= $item_subject ?></strong>
+										<p><?= $item_content ?></p>
+										<span><?= $item_nick ?></span>
+										<span><?= $item_date ?></span>
+										<?
+											if ($num_ripple){	// 댓글이 있으면
+												echo "<span><i class='fa-regular fa-comment-dots'><i>댓글</i></i>{$num_ripple}</span>";
+											}
+										?>
+										<span><i class="fa-regular fa-eye"><i>조회수</i></i> <?= $item_hit ?></span>
+									</div>
+								</a>
+							</li>
+							<?
+									$number--;
+								}
+							?>
+						</ul>
+					</div>
+
+					<div class="page_num">
+						<span class="prev">이전</span>
+						<?
+							// 게시판 목록 하단에 페이지 링크 번호 출력
+							for ($i=1; $i<=$total_page; $i++)
+							{
+								if ($page == $i)     // 현재 페이지 번호 링크 안함
+								{
+									echo "<span class='active'>{$i}</span>";
+								}
+								else
+								{
+									if($mode=="search")	// 검색리스트일 때 (page, scale, mode, find, search)
+									{
+										echo "<span><a href='list.php?page=$i&scale=$scale&liststyle=$liststyle&mode=search&find=$find&search=$search'>{$i}</a></span>";
+									}
+									else
+									{    // 일반 리스트일 때
+										echo "<span><a href='list.php?page=$i&scale=$scale&liststyle=$liststyle'>{$i}</a></span>";
+									}
+								}
+							}
+						?>
+						<span class="next">다음</span>
+					</div>
+
+					<div class="btn_wrap">
+						<a href="list.php?table=<?=$table?>&page=<?=$page?>&liststyle=<?=$liststyle?>">목록</a>
+						<? if($userid){	// 로그인 했을 경우 ?>
+						<a href="write_form.php?table=<?=$table?>&liststyle=<?=$liststyle?>" class='active'>글쓰기</a>
+						<? } ?>
+					</div>
+					
+
+					<div class="bbs_search">
+						<form name="board_form" method="post" action="list.php?table=<?=$table?>&mode=search&liststyle=<?=$liststyle?>"> 
+							<select name="find">
+								<option value='subject'>제목</option>
+								<option value='content'>내용</option>
+								<option value='nick'>별명</option>
+								<option value='name'>이름</option>
+							</select>
+							<label class="hidden" for="search"></label>
+							<input type="text" name="search" id="search" placeholder="검색어를 입력하세요">
+							<button type="submit">검색</button>
+						</form>
+					</div>
+
+				</div>
+
+
 			</div>
-<?
-   	   $number--;
-   }
-?>
-			<div id="page_button">
-				<div id="page_num"> ◀ 이전 &nbsp;&nbsp;&nbsp;&nbsp; 
-<?
-   // 게시판 목록 하단에 페이지 링크 번호 출력
-   for ($i=1; $i<=$total_page; $i++)
-   {
-		if ($page == $i)     // 현재 페이지 번호 링크 안함
-		{
-			echo "<b> $i </b>";
+		</article>
+	<? include '../common/sub_footer.html' ?>
+	<?
+		if (!$liststyle){
+			$liststyle = 'list';	// 리스트 스타일
+			echo "
+				<script>
+					$('.lst_style li').removeClass('active');
+					$('.lst_style li:eq(0)').addClass('active');
+				</script>
+			";
+		} else if($liststyle == 'box'){
+			$liststyle = 'box';	// 리스트 스타일
+			echo "
+				<script>
+					$('.lst_style li').removeClass('active');
+					$('.lst_style li:eq(1)').addClass('active');
+					$('.bbs_lst').addClass('box');
+				</script>
+			";
+
 		}
-		else
-		{ 
-			echo "<a href='list.php?table=$table&page=$i'> $i </a>";
-		}      
-   }
-?>			
-			&nbsp;&nbsp;&nbsp;&nbsp;다음 ▶
-				</div>
-				<div id="button">
-					<a href="list.php?table=<?=$table?>&page=<?=$page?>"><img src="../img/list.png"></a>&nbsp;
-<? 
-	if($userid)
-	{
-?>
-		<a href="write_form.php?table=<?=$table?>"><img src="../img/write.png"></a>
-<?
-	}
-?>
-				</div>
-			</div> <!-- end of page_button -->		
-        </div> <!-- end of list content -->
-		<div class="clear"></div>
-
-	</div> <!-- end of col2 -->
-  </div> <!-- end of content -->
-</div> <!-- end of wrap -->
-
+	?>
 </body>
 </html>
