@@ -75,7 +75,7 @@
             <ul>
                 <li><a href="../greet/list.php">공지사항</a></li>
                 <li><a href="../concert/list.php" class="current">뉴스</a></li>
-                <li><a href="../sub6/sub6_3.html">제품검색</a></li>
+                <li><a href="../product/list.php">제품검색</a></li>
                 <li><a href="../sub6/sub6_4.html">문의하기</a></li>
             </ul>
         </div>

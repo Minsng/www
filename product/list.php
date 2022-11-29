@@ -1,8 +1,10 @@
 <? 
 	session_start(); 
-	@extract($_GET); 
-	@extract($_POST); 
+	@extract($_POST);
+	@extract($_GET);
 	@extract($_SESSION);
+
+	$table = "product";	// sql문에서 table명을 변수로 처리
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -10,35 +12,39 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>고객지원 - 공지사항</title>
+	<title>고객지원 - 제품검색</title>
 	<link rel="stylesheet" href="../common/css/common.css">
 	<link rel="stylesheet" href="../sub6/common/css/sub6common.css">
-	<link rel="stylesheet" href="./css/greet.css">
+	<link rel="stylesheet" href="./css/product.css">
 	<script src="https://kit.fontawesome.com/d488d1cfdc.js" crossorigin="anonymous"></script>
 	<script src="../common/js/prefixfree.min.js"></script>
 </head>
 <?
 	include "../lib/dbconn.php";
 
-	if (!$scale) $scale=8;			// 한 화면에 표시되는 글 수
+    
+   if (!$scale)
+    $scale=6;			// 한 화면에 표시되는 글 수
 
-    if ($mode=="search") {
+    
+    if ($mode=="search")
+	{
 		if(!$search)
 		{
 			echo("
 				<script>
-					window.alert('검색할 단어를 입력해 주세요!');
-					history.go(-1);
+				 window.alert('검색할 단어를 입력해 주세요!');
+			     history.go(-1);
 				</script>
 			");
 			exit;
 		}
 
-		$sql = "select * from greet where $find like '%$search%' order by num desc";
+		$sql = "select * from $table where $find like '%$search%' order by num desc";
 	}
 	else
 	{
-		$sql = "select * from greet order by num desc";
+		$sql = "select * from $table order by num desc";
 	}
 
 	$result = mysql_query($sql, $connect);
@@ -56,7 +62,6 @@
  
 	// 표시할 페이지($page)에 따라 $start 계산  
 	$start = ($page - 1) * $scale;      
-
 	$number = $total_record - $start;
 ?>
 <body>
@@ -67,9 +72,9 @@
         </div>
 		<div class="subNav">
             <ul>
-                <li><a href="../greet/list.php" class="current">공지사항</a></li>
+                <li><a href="../greet/list.php">공지사항</a></li>
                 <li><a href="../concert/list.php">뉴스</a></li>
-                <li><a href="../product/list.php">제품검색</a></li>
+                <li><a href="../product/list.php" class="current">제품검색</a></li>
                 <li><a href="../sub6/sub6_4.html">문의하기</a></li>
             </ul>
         </div>
@@ -77,75 +82,76 @@
 
             <div class="titleArea">
                 <div class="lineMap">
-                    <span><i class="fa-solid fa-house"></i></span> &gt; <span>고객지원</span> &gt; <span>공지사항</span>
+                    <span><i class="fa-solid fa-house"></i></span> &gt; <span>고객지원</span> &gt; <span>제품검색</span>
                 </div>
-                <h2>공지사항</h2>
+                <h2>제품검색</h2>
             </div>
 			<div class="contentArea">
                 <!-- 본문 콘텐츠 영역 -->
-				<div class="bbs_wrap">
+				<div class="photo_bbs_wrap">
 
 					<div class="bbs_sort">
 						<div class="total">총 <b><?= $total_record ?></b> 개의 게시물이 있습니다.</div>
 
 						<select class="scale" name="scale" onchange="location.href='list.php?scale='+this.value+'&liststyle=<?=$liststyle?>'">
 							<option value=''><?=$scale?>개씩</option>
-							<option value='8'>8개씩</option>
-							<option value='10'>10개씩</option>
+							<option value='6'>6개씩</option>
+							<option value='9'>9개씩</option>
 							<option value='12'>12개씩</option>
-							<option value='14'>14개씩</option>
+							<option value='15'>15개씩</option>
 						</select>
 
 						<ul class="lst_style">
 							<li class="active"><a href="list.php?liststyle=list&scale=<?=$scale?>">목록형</a></li>
 							<li><a href="list.php?liststyle=box&scale=<?=$scale?>">박스형</a></li>
 						</ul>
-
 					</div>
 					
-					
+
+
 					<div class="bbs_lst">
-						<ul class="lst_ttl">
-							<li class="lst_width1">번호</li>
-							<li class="lst_width2">제목</li>
-							<li class="lst_width3">글쓴이</li>
-							<li class="lst_width4">등록일</li>
-							<li class="lst_width5">조회</li>
-						</ul>
 						<ul class="lst_cont">
 							<?		
-								for ($i=$start; $i<$start+$scale && $i < $total_record; $i++)
+								for ($i=$start; $i<$start+$scale && $i < $total_record; $i++)                    
 								{
-									mysql_data_seek($result, $i);
-									// 가져올 레코드로 위치(포인터) 이동
+									mysql_data_seek($result, $i);       
+									// 가져올 레코드로 위치(포인터) 이동  
 									$row = mysql_fetch_array($result);
 									// 하나의 레코드 가져오기
-						
-									$item_num     = $row[num];	// 실제 해당 레코드의 num필드에 있는 게시번호, 프라이머리 키
+									
+									$item_num     = $row[num];
 									$item_id      = $row[id];
 									$item_name    = $row[name];
 									$item_nick    = $row[nick];
 									$item_hit     = $row[hit];
-						
-									$item_date    = $row[regist_day];	// 2022-02-21 (11:10)
-									$item_date = substr($item_date, 0, 10);	// 2022-02-21
-						
+									$item_date    = $row[regist_day];
+									$item_date = substr($item_date, 0, 10);
+									$item_category_1 = str_replace(" ", "&nbsp;", $row[category_1]);
+									$item_category_2 = str_replace(" ", "&nbsp;", $row[category_2]);
 									$item_subject = str_replace(" ", "&nbsp;", $row[subject]);
 									$item_content = str_replace(" ", "&nbsp;", $row[content]);
-									// srt_replace 문자를 교체함. " "공백문자가 들어있으면 &nbsp; 로 변경해서 찍는다.
-						
+									
+									// 이미지 경로 가져오기
+									if($row[file_copied_0]){	// 첨부된 첫번째 이미지가 있으면 해당 이미지
+										$item_img = './data/'.$row[file_copied_0];
+									}else{
+										$item_img = './data/default.jpg';	// 이미지가 없으면 default.jpg
+									}
+									
 							?>
 							<li>
-								<div class="lst_width1"><?= $number ?></div>
-								<div class="lst_width2">
-									<a href="view.php?num=<?=$item_num?>&page=<?=$page?>&liststyle=<?=$liststyle?>">
-										<p><?= $item_subject ?></p>
-										<div class="content"><?= $item_content ?></div>
-									</a>
-								</div>
-								<div class="lst_width3"><?= $item_nick ?></div>
-								<div class="lst_width4"><?= $item_date ?></div>
-								<div class="lst_width5"><?= $item_hit ?></div>
+								<a href="view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>&liststyle=<?=$liststyle?>">
+									<div class="img"><img src="<?=$item_img?>" alt="첨부된 이미지"></div>
+									<div class="cont">
+										<i><?=$item_category_1?></i>
+										<i><?=$item_category_2?></i>
+										<strong><?= $item_subject ?></strong>
+										<p><?= $item_content ?></p>
+										<span><?= $item_nick ?></span>
+										<span><?= $item_date ?></span>
+										<span><i class="fa-regular fa-eye"><i>조회수</i></i> <?= $item_hit ?></span>
+									</div>
+								</a>
 							</li>
 							<?
 									$number--;
@@ -181,15 +187,15 @@
 					</div>
 
 					<div class="btn_wrap">
-						<a href="list.php?page=<?=$page?>&liststyle=<?=$liststyle?>">목록</a>
+						<a href="list.php?table=<?=$table?>&page=<?=$page?>&liststyle=<?=$liststyle?>">목록</a>
 						<? if($userid){	// 로그인 했을 경우 ?>
-						<a href="write_form.php?liststyle=<?=$liststyle?>" class='active'>글쓰기</a>
+						<a href="write_form.php?table=<?=$table?>&liststyle=<?=$liststyle?>" class='active'>글쓰기</a>
 						<? } ?>
 					</div>
 					
 
 					<div class="bbs_search">
-						<form name="board_form" method="post" action="list.php?mode=search&liststyle=<?=$liststyle?>">
+						<form name="board_form" method="post" action="list.php?table=<?=$table?>&mode=search&liststyle=<?=$liststyle?>"> 
 							<select name="find">
 								<option value='subject'>제목</option>
 								<option value='content'>내용</option>
@@ -200,10 +206,13 @@
 							<button type="submit">검색</button>
 						</form>
 					</div>
+
 				</div>
+
+
 			</div>
-        </article>
-	<? include "../common/sub_footer.html" ?>
+		</article>
+	<? include '../common/sub_footer.html' ?>
 	<?
 		if (!$liststyle){
 			$liststyle = 'list';	// 리스트 스타일
@@ -225,6 +234,5 @@
 
 		}
 	?>
-
 </body>
 </html>

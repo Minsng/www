@@ -16,6 +16,8 @@
 
 		$row = mysql_fetch_array($result);       
 	
+		$item_category_1  = $row[category_1];
+		$item_category_2  = $row[category_2];
 		$item_subject     = $row[subject];
 		$item_content     = $row[content];
 
@@ -34,10 +36,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>고객지원 - 뉴스</title>
+	<title>고객지원 - 제품검색</title>
 	<link rel="stylesheet" href="../common/css/common.css">
 	<link rel="stylesheet" href="../sub6/common/css/sub6common.css">
-	<link rel="stylesheet" href="./css/concert.css">
+	<link rel="stylesheet" href="./css/product.css">
 	<script src="https://kit.fontawesome.com/d488d1cfdc.js" crossorigin="anonymous"></script>
 	<script src="../common/js/prefixfree.min.js"></script>
 	<script>
@@ -56,6 +58,21 @@
 				document.board_form.content.focus();
 				return;
 			}
+
+			if (!document.board_form.category_1.value)
+			{
+				alert("카테고리를 선택하세요!");    
+				document.board_form.category_1.focus();
+				return;
+			}
+
+			if (!document.board_form.category_2.value)
+			{
+				alert("카테고리를 입력하세요!");    
+				document.board_form.category_2.focus();
+				return;
+			}
+
 			document.board_form.submit();
 		}
 	</script>
@@ -70,8 +87,8 @@
 		<div class="subNav">
             <ul>
                 <li><a href="../greet/list.php">공지사항</a></li>
-                <li><a href="../concert/list.php" class="current">뉴스</a></li>
-                <li><a href="../product/list.php">제품검색</a></li>
+                <li><a href="../concert/list.php">뉴스</a></li>
+                <li><a href="../product/list.php" class="current">제품검색</a></li>
                 <li><a href="../sub6/sub6_4.html">문의하기</a></li>
             </ul>
         </div>
@@ -79,9 +96,9 @@
 
             <div class="titleArea">
                 <div class="lineMap">
-                    <span><i class="fa-solid fa-house"></i></span> &gt; <span>고객지원</span> &gt; <span>뉴스</span>
+                    <span><i class="fa-solid fa-house"></i></span> &gt; <span>고객지원</span> &gt; <span>제품검색</span>
                 </div>
-                <h2>뉴스</h2>
+                <h2>제품검색</h2>
             </div>
 			<div class="contentArea">
                 <!-- 본문 콘텐츠 영역 -->
@@ -104,6 +121,36 @@
 							</li>
 							<li>
 								<dl>
+									<dt><label>카테고리</label></dt>
+									<dd>
+										<select name="category_1">
+											<?
+												if($item_category_1 == '정밀화학') {
+													echo "
+														<option value='정밀화학' selected>정밀화학</option>
+														<option value='전자소재'>전자소재</option>
+													";
+												} else if($item_category_1 == '전자소재'){
+													echo "
+														<option value='정밀화학'>정밀화학</option>
+														<option value='전자소재' selected>전자소재</option>
+													";
+												} else {
+													echo "
+														<option value=''>선택하세요</option>
+														<option value='정밀화학'>정밀화학</option>
+														<option value='전자소재'>전자소재</option>
+													";
+												}
+											?>
+										</select>
+										<label for="category_2" class="hidden">카테고리2</label>
+										<input type="text" name="category_2" id="category_2" value="<?=$item_category_2?>" placeholder="두번째 카테고리를 입력하세요">
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
 									<dt><label for="subject">제목</label></dt>
 									<dd>
 										<input type="text" name="subject" id="subject" value="<?=$item_subject?>" >
@@ -121,7 +168,7 @@
 										</div>
 										<? } ?>
 										<div>
-											<textarea id="contents" name="content"><?=$item_content?></textarea>
+											<textarea name="content" id="contents"><?=$item_content?></textarea>
 										</div>
 									</dd>
 								</dl>
@@ -189,8 +236,6 @@
 
 					</form>
 				</div>
-
-
 
 
 			</div>
