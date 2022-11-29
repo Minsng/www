@@ -50,10 +50,10 @@
 			$copied_file_name[$i] = $new_file_name.".".$file_ext;      
 			$uploaded_file[$i] = $upload_dir.$copied_file_name[$i];
 
-			if( $upfile_size[$i]  > 600000 ) {
+			if( $upfile_size[$i]  > 800000 ) {
 				echo("
 				<script>
-				alert('업로드 파일 크기가 지정된 용량(600KB)을 초과합니다!<br>파일 크기를 체크해주세요! ');
+				alert('업로드 파일 크기가 지정된 용량(800KB)을 초과합니다!<br>파일 크기를 체크해주세요! ');
 				history.go(-1)
 				</script>
 				");
