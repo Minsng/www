@@ -275,24 +275,6 @@
 				</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 			</div>
 		</article>
 	<? include '../common/sub_footer.html' ?>
