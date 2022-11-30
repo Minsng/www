@@ -114,7 +114,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     
     
     /* 검색 */
-    .photo_bbs_wrap .bbs_search{margin:50px 0 0; text-align:center; background:#f7f7f7; padding:25px 0;}
+    .photo_bbs_wrap .bbs_search{margin:50px 0 0; text-align:center; background:#fff; padding:25px 0;}
     
     .photo_bbs_wrap .bbs_search select{width: 120px;}
     .photo_bbs_wrap .bbs_search input{width: 250px;}
