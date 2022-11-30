@@ -84,8 +84,14 @@
 	<script>
 		function del(href) 
 		{
-			if(confirm("한번 삭제한 자료는 복구할 방법이 없습니다.\n\n정말 삭제하시겠습니까?")) {
-					document.location.href = href;
+			var question = prompt('관리자만 삭제 가능합니다. 비밀번호를 입력하세요.');
+
+			if(question == 'tjdalstmd'){
+				if(confirm("한번 삭제한 자료는 복구할 방법이 없습니다.\n\n정말 삭제하시겠습니까?")) {
+						document.location.href = href;
+				}
+			} else {
+				alert('비밀번호가 틀렸습니다. 삭제를 취소합니다.');
 			}
 		}
 	</script>
