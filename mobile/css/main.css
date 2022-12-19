@@ -95,13 +95,14 @@ h3 {font-family: 'roboto', sans-serif; font-weight: 700;}
 .infor .swiper-slide:nth-of-type(2) {background: #edeff3;}
 .infor .swiper-slide:nth-of-type(3) {background: #e8f0f7;}
 
+.infor a {display: block; width: 100%; height: 100%; z-index: 30;}
 .infor .swiper-slide h4{font-weight: 700; font-size: 1.286rem; text-align: center; margin: 20px 0;}
 #wrap .infor .swiper-slide img {
     display: block; width: 150px; height: 150px; margin: 16px auto; border-radius: 75px;
 }
 #wrap .infor .swiper-slide p{line-height: 1.5em; text-align: center;}
-.infor .swiper-container-3d .swiper-slide-shadow-left{border-radius: 24px; background-image: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0))}
-.infor .swiper-container-3d .swiper-slide-shadow-right{border-radius: 24px; background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+.infor .swiper-container-3d .swiper-slide-shadow-left{display:none;border-radius: 24px; background-image: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+.infor .swiper-container-3d .swiper-slide-shadow-right{display:none;border-radius: 24px; background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0))}
 .infor .swiper-pagination{padding: 15px 0}
 
 

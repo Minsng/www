@@ -29,8 +29,6 @@
 	$image_copied[2] = $row[file_copied_2];
 
     $item_date    = $row[regist_day];
-	$item_category_1 = str_replace(" ", "&nbsp;", $row[category_1]);
-	$item_category_2 = str_replace(" ", "&nbsp;", $row[category_2]);
 	$item_subject = str_replace(" ", "&nbsp;", $row[subject]);
 
 	$item_content = $row[content];
@@ -77,10 +75,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>고객지원 - 제품검색</title>
+	<title>투자정보 - 전자공고</title>
 	<link rel="stylesheet" href="../common/css/common.css">
-	<link rel="stylesheet" href="../sub6/common/css/sub6common.css">
-	<link rel="stylesheet" href="./css/product.css">
+	<link rel="stylesheet" href="../sub5/common/css/sub5common.css">
+	<link rel="stylesheet" href="./css/notice.css">
 	<script src="https://kit.fontawesome.com/d488d1cfdc.js" crossorigin="anonymous"></script>
 	<script src="../common/js/prefixfree.min.js"></script>
 	<script>
@@ -102,35 +100,32 @@
 <body>
 	<? include "../common/sub_header.html" ?>
 		<div class="main">
-            <img src="../sub6/images/sub6visual.png" alt="서브6비주얼이미지">
-            <h3>고객지원</h3>
+			<img src="../sub5/images/sub5visual.png" alt="서브5비주얼이미지">
+            <h3>투자정보</h3>
         </div>
 		<div class="subNav">
-            <ul>
-                <li><a href="../greet/list.php">공지사항</a></li>
-                <li><a href="../concert/list.php">뉴스</a></li>
-                <li><a href="../product/list.php" class="current">제품검색</a></li>
-                <li><a href="../sub6/sub6_4.html">문의하기</a></li>
+			<ul>
+				<li><a href="sub5_1.html">IR정보</a></li>
+                <li><a href="sub5_2.html">재무정보</a></li>
+                <li><a href="sub5_3.html">공시정보</a></li>
+                <li><a href="../notice/list.php" class="current">전자공고</a></li>
+                <li><a href="sub5_5.html">지속가능경영</a></li>
             </ul>
         </div>
 		<article id="content">
 
-            <div class="titleArea">
+			<div class="titleArea">
                 <div class="lineMap">
-                    <span><i class="fa-solid fa-house"></i></span> &gt; <span>고객지원</span> &gt; <span>제품검색</span>
+                    <span><i class="fa-solid fa-house"></i></span> &gt; <span>투자정보</span> &gt; <span>전자공고</span>
                 </div>
-                <h2>제품검색</h2>
+                <h2>전자공고</h2>
             </div>
 			<div class="contentArea">
                 <!-- 본문 콘텐츠 영역 -->
 				<div class="photo_bbs_wrap">
 
 					<ul class="bbs_view_ttl">
-						<li>
-							<i><?=$item_category_1?></i>
-							<i><?=$item_category_2?></i>
-							<strong><?= $item_subject ?></strong>
-						</li>
+						<li><?= $item_subject ?></li>
 						<li>
 							<span><?= $item_nick ?></span>
 							<span><?= $item_date ?></span>

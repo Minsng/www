@@ -1,0 +1,205 @@
+.tabbox {
+    margin: 100px 0 0;
+}
+
+.tab ul::after{content:''; display: block; clear:both;}
+.tab li{float:left; width: 50%;}
+.tab li a{
+    position:relative; height:70px; line-height:70px; display: block; 
+    font-size:1.5em; border:1px solid #ddd; border-left-width:0; 
+    text-align:center; color:#333; transition:all .3s
+}
+.tab li:first-child a{border-left-width:1px;}
+.tab li:hover a{color: #0075c1;}
+.tab li.current a{color: #0075c1;}
+.tab li.current a::before{
+    content:''; 
+    position:absolute; left:-1px; top:-1px; display:block;
+    width: 100%; height: 100%; border:1px solid #0075c1;
+}
+
+.intro {
+    margin: 100px 0 0;
+    position: relative;
+}
+    .intro h4 {
+        font-size: 2em; 
+        font-weight: 700;
+    }
+    .intro>p {
+        font-size: 1.75em; text-align: center;
+        margin: 80px 0 0;
+    }
+    .intro>dl {
+        margin: 80px 0 0; font-size: 1.125em;
+    }
+    .intro>dl dt {
+        font-size: 1.125em; font-weight: 700;
+        margin: 50px 0 20px; color: #0075c1;
+    }
+    .intro>dl dt i {
+        padding: 0 5px;
+    }
+    .intro>dl>dd>ul li {
+        overflow: hidden;
+    }
+    .intro>dl>dd>ul li span {
+        display: block; width: 13%; float: left; 
+        height: 70px; font-weight: 700;
+    }
+    .intro>dl>dd>ul li p {
+        display: block; width: 87%; float: left;
+    }
+
+.direction {
+    margin: 100px 0 0;
+}
+    .direction h4 {
+        font-size: 2em;
+    }
+    .direction>p:nth-of-type(1) {
+        font-size: 1.75em; text-align: center;
+        margin: 80px 0 0;
+    }
+    .direction>p:nth-of-type(2) {
+        font-size: 1.5em; text-align: center;
+        margin: 80px 0 0;
+    }
+    .direction ul {overflow: hidden;}
+    .direction ul li{
+        float: left;
+        width: 360px; height: 400px;
+        margin: 40px 20px 10px;
+        box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, .3);
+        
+    }
+    .direction ul li dl {
+        text-align: center;
+    }
+    .direction ul li dl dt{
+        font-size: 1.75em;
+        padding: 20px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .direction ul li dl dd {
+        margin: 20px 20px 0 30px; text-align: justify;
+        text-indent: -12px; font-size: 1.125em;
+    }
+
+.situation {
+    margin: 100px 0 0;
+    position: relative;
+}
+.situation::before {
+    content: '';
+    background: url(../images/logobackground.png) no-repeat;
+    display: block; width: 1200px; height: 477px;
+    position: absolute; left: 300px; top: 100px;
+    opacity: .15;
+}
+    .situation h4 {
+        font-size: 2em;
+    }
+    .situation>p {
+        font-size: 1.75em; text-align: center;
+        margin: 80px 0 0;
+    }
+
+    .situation dl {
+        width: 960px;
+        margin: 80px 0 0 120px; 
+        overflow: hidden;
+        font-size: 1.5em;
+    }
+    
+    .situation dl dt{
+        float: left; display: block; width: 30%;
+        text-align: center; font-weight: 700;
+        font-size: 1.75em;
+        margin: 0 0 50px; color: #0075c1;
+    }
+    .situation dl dd{
+        float: left; display: block; width: 70%;        
+        margin: 0 0 50px;
+    }
+    .situation dl dd ul li {
+        overflow: hidden;
+        line-height: 50px;
+    }
+    .situation dl dd ul li span {
+        display: block; width: 20%; float: left;
+        color: #999;
+    }
+    .situation dl dd ul li p {
+        display: block; width: 80%; float: left;
+    }
+    .situation dl dd ul li p:nth-of-type(2) {
+        display: block; width: 80%; float: left;
+        margin-left: 20%;
+    }
+
+
+.code {
+    margin: 100px 0;
+}
+    .charter h4 {
+        font-size: 2em;
+    }
+    .charter dl {margin: 80px 0 0 10%; overflow: hidden; width: 80%;}
+    .charter dl dt {
+        text-align: center; font-size: 1.75em; font-weight: 700; 
+    }
+    .charter dl dd {
+        display: block; float: left; width: 320px; padding: 50px 50px;
+        text-align: justify; font-size: 1.125em;
+        text-indent: -11px;       
+        background: #efefef; border-radius: 50px;
+        margin:50px 30px 10px;
+        box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, .3);
+    }
+    .codeofethics {
+        margin: 100px 0 0;
+        position: relative;
+    }
+    .codeofethics::before {
+        content: '';
+        background: url(../images/logobackground.png) no-repeat;
+        display: block; width: 1200px; height: 477px;
+        position: absolute; left: 300px; top: 580px;
+        opacity: .15;
+    }
+
+    .codeofethics h4 {
+        font-size: 2em;
+    }
+    .codeofethics p {
+        margin: 50px 0 0;
+        background: #ededed;
+        padding: 40px 50px;
+        font-size: 1.215em; text-align: justify;        
+    }
+    .codeofethics dl {
+        margin: 80px 0 0;
+    }
+
+    .codeofethics dl dt {
+        font-size: 1.5em; color: #0075c1; font-weight: 700;
+        height: 60px; line-height: 60px;
+        margin-top: 30px;
+    }
+    .codeofethics dl dd {
+        font-size: 1.125em; 
+        height: 40px; line-height: 40px;
+        margin-left: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
