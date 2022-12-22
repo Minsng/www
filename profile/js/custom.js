@@ -3,7 +3,7 @@
 
 
     // typer
-    window.onload=function(){	
+    window.onload = function(){	
         var el       = document.querySelector('.slogan p')
         var options  = {
             text: '안녕하세요? 프론트엔드 개발자 성민승입니다.',
@@ -11,7 +11,10 @@
             blinkSpeed: 0.06
         }
 
-        var instance = new tinytyper(el, options);
+        setInterval(() => {
+            var instance = new tinytyper(el, options);
+            
+        }, 1000);
     }
 
 
