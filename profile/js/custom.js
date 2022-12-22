@@ -6,7 +6,7 @@
     window.onload=function(){	
         var el       = document.querySelector('.slogan p')
         var options  = {
-            text: '안녕하세요? 프론트엔드 개발자 & 웹퍼블리셔 송미옥입니다',
+            text: '안녕하세요? 프론트엔드 개발자 성민승입니다.',
             textSpeed: 95,
             blinkSpeed: 0.06
         }
@@ -181,13 +181,6 @@
         $('article section').removeClass('active');
         $('article section').eq(cnt).addClass('active');
 
-        // if(cnt == 3 || cnt == 5 ){  // mobile, bootstrap 배경 변경
-        //     $('#wrap').removeClass('dark');
-        //     $('#wrap').addClass('bright');
-        // } else {
-        //     $('#wrap').removeClass('bright');
-        //     $('#wrap').addClass('dark');
-        // }
     }
     scrollMove(cnt);
 

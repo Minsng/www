@@ -33,7 +33,7 @@ address{font-style: normal}
 a{color: inherit; text-decoration: none}
 img{border: 0; vertical-align: top}
 
-::selection {background-color: rgba(4,43,108,1); color: #fff;}
+::selection {background-color: #004165; color: #fff;}
 
 .hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff}
 
@@ -43,16 +43,14 @@ img{border: 0; vertical-align: top}
 
 #wrap h1{position:fixed; left: 40px; top: 40px; z-index: 99;}
 #wrap h1 a{display: block; font-size: 0; text-align:center;}
-#wrap h1 span{display:block; font-size:0; text-indent: -9999%; overflow: hidden;}
-#wrap h1 path{fill:#fff; transition:all .3s;}
+#wrap h1 span{display:block; font-size:0; text-indent: -9999%; overflow: hidden; transition:all .3s;}
+#wrap h1 img {width: 95px; height: 40px;}
 
 
 
 #wrap nav{position:fixed; left:40px; top:50%; transform:translateY(-50%); z-index: 98;}
-#wrap nav ul li:nth-child(3){position:relative; margin-top:40px;}
-#wrap nav ul li:nth-child(3)::after{position:absolute; left:0; top:-20px; content:''; display: block; width: 6px; height: 6px; background:#fff; border-radius:10px;}
 #wrap nav ul li h3{position:relative; display:inline-block;}
-#wrap nav ul li h3::before{position:absolute; left:-7px; top:23px; content:''; display: block; width:0; height:14px; background:#0039ac; transform:skew(-30deg); transition:all .3s;}
+#wrap nav ul li h3::before{position:absolute; left:-7px; top:23px; content:''; display: block; width:0; height:14px; background:#fbc834; transform:skew(-30deg); transition:all .3s;}
 #wrap nav ul li a{position:relative; display:inline-block; padding:7px 0; text-transform: uppercase; font-size:20px; font-weight:800; color:#fff; font-style: italic; z-index:2;}
     /* on */
 #wrap nav ul li.on h3::before{width:100%; padding:0 7px;}
@@ -68,25 +66,25 @@ img{border: 0; vertical-align: top}
 
 
 
-#wrap article{background:#042b6c; transition: all 1s;}
+#wrap article{background:#004165; transition: all 1s;}
 #wrap.bright article{background:#edf0f4;}
-#wrap.dark article{background:#042b6c;}
+#wrap.dark article{background:#004165;}
 #wrap.design article{background:#0e1634;}
 #wrap article section{position:relative; width: 100%; height: 100%; overflow: hidden;}
+    
     /* bright */
-    #wrap.bright h1 path{fill:#0039ac;}
-    #wrap.bright nav ul li:nth-child(3)::after{background:#0039ac;}
-    #wrap.bright nav ul li a{color:#0039ac;}
-    #wrap.bright nav ul li h3::before{background:#a7c4ff}
+    #wrap.bright h1 path{fill:#fbc834;}
+    #wrap.bright nav ul li a{color:#004165;}
+    #wrap.bright nav ul li h3::before{background:#fbc834}
     #wrap.bright nav .gnb_open span,
     #wrap.bright nav .gnb_open span::before,
-    #wrap.bright nav .gnb_open span::after{background:#0039ac;}
+    #wrap.bright nav .gnb_open span::after{background:#fbc834;}
     
 
 
 
 /* main */
-section.main .slogan{position:absolute; left:0; top:50%; width:100%; text-align:center; color:#06378e; font-style: italic; transform:translateY(-50%); z-index: 3;}
+section.main .slogan{position:absolute; left:0; top:50%; width:100%; text-align:center; color:#fff; font-style: italic; transform:translateY(-50%); z-index: 3;}
 section.main .slogan strong{display:block; font-size:2.0625rem; font-weight:900;}
 section.main .slogan > span{display:block; font-size:3.5625rem; font-weight:900; text-transform: uppercase;}
 section.main .slogan p span{font-size:1.25rem; font-style:normal; font-weight: 400; letter-spacing:-0.025rem;}
@@ -146,9 +144,9 @@ section .prj_info{position:relative; top:50%; margin:0 5% 0 61%; color:#fff; tra
 section .prj_info .ttl{font-size:2.8125rem; font-weight: 800; font-style: italic;}
 section .prj_info .ttl span{display:inline-block; font-size: 1.125rem; font-weight: 400; padding-left:1rem; letter-spacing:-0.025rem;}
 section .prj_info p{font-size: 1.125rem; padding:.5rem 0 0;}
-section .prj_info a.visit{position:relative; display:block; width:15rem; height: 3.125rem; line-height: 3.125rem; font-size:0.875rem; font-weight:600; padding:0 1.43rem; box-sizing:border-box; color:#fff; background:rgba(1,20,73,.5); transition:all .3s; margin:2.5rem 0 0;}
+section .prj_info a.visit{position:relative; display:block; width:15rem; height: 3.125rem; line-height: 3.125rem; font-size:0.875rem; font-weight:600; padding:0 1.43rem; box-sizing:border-box; color:#fff; background:#fbc83490; transition:all .3s; margin:2.5rem 0 0;}
 section .prj_info a.visit i{position:absolute; right: 1.43rem; top: 50%; transform:translateY(-50%); font-size: 0.75rem;}
-section .prj_info a.visit:hover{background:rgba(1,20,73,1);}
+section .prj_info a.visit:hover{background:#fbc834;}
 section .prj_info dl{padding:2.25rem 0 0;}
 
 section .prj_info dl dd{color:#7993be; font-weight: 500; padding: 1rem 0 0; line-height: 1.8;}
@@ -156,7 +154,7 @@ section .prj_info dl.fontcolor{padding:1rem 0 0;}
 section .prj_info dl.fontcolor dd{padding: 0;}
 section .prj_info dl.fontcolor dd span{vertical-align: middle;}
 section .prj_info dl.fontcolor dd span + span::before{content:'/'; display:inline-block; padding: 0 .75rem; color:rgba(255,255,255,.2);}
-section .prj_info dl.fontcolor dd i{display:inline-block; width: 30px; height: 4px; background:#fff; vertical-align: middle; margin-left:5px;}
+section .prj_info dl.fontcolor dd i{display:inline-block; width: 30px; height: 30px; border-radius: 15px; background:#fff; vertical-align: middle; margin-left:10px;}
 section .prj_qr{position:absolute; right: 40px; bottom:40px;}
 
     /* bright */
