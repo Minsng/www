@@ -135,19 +135,19 @@
             }
         }
 
-        if( $('section.mobile').hasClass('active') || $('section.bootstrap').hasClass('active')){
+        if( $('section.pc').hasClass('active') || $('section.responsive').hasClass('active') || $('section.wordpress').hasClass('active')){
             $('#wrap').removeClass('dark');
-            $('#wrap').removeClass('design');
+            // $('#wrap').removeClass('design');
             $('#wrap').addClass('bright');
 
-        } else if( $('section.design').hasClass('active') ) {
-            $('#wrap').removeClass('bright');
-            $('#wrap').removeClass('dark');
-            $('#wrap').addClass('design');
+        // } else if( $('section.design').hasClass('active') ) {
+        //     $('#wrap').removeClass('bright');
+        //     $('#wrap').removeClass('dark');
+        //     $('#wrap').addClass('design');
 
         } else {
             $('#wrap').removeClass('bright');
-            $('#wrap').removeClass('design');
+            // $('#wrap').removeClass('design');
             $('#wrap').addClass('dark');
         }
 

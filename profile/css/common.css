@@ -69,17 +69,19 @@ img{border: 0; vertical-align: top}
 #wrap article{background:#004165; transition: all 1s;}
 #wrap.bright article{background:#edf0f4;}
 #wrap.dark article{background:#004165;}
-#wrap.design article{background:#0e1634;}
+/* #wrap.design article{background:#0e1634;} */
 #wrap article section{position:relative; width: 100%; height: 100%; overflow: hidden;}
     
     /* bright */
-    #wrap.bright h1 path{fill:#fbc834;}
+    /* #wrap.bright h1 path{fill:#fbc834;} */
     #wrap.bright nav ul li a{color:#004165;}
     #wrap.bright nav ul li h3::before{background:#fbc834}
     #wrap.bright nav .gnb_open span,
     #wrap.bright nav .gnb_open span::before,
-    #wrap.bright nav .gnb_open span::after{background:#fbc834;}
+    #wrap.bright nav .gnb_open span::after{background:#333;}
     
+    /* #wrap.bright nav.on ul li a {color: #fff;}
+    #wrap.bright nav.on ul li h3::before {color: #fbc834;} */
 
 
 
@@ -102,9 +104,9 @@ section.main .scroll_down i{display:inline-block; padding:5px 0 0; animation:scr
 section.profile .photo{float:left; width:44%; height: 100%; background:url(../images/profile_photo.jpg) 50% 50% no-repeat; background-size:cover;}
 section.profile .intro{position:absolute; top:50%; margin:0 5% 0 50%; color:#fff; transform:translateY(-50%);}
 section.profile .intro .name{font-size:3.4375rem; font-weight: 800; font-style: italic;}
-section.profile .intro .name span{display: inline-block; font-size:1.25rem; color:#75a6ff; font-weight: 400; letter-spacing:-0.025rem; padding-left:1rem;}
+section.profile .intro .name span{display: inline-block; font-size:1.25rem; color:#edf0f4; font-weight: 400; letter-spacing:-0.025rem; padding-left:1rem;}
 section.profile .intro dl{padding: 3.125rem 0 0;}
-section.profile .intro dl dt{color:#75a6ff; font-weight: 700; text-transform: uppercase; padding-left:30px; background:url(../images/ico_smile.png) 0 0 no-repeat; background-size:auto 20px; line-height: 20px;}
+section.profile .intro dl dt{color:#edf0f4; font-weight: 700; text-transform: uppercase; padding-left:30px; background:url(../images/ico_smile.png) 0 0 no-repeat; background-size:auto 20px; line-height: 20px;}
 section.profile .intro dl dd{font-size: 1.125rem; font-weight: 500; line-height:1.8; padding: 1.5rem 0 0;}
 section.profile .intro dl dd span + span::before{content:'/'; display: inline-block; padding:0 .75rem; color:rgba(255,255,255,.2);}
 section.profile .intro dl dd .skill{padding:1rem 0 0;}
@@ -112,10 +114,10 @@ section.profile .intro dl dd .skill img{vertical-align:middle; opacity: .5; tran
 section.profile .intro dl dd .skill img:hover{opacity: 1;}
 section.profile .intro .btn{padding:4.125rem 0 0;}
 section.profile .intro .btn::after{content:''; display: block; clear: both;}
-section.profile .intro .btn a{float:left; position: relative; width:calc(33.33% - 4px); height: 3.125rem; line-height: 3.125rem; font-size:0.875rem; font-weight: 500; color:#fff; background:rgba(1,20,73,.4); box-sizing:border-box; padding:0 1.43rem; transition:all .3s;}
+section.profile .intro .btn a{float:left; position: relative; width:calc(33.33% - 4px); height: 3.125rem; line-height: 3.125rem; font-size:0.875rem; font-weight: 500; color:#004165; background:rgba(251, 201, 50, 0.8); box-sizing:border-box; padding:0 1.43rem; transition:all .3s;}
 section.profile .intro .btn a + a{margin-left:6px;}
 section.profile .intro .btn a i{position:absolute; right: 1.43rem; top: 50%; transform:translateY(-50%); font-size: 0.75rem;}
-section.profile .intro .btn a:hover{background:rgba(1,20,73,1);}
+section.profile .intro .btn a:hover{background:#fbc834;}
 
 
 
@@ -129,7 +131,7 @@ section .monitor .video .respon{position:absolute; left:0; bottom:5%; width: 32%
 section .monitor .video .respon img{width: 100%;}
 
     /* phone */
-section .phone{float:left; position:relative; width: calc(60% - 15rem); margin-left:15rem; height: 100%; box-sizing:border-box;}
+section .phone{float:left; position:relative; wisdth: calc(60% - 15rem); margin-left:15rem; height: 100%; box-sizing:border-box;}
 section .phone .video{position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); text-align:center;}
 section .phone .video img{max-width: 100%; max-height: 100%;}
 section .phone .video video{position:absolute; left:0; top: 0; width: 100%; padding:4% 7% 0; box-sizing:border-box; border-radius:20%/8%;}
@@ -144,12 +146,12 @@ section .prj_info{position:relative; top:50%; margin:0 5% 0 61%; color:#fff; tra
 section .prj_info .ttl{font-size:2.8125rem; font-weight: 800; font-style: italic;}
 section .prj_info .ttl span{display:inline-block; font-size: 1.125rem; font-weight: 400; padding-left:1rem; letter-spacing:-0.025rem;}
 section .prj_info p{font-size: 1.125rem; padding:.5rem 0 0;}
-section .prj_info a.visit{position:relative; display:block; width:15rem; height: 3.125rem; line-height: 3.125rem; font-size:0.875rem; font-weight:600; padding:0 1.43rem; box-sizing:border-box; color:#fff; background:#fbc83490; transition:all .3s; margin:2.5rem 0 0;}
+section .prj_info a.visit{position:relative; display:block; width:15rem; height: 3.125rem; line-height: 3.125rem; font-size:0.875rem; font-weight:600; padding:0 1.43rem; box-sizing:border-box; color:#004165; background:rgba(251, 200, 52, 0.8); transition:all .3s; margin:2.5rem 0 0;}
 section .prj_info a.visit i{position:absolute; right: 1.43rem; top: 50%; transform:translateY(-50%); font-size: 0.75rem;}
-section .prj_info a.visit:hover{background:#fbc834;}
+section .prj_info a.visit:hover{background:rgb(251, 200, 52);}
 section .prj_info dl{padding:2.25rem 0 0;}
-
-section .prj_info dl dd{color:#7993be; font-weight: 500; padding: 1rem 0 0; line-height: 1.8;}
+#wrap section .prj_info dl dt{font-weight: 700;}
+section .prj_info dl dd{color:#edf0f4; font-weight: 500; padding: 1rem 0 0; line-height: 1.8;}
 section .prj_info dl.fontcolor{padding:1rem 0 0;}
 section .prj_info dl.fontcolor dd{padding: 0;}
 section .prj_info dl.fontcolor dd span{vertical-align: middle;}
@@ -158,16 +160,16 @@ section .prj_info dl.fontcolor dd i{display:inline-block; width: 30px; height: 3
 section .prj_qr{position:absolute; right: 40px; bottom:40px;}
 
     /* bright */
-    #wrap.bright section .prj_info{color:#06378e;}
-    #wrap.bright section .prj_info a.visit{background:#06378e;}
-    #wrap.bright section .prj_info a.visit:hover{background:#001e54;}
-    #wrap.bright section .prj_info dl dt{font-weight: 700;}
-    #wrap.bright section .prj_info dl dd{color:rgba(6,35,142,.5);}
+    #wrap.bright section .prj_info{color:#004165;}
+    #wrap.bright section .prj_info a.visit{background:rgba(251, 200, 52, 0.8);}
+    #wrap.bright section .prj_info a.visit:hover{background:#fbc834;}
+    /* #wrap.bright section .prj_info dl dt{font-weight: 700;} */
+    #wrap.bright section .prj_info dl dd{color:#004165;}
     #wrap.bright section .prj_info dl.fontcolor dd span + span::before{color:rgba(0,0,0,0.1);}
     /* design */
-    #wrap.design section .prj_info a.visit{background:#192549;}
+    /* #wrap.design section .prj_info a.visit{background:#192549;}
     #wrap.design section .prj_info a.visit:hover{background:#24345d;}
-    #wrap.design section .prj_info dl dd{color:rgba(106,114,146,1);}
+    #wrap.design section .prj_info dl dd{color:#6a7292;} */
 
 
 
@@ -207,6 +209,12 @@ section.wordpress{background:url(../images/napoleon_bg.png) 100% 170% no-repeat;
 section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(1){background-color:#b8292f;}
 section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#333;}
 
+/* vue */
+section.design{background:url(../images/napoleon_bg.png) 100% 170% no-repeat; background-size:30% auto;}
+section.design .prj_info dl.fontcolor dd i:nth-of-type(1){background-color:#20407b;}
+section.design .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#017eb9;}
+section.design .prj_info dl.fontcolor dd i:nth-of-type(3){background-color:#333;}
+
 
 
 @media only screen and (max-width:1280px) {
@@ -230,6 +238,7 @@ section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#3
     #wrap nav{position:fixed; right: 0; top: 0; width: 100%; left: inherit; transform: translate(0,0);}
     #wrap nav .gnb_open{display: block;}
     #wrap nav ul{position:fixed; right:-70%; top:0; width:70%; height: 100vh; padding:90px 10% 0; box-sizing:border-box; background:rgba(0,0,0,.9); transition:all .3s;}
+    #wrap.bright nav ul {background: rgba(255, 255, 255, 0.9);}
         /* on */
     #wrap nav.on ul{right:0;}
     #wrap nav.on .gnb_open span{background:rgba(255,255,255,0);}
@@ -268,8 +277,6 @@ section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#3
     section.main .slogan p span{font-size:1.08rem;}
 
     section.profile .intro .name{font-size:2.5rem;}
-    /* section.profile .intro .btn a{width: 100%; margin:5px 0;}
-    section.profile .intro .btn a + a{margin:5px 0;} */
 
     section .monitor{margin:0 2rem;}
     section .phone{margin:0 5rem;}
