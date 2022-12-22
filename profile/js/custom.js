@@ -10,11 +10,12 @@
             textSpeed: 95,
             blinkSpeed: 0.06
         }
-
+        var instance = new tinytyper(el, options);
+        
         setInterval(() => {
             var instance = new tinytyper(el, options);
             
-        }, 1000);
+        }, 4000);
     }
 
 
