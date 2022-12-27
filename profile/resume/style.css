@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/* reset css */
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; 
+    font-size: 100%
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block}
+html{font-size: 16px;}
+body{font-family: 'Noto Sans KR', sans-serif; color: #333; position: relative;}
+    /* min-width:1200px */
+ol, ul{list-style: none}
+table{border-collapse: collapse; border-spacing: 0}
+address{font-style: normal}
+a{color: #FFC107; overflow: hidden; word-break: break-all;}
+img{border: 0; vertical-align: top}
+h1,h2,h3,h4,h5,h6{font-family: 'Noto Sans KR', sans-serif;}
+textarea{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.hidden{
+    display: block; 
+    position: absolute;
+    left: -1000%; 
+    width: 1px; 
+    height: 1px;
+    overflow: hidden; 
+    color: #fff}
+
+::selection {
+    color: #fff;
+    background: #25a022;
+}
+.clearfix::after{
+    display: block;
+    clear: both;
+    content:"";
+}
+#wrap{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.margin_per{
+    margin-left: 12%; margin-right: 12%;
+}
+.inner{
+position: relative;
+}
+.topic{
+    border-bottom: 1px solid #C1C1C1;
+    margin-top: 5rem;
+}
+h1{
+    font-size: 1.625rem;
+    padding-bottom: 0.750rem ;
+    line-height: 1.5em;
+}
+.table_wrap{
+    padding-top: 65px;
+    overflow: hidden;
+    position: relative;
+}
+.img_wrap{
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ececec;
+    float: left;
+    margin-right: 4%;
+}
+.info_wrap{
+    overflow: hidden;
+    padding-top: 15px;
+}
+.info_wrap p, h2{
+    width: fit-content;
+    font-weight: 700;
+    font-size: 1.25rem;
+    position: relative;
+    margin-bottom: 24px;
+    z-index: 0;
+}
+.info_wrap p::before, h2::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 14px;
+    background: url(../images/Frame_pc.png);
+    position: absolute;
+    left: 50%;
+    margin-left: -50%;
+    top: 17px;
+    z-index: -10;
+}
+.items{
+    float: left;
+    overflow: hidden;
+}
+.items dl{
+    padding-bottom: 15px;
+}
+.items dt{
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-bottom: 2px;
+}
+.Summary_info{
+    position: relative;
+    z-index: 0;
+    margin-top: 40px;
+}
+.Summary_info::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: #f8f8f8;
+    position: absolute;
+    top: 50%;
+    z-index: -10;
+}
+.Summary_info .items{
+    width: 76%;
+    background: #fff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.06), 2px 2px 10px rgba(0, 0, 0, 0.04);
+    position: relative;
+}
+.Summary_info dl{
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin: 32px 0;
+    border-right: 1px solid #ececec;
+    box-sizing: border-box;
+    padding-bottom: 0;
+}
+.head{
+    width: 100%;
+    border-bottom: 1px solid #ECECEC;
+}
+.head li{
+    float: left;
+    padding-bottom:  8px;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-right: 4%;
+}
+.details_info .items{
+    float: none;
+    border-bottom: 1px solid #ececec;
+}
+.details_info .items dl{
+    float: left;
+    padding: 15px 0;
+    margin-right: 4%;
+}
+.details_info .items dt{
+    display: none;
+}
+.education .head li:first-of-type, .education .items dl:first-of-type{
+    width: 28%;  
+}
+.education .head li:nth-of-type(2), .education .items dl:nth-of-type(2){
+    width: 28%;
+}
+.education .head li:nth-of-type(3), .education .items dl:nth-of-type(3){
+    width: 21%;
+}
+.education .head li:last-of-type, .education .items dl:last-of-type{
+    margin-right: 0;
+    margin-left: 0;
+}
+.acheivement .head li:first-of-type, .acheivement .items dl:first-of-type{
+    width: 28%;  
+}
+.acheivement .head li:nth-of-type(2), .acheivement .items dl:nth-of-type(2){
+    width: 28%;
+}
+.acheivement .head li:nth-of-type(3), .acheivement .items dl:nth-of-type(3){
+    margin-right: 0;
+    margin-left: 0;
+}
+.skill .head li:first-of-type, .skill .items dl:first-of-type{
+    width: 28%;  
+}
+.skill .head li:nth-of-type(2), .skill .items dl:nth-of-type(2){
+    width: 68%; 
+    margin-right: 0;
+    margin-left: 0;
+}
+.skill .items li{
+    line-height: 1.5em;
+    position: relative;
+    padding-left: 16px;
+}
+.skill .items li::before{
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 4px;
+    background: #333;
+    position: absolute;
+    top: 10.5px;
+    left: 0;
+}
+.portfolio .head li:first-of-type, .portfolio .items dl:first-of-type{
+    width: 28%;  
+}
+.portfolio .head li:nth-of-type(2), .portfolio .items dl:nth-of-type(2){
+    width: 36%;
+}
+.portfolio .head li:nth-of-type(3), .portfolio .items dl:nth-of-type(3){
+    width: 28%;
+    margin-right: 0;
+    margin-left: 0;
+}
+.portfolio_bk>li:nth-child(2){
+    background: url(../images/image\ 22.png)no-repeat bottom right;
+    background-size: contain;
+}
+.portfolio_bk>li:nth-child(3){
+    background: url(../images/image\ 34.png)no-repeat bottom right;
+    background-size: contain;
+}
+.portfolio_bk>li:nth-child(4){
+    background: url(../images/image\ 38.png)no-repeat bottom right;
+    background-size: contain;
+}
+.portfolio_bk>li:nth-child(5){
+    background: url(../images/image\ 46.png)no-repeat bottom right;
+    background-size: contain;
+}
+.portfolio_bk>li:nth-child(6){
+    background: url(../images/image\ 50.png)no-repeat bottom right;
+    background-size: contain;
+}
+.last_info{
+    margin-bottom: 105px;
+}
+/* 푸터 */
+.footer{width: 100%; position: fixed; bottom: 0; padding: 10px 0; text-align: center; background: #FFC107;}
+.footer p{font-family: 'Poppins', sans-serif; color: #fff; font-size: 14px;}
+.material-icons{font-size: 16px; position: relative; top: 4px;}
+
+/* add class */
+.items .no-bottom{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.margin_add{
+    margin-right: 30%;
+}
+.no-bd-bottom{
+    border: none;
+}
+
+/* media queries */
+/* 태블릿 */
+@media screen and (max-width:1024px) {
+    .margin_per{margin-left: 8%; margin-right: 8%;}
+    .Summary_info dl{width: 50%; margin: 16px 0;}
+    .Summary_info .items{width: 84%;}
+    .Summary_info .items::before{content: ''; display: block; width: 90%; height: 1px; background: #ececec; position: absolute; top: 50%; left: 50%; margin-left: -45%;}
+}
+/* 모바일 */
+@media screen and (max-width:640px) {
+    html{font-size: 14px;}
+    h1{font-size: 1.25rem;}
+    .table_wrap{padding: 20px 0 0 0;}
+    .margin_per{margin-left: 5%; margin-right: 5%;}
+    .margin_add{margin-left: 0;}
+    .items .no-bottom{padding-bottom: 20px;}
+    .Summary_info{margin-top: 15px; margin-bottom: 15px;}
+    .Summary_info .items{width: 90%;}
+    .details_info{border-bottom: 15px solid #f8f8f8;}
+    .head{display: none;}
+    .details_info .items{margin-bottom: 15px;}
+    .details_info .items:last-child{border: none; margin-bottom: 0;}
+    .details_info .items dt{display: block;}
+    .details_info .items dl{padding-top: 0; margin-right: 0;}
+    .skill .items li::before{top: 9.5px;}
+    .education .items dl:first-of-type,.education .items dl:nth-child(2),.education .items dl:nth-child(3),.education .items dl:last-of-type
+    ,.acheivement .items dl:first-of-type,.acheivement .items dl:nth-child(2),.acheivement .items dl:nth-child(3)
+    ,.skill .items dl:first-of-type,.skill .items dl:nth-child(2)
+    ,.portfolio .items dl:first-of-type,.portfolio .items dl:nth-child(2),.portfolio .items dl:nth-child(3)
+    {float: none; width: 100%;}
+    .last_info{margin-bottom: 40px;}
+}
+
+/* add media queries */
+@media screen and (max-width:473px) {
+    .info_wrap .items dl{overflow: hidden;}
+    .info_wrap .items dt{float: left;}
+    .info_wrap .items dd{margin-left: 119px;}
+    .margin_add{margin-right: 0;}
+    .items{float: none;}
+}
+@media screen and (max-width:861px) {
+    .img_wrap{float: none;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+    #wrap {
+        min-width: 320px;
+    }
+}
+
+
+
+
+
+
+
+
+
