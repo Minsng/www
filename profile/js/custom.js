@@ -90,7 +90,7 @@
 
             clearTimeout(timer);
             timer = setTimeout(function(){
-                console.log(cnt);
+                // console.log(cnt);
                 cnt --;
                 scrollMove(cnt);
             }, 150);
@@ -100,7 +100,7 @@
             
             clearTimeout(timer);
             timer = setTimeout(function(){
-                console.log(cnt);
+                // console.log(cnt);
                 cnt ++;
                 scrollMove(cnt);
             }, 150);
@@ -176,7 +176,7 @@
         // section[cnt];
         if(wt>1024){
             $("html,body").stop().animate({"scrollTop":section[cnt]},500);
-            console.log('scrollMove Call');
+            // console.log('scrollMove Call');
         }
 
         $("#gnb li").removeClass();
