@@ -180,7 +180,7 @@ section .prj_qr{position:absolute; right: 40px; bottom:40px;}
 section.pc .prj_info dl.fontcolor dd i:nth-of-type(1){background-color:#0075c1;}
 section.pc .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#009944;}
 section.pc .prj_info dl.fontcolor dd i:nth-of-type(3){background-color:#fff;}
-section.pc .prj_info dl.fontcolor dd i:nth-of-type(4){background-color:#333;}
+/* section.pc .prj_info dl.fontcolor dd i:nth-of-type(4){background-color:#333;} */
 
 
 
